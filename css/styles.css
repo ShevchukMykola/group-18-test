@@ -13,3 +13,24 @@ a {
 ul {
   list-style: none;
 }
+
+footer {
+  color: #fff;
+  background-color: #1e212c;
+}
+
+footer a {
+  color: #fff;
+}
+
+.container {
+  width: 1260px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid orangered;
+  margin: 0 auto;
+}
+
+.copyright {
+  background-color: #424551;
+}
