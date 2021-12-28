@@ -1,0 +1,148 @@
+:root {
+	--accent-color: #ff3f3a;
+	--main-text-color: #1e212c;
+	--second-text-color: #424551;
+}
+body {
+	font-family: Lato, sans-serif;
+	color: var(--main-text-color);
+}
+ul,
+h1,
+h2,
+h3,
+p {
+	list-style: none;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+.section {
+	padding-bottom: 180px;
+}
+.contaiter {
+	display: flex;
+	margin: auto;
+	width: 1230px;
+	padding: 0 15px;
+}
+
+/* -------------------HEADER-------------------- */
+
+.section--header {
+	padding-top: 20px;
+	padding-bottom: 80px;
+}
+
+/* ---header navigation---- */
+
+.nav__list {
+	display: flex;
+}
+.nav__link {
+	display: flex;
+	align-items: center;
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.6;
+
+	color: var(--second-text-color);
+
+	outline: 1px solid;
+	border-radius: 2px;
+	outline-offset: 2px;
+	outline-color: #fff;
+
+	transition: outline-color 250ms linear;
+	transition: color 250ms linear;
+}
+.nav__link--current {
+	color: var(--accent-color);
+}
+.nav__item:nth-child(2) {
+	margin-left: 60px;
+}
+.nav__item:nth-child(n + 3) {
+	margin-left: 40px;
+}
+
+/* ----header button---- */
+
+.get-consult-btn {
+	flex-basis: 206px;
+	height: 52px;
+
+	padding: 0;
+	margin-left: auto;
+
+	border: none;
+	border-radius: 4px;
+	background-image: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+	outline: 1px solid #fff;
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 3.25;
+	letter-spacing: 0.5px;
+
+	color: #fff;
+}
+
+/* ----header sign-in/sign-up---- */
+
+.authorization {
+	display: flex;
+}
+.authorization__item {
+	display: flex;
+	align-self: center;
+}
+.authorization__icon {
+	margin-left: 26px;
+}
+.authorization__sign-in {
+	margin-left: 8px;
+}
+.authorization__sign-in,
+.authorization__slash,
+.authorization__sign-up {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 160%;
+
+	outline: 1px solid #fff;
+	border-radius: 2px;
+	outline-offset: 2px;
+
+	color: var(--second-text-color);
+	transition: color 250ms linear;
+}
+
+/* ----header hover/focus---- */
+
+.nav__link:hover,
+.authorization__sign-in:hover,
+.authorization__sign-up:hover {
+	color: var(--accent-color);
+
+	transition: color 250ms linear;
+}
+.nav__link:focus,
+.authorization__sign-in:focus,
+.authorization__sign-up:focus {
+	color: var(--accent-color);
+	outline-color: var(--accent-color);
+
+	transition: color 250ms linear;
+	transition: outline-color 250ms linear;
+}
+.get-consult-btn:hover {
+	cursor: pointer;
+}
+.get-consult-btn:focus {
+	outline: 1px solid var(--main-text-color);
+
+	transition: outline-color 250ms linear;
+}
