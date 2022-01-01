@@ -6,16 +6,13 @@
 body {
 	font-family: Lato, sans-serif;
 	color: var(--main-text-color);
-	width: 1920px;
-	background-image: url(../images/dots-1.svg), url(../images/shapes-1.svg);
-	background-repeat: no-repeat;
-	background-position: 270px 1290px, 1680px 1400px;
 }
 ul,
 h1,
 h2,
 h3,
 h4,
+h5,
 p {
 	list-style: none;
 	padding: 0;
@@ -279,6 +276,7 @@ img {
 /* -----------------------STATISTICS------------------------ */
 
 .container--stat {
+	position: relative;
 	flex-direction: column;
 }
 .stat__play-btn-container {
@@ -353,6 +351,18 @@ img {
 	position: absolute;
 	bottom: -93px;
 	left: -90px;
+}
+
+.dots-1 {
+	position: absolute;
+	left: -75px;
+	bottom: -43px;
+	z-index: -1;
+}
+.shapes-1 {
+	position: absolute;
+	right: -120px;
+	bottom: -83px;
 }
 
 /* ------------------------VALUES------------------------ */
@@ -516,6 +526,187 @@ img {
 	display: flex;
 	align-items: center;
 	margin-left: 8px;
+}
+
+/* -------------------STIDYING PROCESS------------------ */
+
+.container__studying-process {
+	position: relative;
+	flex-direction: column;
+
+	background-image: url(../images/illustration-middle.svg);
+	background-repeat: no-repeat;
+	background-position: right 15px bottom 0px;
+}
+.studying-process__list-container {
+	display: flex;
+}
+.studying-process__list-container::before {
+	display: block;
+	content: "";
+	width: 1px;
+	height: 531px;
+	background-color: #cbccd1;
+
+	margin-right: 40px;
+}
+.studying-process__item {
+	margin-bottom: 32px;
+}
+.studying-process__item-first-header {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+
+	font-weight: 900;
+	font-size: 12px;
+	line-height: 1.5;
+
+	color: var(--second-text-color);
+
+	margin-bottom: 2px;
+}
+.studying-process__item-first-header::before {
+	position: absolute;
+	left: -50px;
+
+	display: block;
+	content: "";
+	width: 18px;
+	height: 18px;
+
+	background-image: radial-gradient(var(--accent-color) 30%, #fff 30%);
+}
+.studying-process__item-second-header {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.5;
+
+	margin-bottom: 8px;
+}
+.studying-process__item-text {
+	width: 446px;
+
+	font-size: 16px;
+	line-height: 1.6;
+
+	color: var(--second-text-color);
+}
+
+.circles-1 {
+	position: absolute;
+	right: -203px;
+	top: -88px;
+}
+.shapes-2 {
+	position: absolute;
+	left: -150px;
+	bottom: -180px;
+}
+
+/* -------------------------TEAM------------------------- */
+
+.container--team {
+	flex-direction: column;
+}
+
+.third-header--team {
+	text-align: center;
+}
+.second-header--team {
+	text-align: center;
+}
+
+.team__list {
+	display: flex;
+	flex-wrap: wrap;
+
+	margin-left: -20px;
+	margin-bottom: -60px;
+}
+.team__item {
+	margin-left: 20px;
+	margin-bottom: 60px;
+}
+
+.team__item-img {
+	position: relative;
+
+	width: 285px;
+	height: 340px;
+	border-radius: 4px;
+	padding: 20px 20px 0 20px;
+
+	margin-bottom: 16px;
+
+	background-color: #ffcf2d;
+}
+.team__item-img::after {
+	display: block;
+	content: "";
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	top: 0;
+	left: 0;
+
+	background-image: linear-gradient(
+		180deg,
+		rgba(30, 33, 44, 0) 43.9%,
+		rgba(30, 33, 44, 0.03) 55.21%,
+		rgba(30, 33, 44, 0.33) 68.73%,
+		rgba(30, 33, 44, 0.56) 76.17%,
+		rgba(30, 33, 44, 0.768225) 83.75%,
+		rgba(30, 33, 44, 0.92) 91.49%,
+		#1e212c 100%
+	);
+	opacity: 0;
+	transition: opacity 250ms linear;
+}
+.team__item-img:hover::after {
+	opacity: 1;
+	transition: opacity 250ms linear;
+}
+
+.team__item-sm-list {
+	display: flex;
+}
+.team__item-sm-list {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	z-index: -1;
+}
+.team__item-img:hover .team__item-sm-list {
+	z-index: 1;
+}
+.team__item-sm-item:not(:first-child) {
+	margin-left: 12px;
+}
+.team__item-sm-icon {
+	fill: rgb(150, 149, 149);
+	transition: fill 250ms linear;
+}
+.team__item-sm-link:hover .team__item-sm-icon {
+	fill: #fff;
+	transition: fill 250ms linear;
+}
+
+.team__item-header {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.5;
+	text-align: center;
+
+	margin-bottom: 4px;
+}
+.team__item-text {
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+
+	color: var(--second-text-color);
 }
 
 /* ------------------------FOOTER------------------------ */
