@@ -18,14 +18,14 @@
 
 <body>
     <!-- header -->
-    <header class="header section section--header">
-        <div class="container container--header">
+    <header class="container container--header">
+        <div class="section-header section">
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
                         <a class="header__nav-link" href="./index.html">
                             <svg class="header__logo-icon" width="130" height="22">
-                                <use href="./img/homepage/icon.svg#logo"></use>
+                                <use href="./img/homepage/symbol-defs.svg#icon-logo"></use>
                             </svg>
                         </a>
                     </li>
@@ -46,54 +46,62 @@
                     </li>
                 </ul>
             </nav>
-            <button class="header__get-consult-btn btn" type="button">Get consultation</button>
-            <ul class="header__authorization">
-                <li class="header__authorization-item">
-                    <svg class="header__authorization-icon" width="20" height="20">
-                        <use class="header__authorization-icon" href="./img/homepage/icon.svg#register"></use>
-                    </svg>
-                </li>
-                <li class="header__authorization-item">
-                    <a class="header__authorization-sign-in" href="">Log in&nbsp</a>
-                </li>
-                <li class="header__authorization-item">
-                    <span class="header__authorization-slash">&nbsp/&nbsp</span>
-                </li>
-                <li class="header__authorization-item">
-                    <a class="header__authorization-sign-up" href="">&nbspRegister</a>
-                </li>
-            </ul>
-        </div>
-    </header>
-    <main>
-        <!-- hero -->
-        <section>
-            <button>Play showreel</button>
-            <h1>Enjoy studying
-                with Createx Online Courses</h1>
-            <button>About us</button>
-            <button>Explore courses</button>
+            <div class="header__authorization">
+                <button class="header__get-consult-btn btn" type="button">Get consultation</button>
+                <ul class="header__registrationtion">
+                    <li class="header__authorization-item">
+                        <a class="header__authorization-sign-in" href="">
+                            <svg class="header__authorization-icon" width="20" height="20">
+                                <use class="authorization-icon" href="./img/homepage/symbol-defs.svg#icon-register">
+                                </use>
+                            </svg>Log in&nbsp</a>
+                    </li>
+                    <li class="header__authorization-item">
+                        <span class="header__authorization-slash">&nbsp/&nbsp</span>
+                    </li>
+                    <li class="header__authorization-item">
+                        <a class="header__authorization-sign-up" href="">&nbspRegister</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- header hero -->
+            <div class="header-hero">
+                <div class="hero-nav">
+                    <button class="buttomm-play">
+                        <svg class="play-icon" width="56" heigth="56">
+                            <use href="./img/homepage/symbol-defs.svg#icon-small"></use>
+                        </svg> Play showreel</button>
+                    <h1 class="hero-title">Enjoy studying
+                        with Createx Online Courses</h1>
+                    <button class="hero-buttomm btn">About us</button>
+                    <button class="hero-buttomm btn">Explore courses</button>
+                </div>
 
-            <img src="./img/illustration.png" alt="girlstudy">
-            <ul>
-                <li>
-                    <p>5</p>
+                <img class="hero-img" src="./img/illustration.png" alt="girlstudy">
+            </div>
+            <ul class="hero-statistics">
+
+                <li class="hero-list">
+                    <p class="hero-paragraph">5</p>
                     <p>Years of experience</p>
                 </li>
-                <li>
-                    <p>16</p>
+                <li class="hero-list">
+                    <p class="hero-paragraph">16</p>
                     <p>Qualified tutors</p>
                 </li>
-                <li>
-                    <p>84</p>
+                <li class="hero-list">
+                    <p class="hero-paragraph">84</p>
                     <p>Completed courses</p>
                 </li>
-                <li>
-                    <p>1200</p>
+                <li class="hero-list">
+                    <p class="hero-paragraph">1200</p>
                     <p>Students graduated</p>
                 </li>
             </ul>
-        </section>
+
+        </div>
+    </header>
+    <main>
         <!-- about -->
         <section>
 
