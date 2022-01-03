@@ -43,6 +43,20 @@ body {
 
 /* -----------------------HERO */
 
+.section-hero {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.bg {
+  /* background-image: linear-gradient(
+    55.95deg,
+    rgb(255, 63, 58) 0%,
+    rgb(247, 94, 5) 100%
+  ); */
+  opacity: 0.2;
+  background-color: var(--paragraph-color-secondary);
+}
+
 .hero-type {
   color: var(--accent-color);
   align-items: center;
@@ -68,6 +82,10 @@ body {
 }
 
 /* -------------------------section2 */
+.sect2 {
+  padding-top: 120px;
+  padding-bottom: 114px;
+}
 
 .title-name-secondary {
   font-weight: 700;
@@ -93,6 +111,11 @@ body {
   color: var(--paragraph-color-secondary);
 }
 /* -------------------------------------------section3 */
+.sect3 {
+  padding-top: 66px;
+  padding-bottom: 180px;
+}
+
 .job-name {
   font-size: 20px;
   line-height: 1.5;
@@ -106,6 +129,15 @@ body {
   align-items: center;
 }
 /* -------------------section4 */
+.sect4 {
+  padding-bottom: 177px;
+}
+
+.sect4-type {
+  align-items: center;
+  text-align: center;
+}
+
 .sect4-title {
   align-items: center;
   text-align: center;
@@ -130,7 +162,9 @@ body {
   color: var(--paragraph-color-secondary);
 }
 /* ----------------------------------JOIN */
-
+.join-section {
+  padding-bottom: 180px;
+}
 .join-title {
   font-weight: 900;
   font-size: 32px;
@@ -165,7 +199,9 @@ label {
   padding: 0 32px;
 }
 /* -----------------------------------section5 */
-
+.sect5 {
+  padding-bottom: 126px;
+}
 .sect5-text {
   font-weight: 700;
   font-size: 20px;
@@ -174,7 +210,10 @@ label {
   color: var(--paragraph-color-primary);
 }
 /* ----------------------section6 */
-
+.sect6 {
+  padding-top: 54px;
+  padding-bottom: 120px;
+}
 .lesson {
   font-weight: bold;
   font-size: 20px;
@@ -186,7 +225,10 @@ label {
   color: var(--accent-color);
 }
 /* ---------------------------What our students say */
-
+.student-section {
+  padding-top: 80px;
+  padding-bottom: 180px;
+}
 .students-name {
   font-weight: 700;
   font-size: 16px;
@@ -200,9 +242,14 @@ label {
   color: var(--paragraph-color-secondary);
 }
 /* ----------------------------section7 */
-
+.sect7 {
+  padding-bottom: 100px;
+}
 /* ----------------------------section8 */
-
+.sect8 {
+  padding-top: 120px;
+  padding-bottom: 180px;
+}
 .sect8-type {
   padding: 1px 8px;
 
