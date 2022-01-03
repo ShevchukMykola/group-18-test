@@ -18,8 +18,8 @@
 
 <body>
     <!-- header -->
-    <header class="container container--header">
-        <div class="section-header section">
+    <header class="section-header">
+        <div class="container container--header">
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
@@ -47,7 +47,7 @@
                 </ul>
             </nav>
             <div class="header__authorization">
-                <button class="header__get-consult-btn btn" type="button">Get consultation</button>
+                <button class="header__get-consult btn" type="button">Get consultation</button>
                 <ul class="header__registrationtion">
                     <li class="header__authorization-item">
                         <a class="header__authorization-sign-in" href="">
@@ -67,10 +67,10 @@
             <!-- header hero -->
             <div class="header-hero">
                 <div class="hero-nav">
-                    <button class="buttomm-play">
-                        <svg class="play-icon" width="56" heigth="56">
+                    <a class="buttomm-play">
+                        <svg class="play-icon" width="52" heigth="52">
                             <use href="./img/homepage/symbol-defs.svg#icon-small"></use>
-                        </svg> Play showreel</button>
+                        </svg> Play showreel</a>
                     <h1 class="hero-title">Enjoy studying
                         with Createx Online Courses</h1>
                     <button class="hero-buttomm btn">About us</button>
@@ -103,123 +103,139 @@
     </header>
     <main>
         <!-- about -->
-        <section>
-
-            <h2>Why Createx?</h2>
-            <p>Who we are</p>
-            <img src="./img/girlstudy.jpg" alt="girlstudy">
-            <ul>
-                <li>
-                    <P>A fermentum in morbi pretium aliquam adipiscing donec tempus.</P>
-                </li>
-                <li>
-                    <p>Vulputate placerat amet pulvinar lorem nisl.</p>
-                </li>
-                <li>
-                    <p>Vulputate placerat amet pulvinar lorem nisl.</p>
-                </li>
-                <li>
-                    <p>Etiam duis lobortis in fames ultrices commodo nibh.</p>
-                </li>
-                <li>
-                    <p>Tincidunt sagittis neque sem ac eget.</p>
-                </li>
-                <li>
-                    <p>Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</p>
-                </li>
-            </ul>
+        <section class="section">
+            <div class="about-cotainer container">
+                <img class="about-img" src="./img/girlstudy.jpg" alt="girlstudy">
+                <div class="about-box">
+                    <p class="about-text">Who we are</p>
+                    <h2 class="about-title">Why Createx?</h2>
+                    <div class="about-list-box">
+                        <ul class="about-unorder">
+                            <li class="about-list">
+                                <P class="list-paragraph">A fermentum in morbi pretium aliquam adipiscing donec tempus.
+                                </P>
+                            </li>
+                            <li class="about-list">
+                                <p class="list-paragraph">Vulputate placerat amet pulvinar lorem nisl.</p>
+                            </li>
+                            <li class="about-list">
+                                <p class="list-paragraph">Consequat feugiat habitant gravida quisque elit bibendum id
+                                    adipiscing sed.</p>
+                            </li>
+                            <li class="about-list">
+                                <p class="list-paragraph">Etiam duis lobortis in fames ultrices commodo nibh.</p>
+                            </li>
+                            <li class="about-list">
+                                <p class="list-paragraph">Tincidunt sagittis neque sem ac eget.</p>
+                            </li>
+                            <li class="about-list">
+                                <p class="list-paragraph">Ultricies amet justo et eget quisque purus vulputate dapibus
+                                    tortor.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn">More about us</button>
+                </div>
+            </div>
         </section>
         <!-- Courses -->
-        <section>
-            <ul>
-                <li>
-                    <p>Ready to learn?</p>
-                    <h2>Featured Courses</h2>
-                </li>
-                <li>
-                    <button>View all courses</button>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <img src="./img/teacher1.jpg" alt="jeromebell">
-                    <p>Marketing</p>
-                    <h3>The Ultimate Google Ads Training Course</h3>
-                    <p>$100 by Jerome Bellr</p>
+        <section class="section">
+            <div class="container">
+                <h1 class="visually-hidden"></h1>
+                <ul class="courses-title">
+                    <li class="courses-title-list">
+                        <p class="courses-text">Ready to learn?</p>
+                        <h2 class="list-title">Featured Courses</h2>
+                    </li>
+                    <li class="courses-title-list">
+                        <button class="btn">View all courses</button>
+                    </li>
+                </ul>
+                <ul class="courses-team">
+                    <li class="team-list">
+                        <img src="./img/teacher1.jpg" alt="jeromebell">
+                        <p>Marketing</p>
+                        <h3>The Ultimate Google Ads Training Course</h3>
+                        <p>$100 by Jerome Bellr</p>
 
-                </li>
-                <li>
-                    <img src="./img/teacher2.jpg" alt="alexsandr li">
-                    <p>HR & Recruting</p>
-                    <h3>HR Management and Analytics </h3>
-                    <p>$200 by Leslie Alexander Li</p>
-                </li>
-                <li>
-                    <img src="./img/teacher3.jpg" alt="diannerussel">
-                    <p>Management</p>
-                    <h3>Business Development Management</h3>
-                    <p>$400 by Dianne Russell</p>
-                </li>
-                <li>
-                    <img src="./img/teacher4.jpg" alt="marvinmackinney">
-                    <p>Management</p>
-                    <h3>Prduct Management Fundamentals</h3>
-                    <p>$480 by Marvin McKinney </p>
-                </li>
-                <li>
-                    <img src="./img/teacher5.jpg" alt="kristinwatson">
-                    <p>Marketing</p>
-                    <h3>Brand Management & PR Communications</h3>
-                    <p>$530 by Kristin Watson</p>
-                </li>
-                <li>
-                    <img src="./img/teacher6.jpg" alt="guyhawkins">
-                    <p>Design</p>
-                    <h3>Graphic Design Basic</h3>
-                    <p>$500 by Guy Hawkins</p>
-                </li>
-            </ul>
+                    </li>
+                    <li class="team-list">
+                        <img src="./img/teacher2.jpg" alt="alexsandr li">
+                        <p>HR & Recruting</p>
+                        <h3>HR Management and Analytics </h3>
+                        <p>$200 by Leslie Alexander Li</p>
+                    </li>
+                    <li class="team-list">
+                        <img src="./img/teacher3.jpg" alt="diannerussel">
+                        <p>Management</p>
+                        <h3>Business Development Management</h3>
+                        <p>$400 by Dianne Russell</p>
+                    </li>
+                    <li class="team-list">
+                        <img src="./img/teacher4.jpg" alt="marvinmackinney">
+                        <p>Management</p>
+                        <h3>Prduct Management Fundamentals</h3>
+                        <p>$480 by Marvin McKinney </p>
+                    </li>
+                    <li class="team-list">
+                        <img src="./img/teacher5.jpg" alt="kristinwatson">
+                        <p>Marketing</p>
+                        <h3>Brand Management & PR Communications</h3>
+                        <p>$530 by Kristin Watson</p>
+                    </li>
+                    <li class="team-list">
+                        <img src="./img/teacher6.jpg" alt="guyhawkins">
+                        <p>Design</p>
+                        <h3>Graphic Design Basic</h3>
+                        <p>$500 by Guy Hawkins</p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <!-- Benefits -->
-        <section>
-            <h2>That’s how we do it</h2>
-            <p>Our benefits</p>
-            <ul>
-                <li>
-                    <a href=""> <svg height="26" width="161">
-                            <use xlink:href="./img/Homepage/icon.svg#experlenced-tutors"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href=""> <svg height="26" width="161">
-                            <use xlink:href="./img/Homepage/icon.svg#fidback-support"></use>
-                        </svg> </a>
-                </li>
-                <li>
-                    <a href=""> <svg height="26" width="161">
-                            <use xlink:href="./img/Homepage/icon.svg#online-libruary"></use>
-                        </svg> </a>
-                </li>
-                <li>
-                    <a href=""> <svg height="26" width="161">
-                            <use xlink:href="./img/Homepage/icon.svg#community"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-            <h3>Only practicing tutors</h3>
-            <p>
-                Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras
-                massa ut dolor
-                quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis
-                vestibulum. Nulla nisl
-                accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.
-            </p>
-            <img src="/img/illustration2.png" alt="study">
+        <section class="section">
+            <div class="container">
+                <p>Our benefits</p>
+                <h2>That’s how we do it</h2>
+
+                <ul>
+                    <li>
+                        <a href=""> <svg height="26" width="161">
+                                <use xlink:href="./img/homepage/symbol-defs.svg#icon-experlenced-tutors"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""> <svg height="26" width="161">
+                                <use xlink:href="./img/homepage/symbol-defs.svg#icon-feedback-support"></use>
+                            </svg> </a>
+                    </li>
+                    <li>
+                        <a href=""> <svg height="26" width="161">
+                                <use xlink:href="./img/homepage/symbol-defs.svg#icon-onlinelibrary"></use>
+                            </svg> </a>
+                    </li>
+                    <li>
+                        <a href=""> <svg height="26" width="161">
+                                <use xlink:href="./img/homepage/symbol-defs.svg#icon-community"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <h3>Only practicing tutors</h3>
+                <p>
+                    Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris
+                    cras
+                    massa ut dolor
+                    quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis
+                    vestibulum. Nulla nisl
+                    accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.
+                </p>
+                <img src="/img/illustration2.png" alt="study">
+            </div>
         </section>
         <!-- Events -->
-        <section>
+        <section class="section">
 
             <p>Our Events</p>
             <h2>Lectures & workshops</h2>
@@ -253,14 +269,14 @@
             <button>Explore all events</button>
         </section>
         <!-- Certificate -->
-        <section>
+        <section class="section">
 
             <p>Createx Certificate</p>
             <h2>Your expertise will be confirmed</h2>
             <p>We are accredited by international professional organizations and institutes:</p>
         </section>
         <!-- Team  -->
-        <section>
+        <section class="section">
             <!-- Team (carousel) -->
             <p>Best tutors are all here</p>
             <h2>Meet our team</h2>
@@ -312,7 +328,7 @@
             <button>rigth</button>
         </section>
         <!-- Blog -->
-        <section>
+        <section class="section">
             <h2>Latest posts</h2>
             <p>Our blog</p>
             <button>Go to blog</button>
@@ -354,7 +370,7 @@
 
         </section>
         <!-- Subscribe -->
-        <section>
+        <section class="section">
             <p>Don’t miss anything</p>
             <h2>Subscribe to the Createx School announcements</h2>
             <div>
