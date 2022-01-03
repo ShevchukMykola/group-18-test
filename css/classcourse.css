@@ -1,15 +1,247 @@
+:root {
+  --article-name-color: #1e212c;
+  --accent-color: #ff3f3a;
+  --numerals-color-section8: #ff4242;
+  --paragraph-color-secondary: #787a80;
+  --paragraph-color-primary: #424551;
+  --input-text-color: #9a9ca5;
+  --numerals-color-section4: #d7dadd;
+  --white-color: #fff;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.62;
+
+  color: var(--paragraph-color-primary);
+}
+
+.container {
+  width: 1260px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.button {
+  border-radius: 4px;
+  border: 1px solid transparent;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 3.14;
+  letter-spacing: 0.5px;
+
+  color: var(--white-color);
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+}
+
+/* -----------------------HERO */
+
+.hero-type {
+  color: var(--accent-color);
+  align-items: center;
+  text-align: center;
+}
+.section-type {
+  font-weight: 700;
+  font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.hero-name {
+  align-items: center;
+  text-align: center;
+}
+.title-name {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 1.3;
+
+  color: var(--article-name-color);
+}
+
+/* -------------------------section2 */
+
+.title-name-secondary {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.sidebar-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--article-name-color);
+}
+.sidebar-main-point {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.29;
+  color: var(--accent-color);
+}
+.sidebar-desc {
+  color: var(--paragraph-color-secondary);
+}
+/* -------------------------------------------section3 */
+.job-name {
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--paragraph-color-secondary);
+}
+.section-info {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.62;
+
+  align-items: center;
+}
+/* -------------------section4 */
+.sect4-title {
+  align-items: center;
+  text-align: center;
+}
+
+.sect4-name {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 1.3;
+
+  align-items: center;
+  color: var(--numerals-color-section4);
+}
+.sect4-point {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  align-items: center;
+  color: var(--article-name-color);
+}
+.sect4-desc {
+  color: var(--paragraph-color-secondary);
+}
+/* ----------------------------------JOIN */
+
+.join-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1.3;
+
+  align-items: center;
+  text-align: center;
+  color: var(--article-name-color);
 }
 
 input {
   padding: 8px;
   font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--input-text-color);
 }
 
 label {
   display: flex;
   flex-direction: column;
   margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: var(--paragraph-color-primary);
+}
+.button-join {
+  border-radius: 4px;
+  border: 1px solid transparent;
+
+  padding: 0 32px;
+}
+/* -----------------------------------section5 */
+
+.sect5-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+
+  color: var(--paragraph-color-primary);
+}
+/* ----------------------section6 */
+
+.lesson {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--article-name-color);
+}
+.lesson-number {
+  font-weight: normal;
+  color: var(--accent-color);
+}
+/* ---------------------------What our students say */
+
+.students-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--article-name-color);
+}
+.students-desc {
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: var(--paragraph-color-secondary);
+}
+/* ----------------------------section7 */
+
+/* ----------------------------section8 */
+
+.sect8-type {
+  padding: 1px 8px;
+
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--white-color);
+  background-attachment: fixed;
+
+  border-radius: 4px;
+}
+.sect8-type1-bg {
+  background: #03cea4;
+}
+.sect8-type2-bg {
+  background: #5a87fc;
+}
+
+.sect8-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+
+  color: var(--article-name-color);
+}
+.sect8-desc {
+  font-size: 18px;
+  line-height: 1.5;
+
+  color: var(--paragraph-color-secondary);
+}
+.sect8-desc-accent {
+  font-weight: bold;
+  color: var(--numerals-color-section8);
+}
+
+.sect8-more-crs {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.5;
+  align-items: center;
+  color: var(--article-name-color);
 }
