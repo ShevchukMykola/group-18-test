@@ -7,6 +7,7 @@
   --input-text-color: #9a9ca5;
   --numerals-color-section4: #d7dadd;
   --white-color: #fff;
+  --stud-sect7-bg-color: #f4f5f7;
 }
 
 body {
@@ -17,6 +18,11 @@ body {
   line-height: 1.62;
 
   color: var(--paragraph-color-primary);
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -162,8 +168,10 @@ body {
 .desc-margin {
   margin-bottom: 40px;
 }
-.btn-sect2 {
+.sect2-button {
+  margin-top: 40px;
   min-width: 431px;
+  padding: 0;
 }
 /* -------------------------------------------section3 */
 .sect3 {
@@ -203,6 +211,37 @@ body {
 .sect3-paph {
   margin: 0;
 }
+.sect3-svg {
+  margin-right: 8px;
+}
+
+.sect3-link-block {
+  display: flex;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.sect3-link-block .sect3-link-li + .sect3-link-li {
+  margin-left: 24px;
+}
+
+.sect3-link {
+  color: var(--paragraph-color-secondary);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sect3-link:hover,
+.sect3-link:focus {
+  color: var(--accent-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-link {
+  fill: currentColor;
+}
 /* -------------------section4 */
 .sect4 {
   padding-bottom: 177px;
@@ -235,6 +274,9 @@ body {
   align-items: center;
   color: var(--numerals-color-section4);
 }
+.sect4-name:hover {
+  color: var(--accent-color);
+}
 .sect4-point {
   margin-bottom: 8px;
 
@@ -254,7 +296,6 @@ body {
 }
 /* ----------------------------------JOIN */
 .join-title {
-  margin-right: 515px;
   margin-bottom: 32px;
   font-weight: 900;
   font-size: 32px;
@@ -264,11 +305,12 @@ body {
 }
 
 .join-section {
+  background: ;
   position: relative;
   padding: 48px 60px;
 }
 
-.join-section::before {
+/* .join-section::before {
   content: "";
   position: absolute;
   background-image: linear-gradient(
@@ -282,14 +324,14 @@ body {
   right: 0;
   bottom: 0;
   opacity: 0.2;
-}
+} */
 
 input {
   padding: 8px;
   font-family: inherit;
   font-size: 14px;
   line-height: 1.5;
-  color: var(--input-text-color);
+  color: var(--white-color);
 }
 
 label {
@@ -300,14 +342,15 @@ label {
   color: var(--paragraph-color-primary);
 }
 .input-box {
-  background-color: whitesmoke;
+  background-color: white;
   border: 1px solid var(--numerals-color-section4);
   border-radius: 4px;
 }
+
 .form-box {
   display: inline-flex;
-  flex-direction: row;
   align-items: flex-end;
+  align-content: space-around;
 }
 .form-box .label-box + .label-box {
   margin-left: 24px;
@@ -315,28 +358,40 @@ label {
 .label-box {
   display: flex;
   flex-direction: column;
+  min-width: 291px;
+  min-height: 44px;
 }
-/* ------------second form sect7 */
-.label-box2 {
-  display: flex;
-  flex-direction: column;
-}
-/* ------------------------------------ */
-.button-join {
-  display: flex;
 
-  border-radius: 4px;
-  border: 1px solid transparent;
+.button-join {
+  display: block;
+
   margin-left: 20px;
   padding: 0 32px;
-  width: 166px;
-  height: 44px;
+  min-width: 166px;
+  max-height: 44px;
 }
 /* -----------------------------------section5 */
 .sect5 {
   margin-top: 180px;
   padding-bottom: 126px;
 }
+.sect5-flexbox {
+  display: flex;
+}
+
+.sect5-type {
+  margin-bottom: 8px;
+}
+.sect5-title {
+  margin-right: 135px;
+}
+.sect5-ul {
+  max-width: 600px;
+}
+.sect5-text {
+  margin-top: 20px;
+}
+
 .sect5-text {
   font-weight: 700;
   font-size: 20px;
@@ -344,33 +399,98 @@ label {
 
   color: var(--paragraph-color-primary);
 }
-/* ----------------------section6 */
+/* -------------------------------------section6 */
 .sect6 {
   padding-top: 54px;
   padding-bottom: 120px;
 }
+.sect6-flexbox {
+  display: flex;
+  align-items: center;
+}
+.sect6-type {
+  margin-bottom: 8px;
+}
+.sect6-title {
+  margin-bottom: 60px;
+}
+.sect6-ul .sect6-li + .sect6-li {
+  margin-top: 24px;
+}
+
 .lesson {
   font-weight: bold;
   font-size: 20px;
   line-height: 1.5;
   color: var(--article-name-color);
 }
+.lesson-margin {
+  margin-bottom: 16px;
+}
 .lesson-number {
   font-weight: normal;
   color: var(--accent-color);
 }
+
+.lesson-paragraph {
+  margin: 0;
+  padding: 0;
+}
+
+.sect6-pic {
+  margin-left: 133px;
+}
+
 /* ---------------------------What our students say */
+
+.stud-sect7-bg {
+  background-color: var(--stud-sect7-bg-color);
+}
+
 .student-section {
   padding-top: 80px;
   padding-bottom: 180px;
 }
+
+.stud-type {
+  margin-bottom: 8px;
+  text-align: center;
+}
+.stud-title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.stud-box {
+  padding: 64px 105px;
+
+  display: block;
+  background: var(--white-color);
+
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 4px;
+}
+.stud-paph {
+  margin: 0 0 24px 0;
+}
+.stud-box2 {
+  display: flex;
+  align-items: center;
+}
 .students-name {
+  margin-bottom: 4px;
+  margin-left: 20px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.6;
   color: var(--article-name-color);
 }
 .students-desc {
+  margin-left: 20px;
   font-size: 14px;
   line-height: 1.5;
 
@@ -380,19 +500,81 @@ label {
 .sect7 {
   padding-bottom: 100px;
 }
+.sect7-flexbox {
+  display: flex;
+}
+.sect7-pic {
+  margin-right: 185px;
+}
+.sect7-form-box {
+  display: block;
+}
+.sect7-form .label-box2 + .label-box2 {
+  margin-top: 24px;
+}
+.label-box2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+.sect7-type {
+  margin-bottom: 8px;
+}
+.sect7-name {
+  margin-bottom: 40px;
+}
+.sect7-button {
+  margin-top: 40px;
+  padding: 0 190px;
+  min-width: 495px;
+  min-height: 52px;
+}
+
 /* ----------------------------section8 */
 .sect8 {
   padding-top: 120px;
   padding-bottom: 180px;
 }
 .sect8-type {
+  margin-bottom: 8px;
+}
+.sect8-title {
+  margin-bottom: 60px;
+}
+.sect8-type {
+  margin-top: 120px;
   padding: 1px 8px;
+}
 
-  font-size: 14px;
-  line-height: 1.5;
-  color: var(--white-color);
-  background-attachment: fixed;
+.sect8-ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly;
+}
+.sect8-ul .sect8-li + .sect8-li {
+  margin-left: 30px;
+}
+.sect8-li-block {
+  display: flex;
+}
+.sect2-svg {
+  margin-right: 16px;
+}
+.sect8-li-info {
+  padding: 32px;
+  margin: 0;
+}
+.sect8-li {
+  background: #ffffff;
 
+  border: 1px solid #e5e8ed;
+  box-sizing: border-box;
+
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.03);
   border-radius: 4px;
 }
 .sect8-type1-bg {
@@ -403,6 +585,8 @@ label {
 }
 
 .sect8-name {
+  margin: 20px 0;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
@@ -410,6 +594,9 @@ label {
   color: var(--article-name-color);
 }
 .sect8-desc {
+  padding: 0;
+  margin: 0;
+
   font-size: 18px;
   line-height: 1.5;
 
@@ -419,8 +606,24 @@ label {
   font-weight: bold;
   color: var(--numerals-color-section8);
 }
-
+.sect8-more-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-top: 85px;
+  margin-bottom: 185px;
+}
+.sect8-button {
+  margin-left: 40px;
+  padding: 0 40px;
+  min-width: 202px;
+  min-height: 52px;
+}
 .sect8-more-crs {
+  margin: 0;
+  padding: 0;
+
   font-weight: bold;
   font-size: 28px;
   line-height: 1.5;
