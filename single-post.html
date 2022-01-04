@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>single-post</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -20,7 +20,11 @@
     <section class="main-section">
         <div class="left-container">
             <ul class="artic-list">
-                <li class="link-artik"><a href="">Article</a></li>
+                <li class="link-artik">
+                    
+                    <a class="artik-link" href=""> <svg class="artic-svg" width="11.33" height="14.33">
+                        <use href="./images/sprite.svg#icon-article"></use>
+                    </svg>Article</a></li>
                 <li class="link-hr"><a href="">HR & Recruting</a></li>
             </ul>
             <h1 class="main-title">HR statistics: job search, interviews, hiring and recruiting</h1>
@@ -131,38 +135,57 @@
     <section class="right-block">
         <div class="right-container">
             <button type="button">Search blog...</button>
-            <h4>author</h4>
-            <div class="menager-card">
+            <h4 class="right-title">author</h4>
+            <div class="manager-card">
                 <img src="./images/rbl-photo.jpg" alt="kristin-watson">
-                <h4>Kristin Watson</h4>
-                <p>Curator of Marketing Course</p>
-                <ul>
-                    <li> <a href="">insta</a> </li>
-                    <li> <a href="">twitter</a> </li>
-                    <li> <a href="">linkedin</a> </li>
+                <ul class="manager-list">
+                    <li><h4 class="manager-title">Kristin Watson</h4></li>
+                    <li class="manager-role"><p>Curator of Marketing Course</p></li>
+                    <li>
+                        <ul class="manager-social-list">
+                            <li> <a href="">insta</a> </li>
+                            <li> <a href="">twitter</a> </li>
+                            <li> <a href="">linkedin</a> </li>
+                        </ul>
+                    </li>
                 </ul>
+                
+                
+                
             </div>
             
-            <h4>Trending Articles</h4>
-            <ul>
-                <li>
+            <h4 class="right-title">Trending Articles</h4>
+            <ul class="trending-list">
+                <li class="trending-item">
                     <img src="./images/rbl-img1.jpg" alt="img1">
-                    <p>September 4, 2020</p>
-                    <a href="">What is traffic arbitrage and does it really make money?</a>
+                    <ul class="trending-right-list">
+                        <li><p>September 4, 2020</p></li>
+                        <li><a class="trending-link" href="">What is traffic arbitrage and does it really make money?</a></li>
+                    </ul>
+                    
+                    
                 </li>
-                <li>
+                <li class="trending-item">
                     <img src="./images/rbl-img2.jpg" alt="img2">
-                    <p>July 15, 2020</p>
-                    <a href="">Startup: how to build a team that will live longer than a year</a>
+                    <ul class="trending-right-list">
+                        <li><p>July 15, 2020</p></li>
+                        <li><a class="trending-link" href="">Startup: how to build a team that will live longer than a year</a></li>
+                    </ul>
+                    
+                    
                 </li>
-                <li>
+                <li class="trending-item">
                     <img src="./images/rbl-img3.jpg" alt="img3">
-                    <p>August 2, 2020</p>
-                    <a href="">What to do if you want to get feedback on the product</a>
+                    <ul class="trending-right-list">
+                        <li><p>August 2, 2020</p></li>
+                        <li><a class="trending-link" href="">What to do if you want to get feedback on the product</a></li>
+                    </ul>
+                    
+                    
                 </li>
             </ul>
-            <h4>Trending Articles</h4>
-            <ul>
+            <h4 class="right-title">tags</h4>
+            <ul class="tags-list">
                 <li> <button type="button">#marketing</button> </li>
                 <li> <button type="button">#recruiting</button> </li>
                 <li> <button type="button">#coding</button> </li>
