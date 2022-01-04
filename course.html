@@ -28,7 +28,7 @@
 </div>
         <!------------------------- section2 -->
 <section class="sect2">
-    <div class="container test">
+    <div class="container sect2-flexbox">
         <div class="sect2-about">
     <h2 class="title-name t-n-margin">About the course</h2>
     <p class="sect2-paph">Bibendum vulputate adipiscing venenatis at est, a eu tincidunt. Leo aenean congue in sagittis, felis maecenas amet
@@ -59,29 +59,29 @@
         <li>
             <span class="sidebar-name block">Price</span>
         <h3 class="sidebar-main-point">$120 per month</h3>
-        <p class="sidebar-desc desc-margin">Nulla sem adipiscing adipiscing felis fringilla. Adipiscing mauris quam ac elit tristique dis.</p></li>
+        <p class="sidebar-desc">Nulla sem adipiscing adipiscing felis fringilla. Adipiscing mauris quam ac elit tristique dis.</p></li>
     </ul>
-    <button class="button btn-sect2" type="submit">Join the course </button>
+    <button class="button button-join" type="submit">Join the course </button>
 </div>   
 </div>
 </section>
 <!------------------------------ section3 -->
 <section class="sect3">
-    <div class="container">
+    <div class="container sect3-flexbox">
     <img src="./images-course/img1.jpg" alt="Course curator photo" width="495">
 
 
-
-    <h3 class="section-type">Course curator</h3>
-    <h2 class="title-name">Cody Fisher</h2>
+<div class="sect3-title-box">
+    <h3 class="section-type sect3-h3">Course curator</h3>
+    <h2 class="title-name sect3-h2">Cody Fisher</h2>
 <p class="job-name">Senior UX designer in IT Product Company</p>
 
-<ul>
+<ul class="sect3-info"> 
     <li class="section-info">4.9 rate</li>
     <li class="section-info">4 courses</li>
     <li class="section-info">350 students</li>
 </ul>
-<p>Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum
+<p class="sect3-paph">Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum
 ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur
 vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec
 ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.</p>
@@ -93,31 +93,32 @@ ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.</p>
     <li><a href=""></a></li>
 </ul>
 </div>
+</div>
 </section>
 <!-- --------------------------section4 -->
 <section class="sect4">
-<div class="container">
+<div class="container ">
    <h3 class="section-type sect4-type">Main steps</h3> 
     <h2 class="title-name sect4-title">Online learning process</h2> 
 
-    <ul>
-        <li>
+    <ul class="sect4-flexbox">
+        <li class="flex-block">
             <h4  class="sect4-name" >01</h4> 
             <h3 class="sect4-point">Watching online video lectures</h3>
         <p class="sect4-desc" >Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.</p>
        
         </li>
-        <li>
+        <li class="flex-block">
           <h4 class="sect4-name">02</h4>
         <h3 class="sect4-point" >Passing test</h3>
         <p class="sect4-desc">Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim ad tempor est ea</p> 
         </li>
-        <li>
+        <li class="flex-block">
           <h4 class="sect4-name">03</h4>
              <h3 class="sect4-point">Curator’s feedback</h3>
             <p class="sect4-desc">Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt</p>
         </li>
-        <li>
+        <li class="flex-block">
            <h4 class="sect4-name">04</h4>
              <h3 class="sect4-point">Corrections if needed</h3>
             <p class="sect4-desc">Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.</p>
@@ -126,26 +127,31 @@ ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.</p>
     </div>
     </section>
     <!--===================================== JOIN -->
-<section class="join-section">
-    <div class="container">
-    <h2 class="join-title">220% discount for early birds!</h2> 
-    <div class="timer"></div>
-    <form>
-        <label>
-            Full name
-            <input type="text" name="Full name " placeholder="Your full name"/>
-        </label>
-        <label>
-            Email
-            <input type="email" name="email" placeholder="Your working email"/>
-        </label>
-        <label>
-            Phone
-            <input type="email" name="email" placeholder="Your phone number" />
-        </label>
+<section class="">
+    <div class="container join-section">
+    <h2 class="join-title">20% discount for early birds!</h2> 
+    <div class="timer">
+    <form class="form-box">
+        <div class="label-box">
+            <label for="full">Full name</label>
+            <input class="input-box" id="full" type="text" name="Full name " placeholder="Your full name" />
+        </div>
+        <div class="label-box">
+            <label for="email">Email</label>
+            <input class="input-box" type="email" id="email" name="email" placeholder="Your working email" />
+        </div>
+        <div class="label-box">
+            <label for="phone">Phone</label>
+            <input class="input-box" id="phone" type=" email" name="email" placeholder="Your phone number" />
+        </div>
+        
         <button class="button button-join" type="submit">Join the course </button>
     </form>
+    </div>
 </div>
+
+
+
     </section>
 <!-- ------------------------------------------section5 -->
     <section class="sect5">
@@ -251,17 +257,17 @@ etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
     <h3 class="section-type">Leave a request now and get 20% off!</h3>
     <h2 class="title-name">Register for the course</h2>
 <form>
-    <label>
+    <label class="label-box2">
         Full name
-        <input type="text" name="Full name " placeholder="Your full name" />
+        <input class="input-box" type="text" name="Full name " placeholder="Your full name" />
     </label>
-    <label>
+    <label class="label-box2">
         Email
-        <input type="email" name="email" placeholder="Your working email" />
+        <input  class="input-box"  type="email" name="email" placeholder="Your working email" />
     </label>
-    <label>
+    <label class="label-box2">
         Phone
-        <input type="email" name="email" placeholder="Your phone number" />
+        <input class="input-box"  type="email" name="email" placeholder="Your phone number" />
     </label>
     <button class="button button-join" type="submit">Join the course </button>
 </form>

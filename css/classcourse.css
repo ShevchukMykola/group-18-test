@@ -48,16 +48,23 @@ body {
   padding-bottom: 120px;
 }
 .bg {
+  position: relative;
+}
+.bg::before {
+  content: "";
+  position: absolute;
   background-image: linear-gradient(
     55.95deg,
-    rgb(255, 63, 58, 1) 0%,
-    rgb(247, 94, 5) 100%
+    rgba(255, 63, 58, 1) 0%,
+    rgba(247, 94, 5, 1) 100%
   );
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   opacity: 0.2;
-
-  background-color: var(--paragraph-color-secondary);
 }
-
 .hero-type {
   color: var(--accent-color);
   align-items: center;
@@ -95,7 +102,7 @@ body {
 .sect2-paph {
   margin: 0 0 48px 0;
 }
-.test {
+.sect2-flexbox {
   display: flex;
 }
 .sect2-about {
@@ -163,11 +170,25 @@ body {
   padding-top: 66px;
   padding-bottom: 180px;
 }
-
+.sect3-flexbox {
+  display: flex;
+}
+.sect3-h3 {
+  margin-bottom: 8px;
+}
+.sect3-h2 {
+  margin-bottom: 16px;
+}
 .job-name {
+  margin: 0;
+
   font-size: 20px;
   line-height: 1.5;
   color: var(--paragraph-color-secondary);
+}
+.sect3-title-box {
+  display: block;
+  margin-left: 125px;
 }
 .section-info {
   font-weight: 700;
@@ -176,22 +197,37 @@ body {
 
   align-items: center;
 }
+.sect3-info {
+  margin: 32px 0;
+}
+.sect3-paph {
+  margin: 0;
+}
 /* -------------------section4 */
 .sect4 {
   padding-bottom: 177px;
 }
+.sect4-flexbox {
+  display: flex;
+}
 
 .sect4-type {
+  margin-bottom: 8px;
+
   align-items: center;
   text-align: center;
 }
 
 .sect4-title {
+  margin-bottom: 60px;
+
   align-items: center;
   text-align: center;
 }
 
 .sect4-name {
+  margin-bottom: 16px;
+
   font-weight: 900;
   font-size: 46px;
   line-height: 1.3;
@@ -200,6 +236,8 @@ body {
   color: var(--numerals-color-section4);
 }
 .sect4-point {
+  margin-bottom: 8px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
@@ -207,20 +245,43 @@ body {
   color: var(--article-name-color);
 }
 .sect4-desc {
+  margin: 0;
   color: var(--paragraph-color-secondary);
 }
-/* ----------------------------------JOIN */
-.join-section {
-  padding-bottom: 180px;
+
+.sect4-flexbox .flex-block + .flex-block {
+  margin-left: 30px;
 }
+/* ----------------------------------JOIN */
 .join-title {
+  margin-right: 515px;
+  margin-bottom: 32px;
   font-weight: 900;
   font-size: 32px;
   line-height: 1.3;
 
-  align-items: center;
-  text-align: center;
   color: var(--article-name-color);
+}
+
+.join-section {
+  position: relative;
+  padding: 48px 60px;
+}
+
+.join-section::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(
+    55.95deg,
+    rgba(255, 63, 58, 1) 0%,
+    rgba(247, 94, 5, 1) 100%
+  );
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
 }
 
 input {
@@ -232,22 +293,48 @@ input {
 }
 
 label {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 8px;
   font-size: 14px;
   line-height: 1.5;
 
   color: var(--paragraph-color-primary);
 }
+.input-box {
+  background-color: whitesmoke;
+  border: 1px solid var(--numerals-color-section4);
+  border-radius: 4px;
+}
+.form-box {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.form-box .label-box + .label-box {
+  margin-left: 24px;
+}
+.label-box {
+  display: flex;
+  flex-direction: column;
+}
+/* ------------second form sect7 */
+.label-box2 {
+  display: flex;
+  flex-direction: column;
+}
+/* ------------------------------------ */
 .button-join {
+  display: flex;
+
   border-radius: 4px;
   border: 1px solid transparent;
-
+  margin-left: 20px;
   padding: 0 32px;
+  width: 166px;
+  height: 44px;
 }
 /* -----------------------------------section5 */
 .sect5 {
+  margin-top: 180px;
   padding-bottom: 126px;
 }
 .sect5-text {
