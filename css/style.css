@@ -111,3 +111,32 @@ a {
   margin-bottom: 40px;
   align-items: baseline;
 }
+.main-text-list {
+  font-style: 16px;
+  line-height: 1.6;
+  margin-top: 60px;
+}
+.bold-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.main-text-item + .main-text-item {
+  margin-bottom: 24px;
+}
+.intext-list {
+  margin-top: 24px;
+}
+.main-after-list {
+  display: flex;
+  margin-top: 60px;
+  align-items: center;
+}
+.after-list {
+  display: flex;
+}
+.social-after-list {
+  margin-left: auto;
+}
