@@ -5,8 +5,216 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
+    <header class="event-header">
+        <div class="container event-header-container">
+            <a class="event-logo" href=""><img src="./images/logo.svg" alt="logo"></a>
+            <nav class="event-header-nav">
+                <ul class="event-header-list list">
+                    <li class="event-header-link"><a class="link event-header-nav-link" href="">About Us</a></li>
+                    <li class="event-header-link"><a class="link event-header-nav-link" href="">Courses</a></li>
+                    <li class="event-header-link"><a class="link event-header-nav-link current" href="./event.html">Events</a></li>
+                    <li class="event-header-link"><a class="link event-header-nav-link" href="">Blog</a></li>
+                    <li class="event-header-link"><a class="link event-header-nav-link" href="">Contacts</a></li>
+                </ul>
+            </nav>
+                <ul class="event-header-contacts list">
+                    <li><button class="button">Get consultation</button></li>
+                    <li>
+                        <a class="link event-log" href="">
+                            <svg class="header-social-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-person"></use>
+                            </svg>
+                            Log in / Register
+                        </a>
+                    </li>
+                </ul>
+        </div>
+    </header>  
+    <main>
+        <section class="event-hero">
+            <div class="container">
+                <p class="event-hero-pre-title">Online lecture</p>
+                <h1 class="event-hero-title">Formation of the organizational structure of the company in the face of uncertainty</h1>
+            </div>
+        </section>
+        <section class="event-about">
+            <div class="container event-about-container">
+                <div class="event-about-left">
+                <h2 class="event-about-left-title">We will talk about:</h2>
+                <ul class="list">
+                    <li><h3 class="event-about-left-after-one">Aliquet lectus urna viverra in odio.</h3>
+                        <p class="event-about-left-after-paragraph">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi
+                        curabitur
+                        turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu
+                        feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+                    </li>
+                    <li><h3 class="event-about-left-after-title">Orci commodo, viverra orci mollis ut euismod.</h3></li>
+                    <li><h3 class="event-about-left-after-title">Sagittis vitae facilisi rutrum amet mauris quisque vel.</h3></li>
+                    <li><h3 class="event-about-left-after-title">In id dolor quis nunc, urna hendrerit pharetra.</h3></li>
+                </ul>
+                </div>
+                <div class="event-about-right">
+                <ul class="list">
+                    <li>
+                        <h3 class="event-about-right-title">Time</h3>
+                        <p class="event-about-right-after-title">August 5, 11:00 – 14:00</p>
+                        <p class="event-about-right-paragraph">Metus turpis sit lorem lacus, in elit tellus lacus.</p>
+                    </li>
+                    <li>
+                        <h3 class="event-about-right-title">Price</h3>
+                        <p class="event-about-right-after-title">Free</p>
+                        <p class="event-about-right-paragraph">Nulla sem adipiscing adipiscing felis fringilla. Adipiscing mauris quam ac elit tristique dis.</p>
+                    </li>
+                    <li>
+                        <a class="link event-about-link" href="">Event on Facebook</a>
+                    </li>
+                    <button class="button event-about-btn">Join the event</button>
+                </ul>
+                </div>
+            </div>
+        </section>
+        <section class="event-speaker">
+            <div class="container event-speaker-container">
+                <div class="event-speaker-right">
+                    <img src="./images/image.png" width="458" height="600" alt="speaker">
+                </div>
+                <div class="event-speaker-left">
+                    <p class="event-speaker-pre-title">Speaker</p>
+                    <h2 class="event-speaker-title">Kathryn Murphy</h2>
+                    <p class="event-speaker-after-title">Analyst and Marketing specialist in IT company</p>
+                    <p class="event-speaker-text">Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum
+                    ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur
+                    vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec
+                    ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.</p>
+                <ul class="list event-speaker-logo">
+                    <li class="event-speaker-logo-list"><img src="./images/del-mar-strategy-logo.svg" alt=""></li>
+                    <li class="event-speaker-logo-list"><img src="./images/sentinal-consulting-logo.svg" alt=""></li>
+                    <li class="event-speaker-logo-list"><img src="./images/national-health-logo.svg" alt=""></li>
+                </ul>
+                <ul class="list event-speaker-contacts-list">
+                    <li class="event-speaker-contacts-item">
+                        <a class="event-speaker-contacts-link" href="">
+                            <img class="event-contacts" src="./images/facebook.svg" alt="">
+                            <!-- <svg class="event-speaker-contacts-icon" width="24" height="24">
+                                <use href="./images/icons.svg#facebook"></use>
+                            </svg> -->
+                        </a>
+                    </li>
+                    <li class="event-speaker-contacts-item">
+                        <a class="event-speaker-contacts-link" href="">
+                            <img class="event-contacts" src="./images/Instagram.svg" alt="">
+                            <!-- <svg class="event-speaker-contacts-icon" width="24" height="24">
+                                <use href="./images/icons.svg#instagram"></use>
+                            </svg> -->
+                        </a>
+                    </li>
+                    <li class="event-speaker-contacts-item">
+                        <a class="event-speaker-contacts-link" class="" href="">
+                            <img class="event-contacts" src="./images/twitter.svg" alt="">
+                            <!-- <svg class="event-speaker-contacts-icon" width="24" height="24">
+                                <use href="./images/icons.svg#twitter"></use>
+                            </svg> -->
+                        </a>
+                    </li>
+                    <li class="event-speaker-contacts-item">
+                        <a class="event-speaker-contacts-link" href="">
+                            <img class="event-contacts" src="./images/linked-in.svg" alt="">
+                            <!-- <svg class="event-speaker-contacts-icon" width="24" height="24">
+                                <use href="./images/icons.svg#linked-in"></use>
+                            </svg> -->
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </section>
+            <section>
+                <div class="container">
+                    <p>For whom?</p>
+                    <h2>Who will benefit from the event:</h2>
+                    <ul class="list">
+                        <li>Specialists with more than 1 year of active work experience</li>
+                        <li>Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered
+                        interfaces</li>
+                        <li>Professional designers who want to feel more confident in UX</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="newsletter">
+                <div class="container">
+                    <img src="./images/illustration-one.png" alt="">
+                    <h2>Don’t want to miss the best events?
+                    Subscribe to our newsletter!</h2>
+                    <button>Subscribe</button>
+                    <p>I agree to receive communications from Createx Online School</p>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <p>Don’t miss the event</p>
+                    <h2>Leave a request</h2>
+                    <ul class="list">
+                        <li>
+                            <p>Full Name</p>
+                            <p>Your full name</p>
+                        </li>
+                        <li>
+                            <p>Email</p>
+                            <p>Your working email</p>
+                        </li>
+                        <li>
+                            <p>Phone</p>
+                            <p>Your phone number</p>
+                        </li>
+                    </ul>
+                    <button>Join the event</button>
+                    <p>* You will receive a link to the online lecture in an email after registration.</p>
+                    <img src="./images/illustration-two.png" alt="">
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <p>Check other online events</p>
+                    <h2>You may be interested in</h2>
+                    <ul class="list">
+                        <li>
+                            <p>05 Aug</p>
+                            <p>11:00 – 14:00</p>
+                            <p>Formation of the organizational structure of the company in the face of uncertainty.</p>
+                            <p>Onine master-class</p>
+                            <button>View more</button>
+                        </li>
+                        <li>
+                            <p>24 Jul</p>
+                            <p>11:00 – 12:30</p>
+                            <p>Building a customer service department. Best Practices.</p>
+                            <p>Onine lecture</p>
+                            <button>View more</button>
+                        </li>
+                        <li>
+                            <p>10 Jul</p>
+                            <p>9:00 – 14:00</p>
+                            <p>Find and evaluate: search and assessment tools for candidates.</p>
+                            <p>Onine workshop</p>
+                            <button>View more</button>
+                        </li>
+                    </ul>
+                    <p></p>
+                    <button></button>
+                </div>
+            </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
