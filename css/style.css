@@ -33,6 +33,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 .container {
   width: 1230px;
   margin: 0 auto;
@@ -48,6 +49,20 @@ a {
 .right-container {
   width: 342px;
   margin-left: 78px;
+}
+/* .search-form {
+  width: 342px;
+  height: 44px;
+} */
+.input-text {
+  padding-left: 16px;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--second-color);
+  width: 342px;
+  height: 44px;
 }
 .artic-list {
   text-decoration: none;
@@ -472,7 +487,11 @@ a {
   display: flex;
   align-items: center;
 }
-
+.right-prelist-item {
+  content: '';
+  display: flex;
+  align-items: center;
+}
 .blog-prelist-item:not(:last-child) {
   padding-right: 12px;
   border-right: 1px solid var(--second-color);
