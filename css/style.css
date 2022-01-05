@@ -393,8 +393,23 @@ a {
   font-weight: 900;
   margin-top: 8px;
 }
+.blog-title-container {
+  display: flex;
+  align-items: baseline;
+}
+.line-icon-left {
+  content: '';
+  transform: rotate(180deg);
+  margin-left: auto;
+  margin-right: 27px;
+  fill: #424551;
+}
+.line-icon-right {
+  fill: #424551;
+}
 .blog-column-list {
   display: flex;
+  margin-top: 60px;
 }
 .blog-column + .blog-column {
   margin-left: 30px;
@@ -490,6 +505,7 @@ a {
   display: inline-block;
   align-items: center;
   margin-left: 11px;
+  fill: var(--hover-color);
 }
 .prefooter-info {
   display: flex;
