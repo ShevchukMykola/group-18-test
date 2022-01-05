@@ -15,6 +15,11 @@ body {
   font-size: 16px;
   font-weight: 400;
 }
+:root {
+  --accent-color: #ff3f3a;
+  --main-text-color: #1e212c;
+  --second-text-color: #424551;
+}
 .container {
   width: 1260px;
   padding-left: 15px;

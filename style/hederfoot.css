@@ -516,6 +516,7 @@ span {
 }
 /* ------------------------EVENTS------------------------ */
 .section-events {
+  min-height: 850px;
   background: linear-gradient(55.95deg, #ff3f3a33 0%, #f75e0533 100%);
 }
 .section-events .third-header {
@@ -534,6 +535,10 @@ span {
   border: none;
   border-radius: 4px;
   background: #ffffff;
+
+  box-shadow: 0px 4px 4px -4px #1e212c0d;
+
+  box-shadow: 0px 12px 10px -6px #ff3f3a14;
 }
 .list-date {
   margin-left: 40px;
@@ -657,6 +662,94 @@ span {
   color: #fff;
   transition: 250ms;
   transition: color 250ms linear;
+}
+
+/* ------------------------Certificate------------------------ */
+.certificate-section {
+  padding-top: 120px;
+  max-height: 578px;
+}
+.certificate-container {
+  display: flex;
+  justify-content: space-between;
+  max-height: 500px;
+}
+.certificate-box {
+  width: 397px;
+  height: 334px;
+}
+.certificate-paragraph {
+  margin-top: 48px;
+}
+.certificate-img {
+  position: relative;
+  box-shadow: 0px 4px 4px -4px #1e212c0d;
+
+  box-shadow: 0px 12px 10px -6px #9a9ca514;
+
+  box-shadow: 0px 30px 24px -10px #9a9ca51a;
+
+  box-shadow: 0px 80px 80px -20px #9a9ca529;
+}
+.certificate-item {
+  display: flex;
+  margin-top: 32px;
+}
+.logo-company + .logo-company {
+  margin-left: 40px;
+}
+/* ------------------------TEAM------------------------ */
+.team-section {
+  padding-top: 166px;
+  background: #f4f5f6;
+}
+.team-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.team-raundabout {
+  padding-top: 60px;
+  display: flex;
+}
+.team-raundabout-list {
+  width: 285px;
+  height: 416px;
+}
+.team-raundabout-list + .team-raundabout-list {
+  margin-left: 30px;
+}
+.team-card {
+  padding: 20px 20px 0 20px;
+
+  height: 340px;
+  width: 285px;
+  left: 0px;
+  top: 0px;
+  border-radius: 4px;
+
+  background: #ffcf2d;
+}
+.team-title {
+  text-align: center;
+  margin-top: 16px;
+}
+.team-name {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+}
+.team-title .normal-text {
+  color: #787a80;
+}
+.testimonials {
+  margin-top: 180px;
+  /* display: flex; */
+}
+.testimonials-box {
+  display: flex;
 }
 /* ------------------------FOOTER------------------------ */
 
