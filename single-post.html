@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<div class="container">
+<div class="container top-container">
     <section class="main-section">
         <div class="left-container">
             <ul class="artic-list">
@@ -87,13 +87,24 @@
                     </p>
                 </li>
                 <li class="main-text-item text-akcent-item">
-                    <p class="main-text bold-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis
-                        fermentum amet,
-                        eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in tot
-                        euismod
-                        vulputate etiam eros. Vel accumsan at elit neque, ipsum.
-                    </p>
+                    
+                        <div class="bold-block">
+                            <div class="rectangle">
+                                <svg class="rectangle-icon" width="10" height="20">
+                                    <use href="./images/sprite.svg#icon-rectangle"></use>
+                                </svg>
+                                <svg class="rectangle-icon" width="10" height="20">
+                                    <use href="./images/sprite.svg#icon-rectangle"></use>
+                                </svg>
+                            </div>
+                            <p class="main-text bold-text block-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis
+                                fermentum amet,
+                                eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in tot
+                                euismod
+                                vulputate etiam eros. Vel accumsan at elit neque, ipsum.
+                            </p>
+                        </div>
                 </li>
                 <li class="main-text-item">
                     <p class="main-text">
@@ -102,10 +113,24 @@
                         fringilla blandit:
                     </p>
                     <ul class="intext-list">
-                        <li>A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
-                        <li>Vulputate placerat amet pulvinar lorem nisl.</li>
-                        <li>Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
-                        <li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
+                        <li class="intext-item" > <svg class="listmark-icon" width="15.33" height="14.67">
+                                    <use href="./images/sprite.svg#icon-listmark"></use>
+                                </svg> <p>
+                                    A fermentum in morbi pretium aliquam adipiscing donec tempus.
+                                </p></li>
+                        <li class="intext-item" > <svg class="listmark-icon" width="15.33" height="14.67">
+                                    <use href="./images/sprite.svg#icon-listmark"></use>
+                                </svg> <p>Vulputate placerat amet pulvinar lorem nisl.</p></li>
+                        <li class="intext-item" > <svg class="listmark-icon" width="15.33" height="14.67">
+                                    <use href="./images/sprite.svg#icon-listmark"></use>
+                                </svg> <p>
+                                    Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.
+                                </p> </li>
+                        <li class="intext-item" > <svg class="listmark-icon" width="15.33" height="14.67">
+                                    <use href="./images/sprite.svg#icon-listmark"></use>
+                                </svg> <p>
+                                    Etiam duis lobortis in fames ultrices commodo nibh.
+                                </p> </li>
                     </ul>
                 </li>
                 <li class="main-text-item">
@@ -125,10 +150,10 @@
             
             <div class="main-after-list">
                 <ul class="after-list">
-                    <li>Tags:</li>
-                    <li> <button type="button">#learning</button> </li>
-                    <li> <button type="button">#HR</button> </li>
-                    <li> <button type="button">#self-development</button> </li>
+                    <li class="after-list-text after-list-item">Tags:</li>
+                    <li class="after-list-item" > <button type="button">#learning</button> </li>
+                    <li class="after-list-item" > <button type="button">#HR</button> </li>
+                    <li class="after-list-item" > <button type="button">#self-development</button> </li>
                 </ul>
                 <ul class="social-list">
                     <li class="social-text">
@@ -219,48 +244,101 @@
     </section>
 </div>
 <section class="hero">
-    <img src="./images/Subscribe.jpg" alt="vector" width="507">
-    <h2>Want to get the best articles weekly?
-    Subscribe to our newsletter!</h2>
-    <button type="button">Your working email</button>
-    <button type="button">Subscribe</button>
-    <button type="button">small button</button>
-    <p>I agree to receive communications from Createx Online School</p>
+    <div class="container hero-container">
+        <svg class="hero-icon" width="507" height="454">
+            <use href="./images/sprite.svg#icon-illustration"></use>
+        </svg>
+        <div class="hero-right-block">
+            <h2 class="hero-title">Want to get the best articles weekly?
+                Subscribe to our newsletter!</h2>
+            <button type="button">Your working email</button>
+            <button type="button">Subscribe</button>
+            <button type="button">small button</button>
+            <p>I agree to receive communications from Createx Online School</p>
+        </div>
+    </div>
 </section>
 
 <section class="section-blog">
-    <p>Our blog</p>
-    <h2>You may also like</h2>
-    <img src="./images/block-img1.jpg" alt="bg-img1">
-    <ul>
-        <li>Design</li>
-        <li>July 28, 2020</li>
-        <li>36 min</li>
-    </ul>
-    <h4>What are color profiles and how they work in graphic design</h4>
-    <p>Aliquam vulputate hendrerit quam sollicitudin urna enim viverra gravida. Consectetur urna arcu eleifend...</p>
-    <p>Listen</p>
-
-    <img src="./images/block-img2.jpg" alt="bg-img2">
-    <ul>
-        <li>Development</li>
-        <li>September 1, 2020</li>
-    </ul>
-    <h4>How to choose the first programming language for a beginner</h4>
-    <p>Turpis sed at magna laoreet gravida consequat tortor placerat. Gravida vitae aliquet enim egestas dui...</p>
-    <p>Read</p>
-
-    <img src="./images/block-img3.jpg" alt="bg-img3">
-    <ul>
-        <li>Design</li>
-        <li>August 8, 2020</li>
-    </ul> 
-    <h4>Should you choose a creative profession if you are attracted to creativity?</h4>
-    <p>Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...</p>
-    <p>Read</p>
-    
-<p>Do you want more articles, podcasts and videos?</p>
-<button type="button">Go to blog</button>
+    <div class="container">
+        <p class="blog-pretitle">Our blog</p>
+        <h2 class="blog-tittle">You may also like</h2>
+        <div class="blog-column-list">
+            <div class="blog-column">
+                <div class="blog-img1">
+                    <p class="blog-img-text">
+                        <svg class="blog-podcast-icon" width="12" height="15">
+                            <use href="./images/sprite.svg#icon-podcast"></use>
+                        </svg>Podcast</p>
+                </div>
+                <!-- <img src="./images/block-img1.jpg" alt="bg-img1"> -->
+                <ul class="blog-prelist" >
+                    <li class="blog-prelist-item" >Design</li>
+                    <li class="blog-prelist-item" > <svg class="calendar-icon" width="14.33" height="14.33">
+                        <use href="./images/sprite.svg#icon-calendar"></use>
+                    </svg> <p>July 28, 2020</p> </li>
+                    <li class="blog-prelist-item" > <svg class="calendar-icon" width="14.67" height="14.67">
+                        <use href="./images/sprite.svg#icon-clock"></use>
+                    </svg> <p>36 min</p> </li>
+                </ul>
+                <h4 class="blog-list-title" >What are color profiles and how they work in graphic design</h4>
+                <p class="blog-list-text" >Aliquam vulputate hendrerit quam sollicitudin urna enim viverra gravida. Consectetur urna arcu eleifend...</p>
+                <p class="after-blog-text" >Listen <svg class="line-icon" width="18" height="11">
+                    <use href="./images/sprite.svg#icon-line"></use>
+                </svg></p>
+            </div>
+            
+            <div class="blog-column">
+                <div class="blog-img2">
+                    <p class="blog-img-text">
+                        <svg class="blog-podcast-icon" width="11.33" height="14.33">
+                            <use href="./images/sprite.svg#icon-article"></use>
+                        </svg>Article
+                    </p>
+                </div>
+                <!-- <img src="./images/block-img2.jpg" alt="bg-img2"> -->
+                <ul class="blog-prelist" >
+                    <li class="blog-prelist-item" >Development</li>
+                    <li class="blog-prelist-item" > <svg class="calendar-icon" width="14.33" height="14.33">
+                        <use href="./images/sprite.svg#icon-calendar"></use>
+                    </svg> <p>September 1, 2020</p> </li>
+                </ul>
+                <h4 class="blog-list-title" >How to choose the first programming language for a beginner</h4>
+                <p class="blog-list-text" >Turpis sed at magna laoreet gravida consequat tortor placerat. Gravida vitae aliquet enim egestas dui...</p>
+                <p class="after-blog-text" >Read  <svg class="line-icon" width="18" height="11">
+                    <use href="./images/sprite.svg#icon-line"></use>
+                </svg></p>
+            </div>
+            
+            <div class="blog-column">
+                <div class="blog-img3">
+                    <p class="blog-img-text">
+                        <svg class="blog-podcast-icon" width="11.33" height="14.33">
+                            <use href="./images/sprite.svg#icon-article"></use>
+                        </svg>Article
+                    </p>
+                </div>
+                <!-- <img src="./images/block-img3.jpg" alt="bg-img3"> -->
+                <ul class="blog-prelist" >
+                    <li class="blog-prelist-item" >Design</li>
+                    <li class="blog-prelist-item" > <svg class="calendar-icon" width="14.33" height="14.33">
+                        <use href="./images/sprite.svg#icon-calendar"></use>
+                    </svg> <p>August 8, 2020</p> </li>
+                </ul>
+                <h4 class="blog-list-title" >Should you choose a creative profession if you are attracted to creativity?</h4>
+                <p class="blog-list-text" >Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...</p>
+                    <p class="after-blog-text">Read <svg class="line-icon" width="18" height="11">
+                        <use href="./images/sprite.svg#icon-line"></use>
+                    </svg></p>
+                    
+            </div>
+            </div>
+            <div class="prefooter-info">
+                <p class="prefooter-text">Do you want more articles, podcasts and videos?</p>
+                <a class="prefooter-btn" href="">Go to blog</a>
+            </div>
+            
+        </div>
 
     
 </section>
