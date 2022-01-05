@@ -380,7 +380,7 @@ label {
 }
 /* -----------------------------------section5 */
 .sect5 {
-  margin-top: 180px;
+  padding-top: 180px;
   padding-bottom: 126px;
 }
 .sect5-flexbox {
@@ -393,23 +393,24 @@ label {
 .sect5-title {
   margin-right: 135px;
 }
-.sect5-ul {
+
+.sect5-container {
+  display: flex;
   max-width: 600px;
 }
-.sect5-text-box {
-  margin-top: 20px;
-  padding: 0;
-}
-.sect5-text-box1 {
-  margin: 0;
-}
-
 .sect5-text {
+  display: flex;
+  align-items: flex-start;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
 
   color: var(--paragraph-color-primary);
+}
+.sect5-text-box {
+  padding: 0;
+  margin: 0 0 20px 0;
 }
 /* -------------------------------------section6 */
 .sect6 {
@@ -428,6 +429,10 @@ label {
 }
 .sect6-ul .sect6-li + .sect6-li {
   margin-top: 24px;
+}
+
+.sect6-li-flex {
+  display: flex;
 }
 .sect6-svg {
   margin-right: 20px;
@@ -488,7 +493,8 @@ label {
   margin-right: 69px;
   padding: 64px 105px;
 
-  display: block;
+  display: flex;
+  flex-direction: column;
   background: var(--white-color);
 
   box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
@@ -497,12 +503,15 @@ label {
     0px 4px 4px -4px rgba(30, 33, 44, 0.03);
   border-radius: 4px;
 }
+.stud-box-flex {
+  display: flex;
+}
 .stud-paph {
   margin: 0 0 24px 0;
 }
 .stud-box2 {
   display: flex;
-  align-items: center;
+  padding-left: 58px;
 }
 .students-name {
   margin-bottom: 4px;
