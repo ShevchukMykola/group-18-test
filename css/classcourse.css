@@ -242,7 +242,7 @@ p {
 .social-link {
   fill: currentColor;
 }
-/* -------------------section4 */
+/* --------------------------------------------------------section4 */
 .sect4 {
   padding-bottom: 177px;
 }
@@ -277,6 +277,7 @@ p {
 .sect4-name:hover {
   color: var(--accent-color);
 }
+
 .sect4-point {
   margin-bottom: 8px;
 
@@ -305,8 +306,15 @@ p {
 }
 
 .join-section {
-  background: ;
-  position: relative;
+  background-color: violet;
+  background-image: linear-gradient
+    (var(--article-name-color), var(--input-text-color));
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
   padding: 48px 60px;
 }
 
@@ -388,8 +396,12 @@ label {
 .sect5-ul {
   max-width: 600px;
 }
-.sect5-text {
+.sect5-text-box {
   margin-top: 20px;
+  padding: 0;
+}
+.sect5-text-box1 {
+  margin: 0;
 }
 
 .sect5-text {
@@ -416,6 +428,9 @@ label {
 }
 .sect6-ul .sect6-li + .sect6-li {
   margin-top: 24px;
+}
+.sect6-svg {
+  margin-right: 20px;
 }
 
 .lesson {
@@ -460,8 +475,17 @@ label {
   margin-bottom: 60px;
   text-align: center;
 }
+.stud-svg {
+  margin-right: 30px;
+}
+.stud-box-main {
+  display: flex;
+  align-items: center;
+}
 
 .stud-box {
+  margin-left: 69px;
+  margin-right: 69px;
   padding: 64px 105px;
 
   display: block;
@@ -496,6 +520,21 @@ label {
 
   color: var(--paragraph-color-secondary);
 }
+
+.stud-btn {
+  background-color: inherit;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  fill: var(--paragraph-color-primary);
+}
+.stud-btn:hover {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
+}
+
 /* ----------------------------section7 */
 .sect7 {
   padding-bottom: 100px;
@@ -544,6 +583,15 @@ label {
 .sect8-type {
   margin-top: 120px;
   padding: 1px 8px;
+}
+
+.sect8-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.sect8-btn-margin {
+  margin-bottom: 60px;
 }
 
 .sect8-ul {
