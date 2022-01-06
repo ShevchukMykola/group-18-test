@@ -63,6 +63,64 @@ a {
   color: var(--second-color);
   width: 342px;
   height: 44px;
+  border-radius: 4px;
+  border: 1px solid #d7dadd;
+}
+.input-search-text {
+  padding-left: 16px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--second-color);
+  width: 422px;
+  height: 52px;
+  border-radius: 4px;
+  border: 1px solid #d7dadd;
+  margin-right: 24px;
+}
+.sub-btn {
+  display: inline-block;
+  width: 154px;
+  background-image: linear-gradient(to right, rgba(255, 63, 58, 1), rgba(247, 94, 5, 1));
+  color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  line-height: 2.71;
+  letter-spacing: 0.5px;
+}
+.agree-text {
+  margin-left: 12px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #424551;
+}
+.search-block {
+  display: flex;
+}
+.agree-block {
+  display: flex;
+  margin-top: 24px;
+  align-items: center;
+}
+.check-btn {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  align-items: center;
+  margin-right: 12px;
+  fill: var(--hover-color);
+}
+.check-btn:enabled {
+  color: var(--hover-color);
+}
+.search-form-l {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #424551;
 }
 .artic-list {
   text-decoration: none;
