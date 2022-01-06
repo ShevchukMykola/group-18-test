@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body>    
     <header class="event-header">
         <div class="container event-header-container">
             <a class="event-logo" href=""><img src="./images/logo.svg" alt="logo"></a>
@@ -50,14 +50,14 @@
             <div class="container event-about-container">
                 <div class="event-about-left">
                     <h2 class="event-about-left-title">We will talk about:</h2>
-                    <ul class="list event-about-list">
+                    <ul class="list even00t-about-list">
                         <li>
                             <h3 class="event-about-left-after-title event-about-one">Aliquet lectus urna viverra in odio.</h3>
                             <p class="event-about-left-after-paragraph">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi
                             curabitur
                             turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu
                             feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
-                        </liclass=>
+                        </li>
                         <li><h3 class="event-about-left-after-title event-about-two">Orci commodo, viverra orci mollis ut euismod.</h3></liclass=>
                         <li><h3 class="event-about-left-after-title event-about-three">Sagittis vitae facilisi rutrum amet mauris quisque vel.</h3></li>
                         <li><h3 class="event-about-left-after-title event-about-four">In id dolor quis nunc, urna hendrerit pharetra.</h3></li>
@@ -173,71 +173,234 @@
                 </div>
             </section>
             <section class="newsletter">
-                <div class="container">
-                    <img src="./images/illustration-one.png" alt="">
-                    <h2>Don’t want to miss the best events?
-                    Subscribe to our newsletter!</h2>
-                    <button>Subscribe</button>
-                    <p>I agree to receive communications from Createx Online School</p>
+                <div class="container event-newsletter-container">
+                        <div class="newsletter-img">
+                        <img src="./images/illustration-one.png" alt="" width="308">
+                    </div>
+                    <div class="event-newsletter-right">
+                        <h2 class="event-newsletter-title">Don’t want to miss the best events?
+                        Subscribe to our newsletter!</h2>
+                        <div class="event-newsletter-form-item">
+                            <form class="" action="text">
+                                <label for="id">
+                                    <input class="event-newsletter-form" type="text" placeholder="Your working email">
+                                </label>
+                            </form>
+                            <button class="button">Subscribe</button>
+                        </div>
+                        <form action="checkbox">
+                            <label for="checkbox">
+                                <input class="newsletter-check" type="checkbox">I agree to receive communications from Createx Online School
+                            </label>
+                        </form>
+                    </div>
+                    </div>
+            </section>
+            <section class="event-request">
+                <div class="container event-request-container">
+                    <div class="event-request-left">
+                        <p class="event-request-pre-title">Don’t miss the event</p>
+                        <h2 class="event-request-title">Leave a request</h2>
+                        <form class="event-request-form" action="text">
+                            <label class="event-form-list" for="">
+                                <p class="event-form-pre-title">Full Name</p>
+                                <input class="event-form" type="text" placeholder="Your full name">
+                            </label>
+                            <label class="event-form-list" for="">
+                                <p class="event-form-pre-title">Email</p>
+                                <input class="event-form" type="text" placeholder="Your working email">
+                            </label>
+                            <label class="event-form-list" for="">
+                                <p class="event-form-pre-title">Phone</p>
+                                <input class="event-form" type="text" placeholder="Your phone number">
+                            </label>
+                        </form>
+                        <button class="button form-btn">Join the event</button>
+                        <p>* You will receive a link to the online lecture in an email after registration.</p>
+                    </div>
+                    <div class="event-request-right">
+                        <img src="./images/illustration-two.png" alt="">
+                    </div>
                 </div>
             </section>
-            <section>
-                <div class="container">
-                    <p>Don’t miss the event</p>
-                    <h2>Leave a request</h2>
-                    <ul class="list">
-                        <li>
-                            <p>Full Name</p>
-                            <p>Your full name</p>
+            <section class="event-online">
+                <div class="container event-online-container">
+                    <p class="event-online-pre-title">Check other online events</p>
+                    <h2 class="event-online-title">You may be interested in</h2>
+                    <ul class="list event-online-list">
+                        <li class="event-online-item">
+                            <p class="event-online-time">05 Aug</p>
+                            <p class="event-online-hour">11:00 – 14:00</p>
+                            <p class="event-online-text">Formation of the organizational structure of the company in the face of uncertainty.</p>
+                            <p class="event-online-after">Onine master-class</p>
+                            <button class="button-online">View more</button>
                         </li>
-                        <li>
-                            <p>Email</p>
-                            <p>Your working email</p>
+                        <li class="event-online-item">
+                            <p class="event-online-time">24 Jul</p>
+                            <p class="event-online-hour">11:00 – 12:30</p>
+                            <p class="event-online-text">Building a customer service department. Best Practices.</p>
+                            <p class="event-online-after">Onine lecture</p>
+                            <button class="button-online">View more</button>
                         </li>
-                        <li>
-                            <p>Phone</p>
-                            <p>Your phone number</p>
-                        </li>
-                    </ul>
-                    <button>Join the event</button>
-                    <p>* You will receive a link to the online lecture in an email after registration.</p>
-                    <img src="./images/illustration-two.png" alt="">
-                </div>
-            </section>
-            <section>
-                <div class="container">
-                    <p>Check other online events</p>
-                    <h2>You may be interested in</h2>
-                    <ul class="list">
-                        <li>
-                            <p>05 Aug</p>
-                            <p>11:00 – 14:00</p>
-                            <p>Formation of the organizational structure of the company in the face of uncertainty.</p>
-                            <p>Onine master-class</p>
-                            <button>View more</button>
-                        </li>
-                        <li>
-                            <p>24 Jul</p>
-                            <p>11:00 – 12:30</p>
-                            <p>Building a customer service department. Best Practices.</p>
-                            <p>Onine lecture</p>
-                            <button>View more</button>
-                        </li>
-                        <li>
-                            <p>10 Jul</p>
-                            <p>9:00 – 14:00</p>
-                            <p>Find and evaluate: search and assessment tools for candidates.</p>
-                            <p>Onine workshop</p>
-                            <button>View more</button>
+                        <li class="event-online-item">
+                            <p class="event-online-time">10 Jul</p>
+                            <p class="event-online-hour">9:00 – 14:00</p>
+                            <p class="event-online-text">Find and evaluate: search and assessment tools for candidates.</p>
+                            <p class="event-online-after">Onine workshop</p>
+                            <button class="button-online">View more</button>
                         </li>
                     </ul>
-                    <p></p>
-                    <button></button>
+                    <div class="event-online-btn">
+                        <p class="event-online-btn-title">Do you want more?</p>
+                        <button class="button online-btn">Explore all events</button>
+                    </div>
                 </div>
             </section>
     </main>
-    <footer>
-
+    <footer class="footer section section--footer" id="footer">
+        <div class="container container--footer">
+            <div class="footer__main-content">
+                <div class="footer__first-column">
+                    <a class="footer__logo" href="./index.html">
+                        <svg class="footer__logo-icon" width="130" height="22">
+                            <use href="./images/icons.svg#icon-logo"></use>
+                        </svg>
+                    </a>
+                    <p class="footer__text">
+                        Createx Online School is a leader in online studying. We have lots of courses and programs from the
+                        main
+                        market experts. We provide relevant approaches to online learning, internships and employment in the
+                        largest companies in the country.
+                    </p>
+                    <ul class="footer__sm-list">
+                        <li class="footer__sm-item">
+                            <a class="footer__sm-link" href="">
+                                <svg class="footer__sm-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__sm-item">
+                            <a class="footer__sm-link" href="">
+                                <svg class="footer__sm-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__sm-item">
+                            <a class="footer__sm-link" href="">
+                                <svg class="footer__sm-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__sm-item">
+                            <a class="footer__sm-link" href="">
+                                <svg class="footer__sm-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__sm-item">
+                            <a class="footer__sm-link" href="">
+                                <svg class="footer__sm-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__sm-item">
+                            <a class="footer__sm-link" href="">
+                                <svg class="footer__sm-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linked-in"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <h2 class="footer__nav-header">SITE MAP</h2>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="./about.html">About Us</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="">Courses</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="">Events</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="">Blog</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="">Contacts</a>
+                    </li>
+                </ul>
+    
+                <ul class="footer__courses-list">
+                    <li class="footer__courses-item">
+                        <h2 class="footer__courses-header">COURSES</h2>
+                    </li>
+                    <li class="footer__courses-item">
+                        <a class="footer__courses-link" href="">Marketing</a>
+                    </li>
+                    <li class="footer__courses-item">
+                        <a class="footer__courses-link" href="">Management</a>
+                    </li>
+                    <li class="footer__courses-item">
+                        <a class="footer__courses-link" href="">HR & Recruting</a>
+                    </li>
+                    <li class="footer__courses-item">
+                        <a class="footer__courses-link" href="">Design</a>
+                    </li>
+                    <li class="footer__courses-item">
+                        <a class="footer__courses-link" href="">Development</a>
+                    </li>
+                </ul>
+    
+                <address class="footer__address">
+                    <h2 class="footer__address-header">CONTACT US</h2>
+                    <a class="footer__address-link" href="phone:4055550128">
+                        <svg class="footer__address-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                        (405) 555-0128
+                    </a>
+                    <a class="footer__address-link" href="mailto:hello@createx.com">
+                        <svg class="footer__address-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>
+                        hello@createx.com
+                    </a>
+                </address>
+    
+                <div class="footer__input">
+                    <h2 class="footer__input-header">SIGN UP TO OUR NEWSLETTER</h2>
+                    <div class="footer__input-window-container">
+                        <input class="footer__input-window" type="text" placeholder="Email address" />
+                        <button class="footer__input-btn" type="submit">
+                            <svg class="footer__input-btn-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="footer__input-comment">
+                        *Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="footer__bottom">
+                <p class="footer__bottom-text">© All rights reserved. Made with&nbsp&nbsp</p>
+                <svg class="footer__heart-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-heart"></use>
+                </svg>
+                <p class="footer__bottom-text">by Createx Studio</p>
+                <a class="footer__bottom-link" href="#top">GO TO TOP</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
