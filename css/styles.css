@@ -352,7 +352,7 @@ a {
     text-decoration: none;
 }
 
-.footer__bottom-text::before{
+.footer__bottom-text::before {
     background-image: url(../images/heart.svg);
 }
 
@@ -365,7 +365,7 @@ a {
     padding-top: 20px;
     /* background-color: #FF3F3A; */
     background: rgb(255, 63, 58);
-    background: linear-gradient(55deg, rgba(255, 63, 58, 0.4514180672268907) 0%, rgba(247, 94, 5, 0.10127801120448177) 100%);
+    background-color: #ffe6e6;
     justify-content: center;
     align-items: center;
 }
@@ -412,8 +412,7 @@ a {
     text-align: center;
     padding-top: 120px;
     padding-bottom: 120px;
-    background: linear-gradient(55deg, rgba(255, 63, 58, 0.4514180672268907) 0%, rgba(247, 94, 5, 0.10127801120448177) 100%);
-    /* opacity: 0.2; */
+    background-color: #ffe6e6;
 }
 
 .event-hero-title {
@@ -770,7 +769,7 @@ a {
 
 .event-newsletter-container {
     display: flex;
-    background: linear-gradient(55deg, rgba(255, 63, 58, 0.4514180672268907) 0%, rgba(247, 94, 5, 0.10127801120448177) 100%);
+    background-color: #ffcccc;
     border-radius: 4px;
     background-position: center;
     background-size: 1230px;
