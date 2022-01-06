@@ -14,7 +14,7 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/header-footer.css" />
 		<title>Main Page</title>
 	</head>
 	<body>
@@ -30,7 +30,7 @@
 							</a>
 						</li>
 						<li class="header__nav-item">
-							<a class="header__nav-link header__nav-link--current" href="./about.html">About Us</a>
+							<a class="header__nav-link header__nav-link--current" href="">About Us</a>
 						</li>
 						<li class="header__nav-item">
 							<a class="header__nav-link" href="">Courses</a>
@@ -46,7 +46,7 @@
 						</li>
 					</ul>
 				</nav>
-				<button class="header__get-consult-btn" type="button">Get consultation</button>
+				<button class="btn btn--header" type="button">Get consultation</button>
 				<ul class="header__authorization">
 					<li class="header__authorization-item">
 						<svg class="header__authorization-icon" width="20" height="20">
@@ -54,19 +54,19 @@
 						</svg>
 					</li>
 					<li class="header__authorization-item">
-						<a class="header__authorization-sign-in" href="">Log in&nbsp</a>
+						<button class="header__authorization-sign-in" href="">&nbspLog in&nbsp</button>
 					</li>
 					<li class="header__authorization-item">
 						<span class="header__authorization-slash">&nbsp/&nbsp</span>
 					</li>
 					<li class="header__authorization-item">
-						<a class="header__authorization-sign-up" href="">&nbspRegister</a>
+						<a class="header__authorization-sign-up" href="">&nbspRegister&nbsp</a>
 					</li>
 				</ul>
 			</div>
 		</header>
 		<main></main>
-		<footer class="footer section section--footer">
+		<footer class="footer section section--footer" id="footer">
 			<div class="container container--footer">
 				<div class="footer__main-content">
 					<div class="footer__first-column">
@@ -186,7 +186,14 @@
 
 					<div class="footer__input">
 						<h2 class="footer__input-header">SIGN UP TO OUR NEWSLETTER</h2>
-						<input class="footer__input-window" type="text" placeholder="Email address" />
+						<div class="footer__input-window-container">
+							<input class="footer__input-window" type="text" placeholder="Email address" />
+							<button class="footer__input-btn" type="submit">
+								<svg class="footer__input-btn-icon" width="16" height="16">
+									<use href="./images/icons.svg#icon-arrow"></use>
+								</svg>
+							</button>
+						</div>
 						<p class="footer__input-comment">
 							*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.
 						</p>
