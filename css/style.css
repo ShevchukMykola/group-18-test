@@ -99,6 +99,9 @@ a {
 .search-block {
   display: flex;
 }
+a {
+  text-decoration: none;
+}
 .agree-block {
   display: flex;
   margin-top: 24px;
