@@ -399,6 +399,7 @@ img {
 .team-list {
     display: flex;
     border: 1px solid rgba(229, 232, 237, 1);
+    border-radius: 4px;
     box-shadow: 0px 12px 10px -6px rgba(154, 156, 165, 0.08);
     margin-top: 60px;
     width: 600px;
@@ -795,6 +796,21 @@ span {
     background: #ffcf2d;
 }
 
+.team-social {
+    display: flex;
+    margin-left: auto;
+    margin-top: -40px;
+    justify-content: flex-end;
+    position: relative;
+    border: 1px solid black;
+    width: 84px;
+    height: 20px;
+}
+
+.social-icon {
+    color: #ffffff99;
+}
+
 .team-title {
     text-align: center;
     margin-top: 16px;
@@ -910,7 +926,21 @@ span {
     color: #fff;
 }
 
-.testimonials-icon {
+.team-card:hover,
+.team-card:focus {
+    background: linear-gradient(180deg, rgba(30, 33, 44, 0) 43.9%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.768225) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%), #ffcf2d;
+    ;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+    background: transparent;
+    color: #fff;
+}
+
+.icon {
     fill: currentColor;
 }
 
