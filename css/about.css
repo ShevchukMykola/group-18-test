@@ -13,7 +13,8 @@ h2,
 h3,
 h4,
 h5,
-p {
+p,
+span {
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -693,9 +694,13 @@ img {
 	fill: rgb(150, 149, 149);
 	transition: fill 250ms linear;
 }
-.team__item-sm-link:hover .team__item-sm-icon {
+.team__item-sm-link:hover .team__item-sm-icon,
+.team__item-sm-link:focus .team__item-sm-icon {
 	fill: #fff;
 	transition: fill 250ms linear;
+}
+.team__item-sm-link:focus {
+	outline: none;
 }
 
 .team__item-header {
@@ -726,6 +731,7 @@ img {
 }
 .third-header-testimonials,
 .second-header-testimonials {
+	position: relative;
 	text-align: center;
 }
 .testimonials__content {
@@ -863,6 +869,230 @@ img {
 } */
 
 /* ------------------------JOBES------------------------- */
+
+.section--jobes {
+	background-color: #f4f5f7;
+}
+
+.container--jobes {
+	position: relative;
+	flex-direction: column;
+}
+
+.third-header--jobes,
+.second-header--jobes {
+	text-align: center;
+}
+
+.jobes__list {
+	display: flex;
+	flex-wrap: wrap;
+
+	margin-left: -96px;
+	margin-bottom: -40px;
+}
+
+.jobes__item {
+	margin-left: 96px;
+	margin-bottom: 40px;
+}
+
+.jobes__link {
+	display: inline-block;
+}
+.jobes__link:hover .jobes__icon {
+	filter: hue-rotate(143deg) saturate(100);
+}
+
+.shapes-4 {
+	position: absolute;
+	left: -165px;
+	top: 10px;
+}
+
+/* -------------------------BLOG------------------------- */
+
+.section--blog {
+	padding-top: 105px;
+}
+.container--blog {
+	position: relative;
+	flex-direction: column;
+}
+.btn--blog {
+	position: absolute;
+	right: 0;
+	top: 40px;
+
+	width: 159px;
+}
+
+.blog__list {
+	display: flex;
+}
+.blog__item:not(:first-child) {
+	margin-left: 30px;
+}
+
+.blog__item-container {
+	position: relative;
+	width: 380px;
+	height: 500px;
+
+	/* outline: 1px solid tomato; */
+}
+.blog__img {
+	margin-bottom: 16px;
+}
+.blog__img-icon {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+
+	display: inline-flex;
+	align-items: center;
+
+	padding: 4px 8px;
+	border-radius: 4px;
+	background-color: #fff;
+}
+.blog__img-icon-text {
+	margin-left: 4px;
+
+	font-size: 14px;
+	line-height: 1;
+
+	color: var(--second-text-color);
+}
+
+.blog__item-description {
+	margin-bottom: 8px;
+}
+.blog__item-description-list {
+	display: flex;
+}
+.blog__item-description-item {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.blog__item-description-item:not(:first-child) {
+	margin-left: 24px;
+}
+.blog__item-description-item:not(:last-child)::after {
+	position: absolute;
+	right: -12px;
+	align-self: center;
+	content: "";
+	width: 1px;
+	height: 12px;
+	background-color: #787a80;
+}
+.blog__item-description-icon {
+	margin-right: 8px;
+}
+.blog__item-description-text {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.8;
+
+	color: #787a80;
+}
+.blog__item-title {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.5;
+
+	color: var(--main-text-color);
+
+	margin-bottom: 8px;
+}
+.blog__item-text {
+	font-size: 16px;
+	line-height: 1.6;
+
+	margin-bottom: 16px;
+}
+.blog__item-link {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	padding: 0 3px;
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.6;
+
+	color: var(--main-text-color);
+	outline: 1px solid #fff;
+	border-radius: 4px;
+	transition: color 250ms linear, outline 250ms linear;
+}
+.blog__item-link:hover,
+.blog__item-link:focus {
+	color: var(--accent-color);
+	outline: 1px solid var(--accent-color);
+	transition: color 250ms linear, outline 250ms linear;
+}
+.blog__red-arrow {
+	margin-left: 8px;
+}
+
+/* ---------------------SUBSCRIPTION--------------------- */
+
+.section--subscription {
+	background: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+	padding-top: 120px;
+}
+.container--subscription {
+	position: relative;
+	flex-direction: column;
+}
+.third-header--subscription,
+.second-header--subscription {
+	text-align: center;
+}
+.subscription-form {
+	display: flex;
+	margin: auto;
+}
+.subscription__input {
+	width: 422px;
+
+	border: 1px solid #d7dadd;
+	transition: outline 250ms linear;
+
+	border-radius: 4px;
+	padding: 13px 16px;
+}
+.subscription__input::placeholder {
+	font-size: 16px;
+	line-height: 1.6;
+
+	color: #9a9ca5;
+}
+.subscription__input:focus {
+	outline: none;
+	border: 1px solid #000;
+	transition: border 250ms linear;
+
+	color: var(--main-text-color);
+}
+.btn--subscription {
+	margin-left: 24px;
+	width: 154px;
+}
+.subscription__background-img-1 {
+	position: absolute;
+	left: -354px;
+	bottom: -180px;
+}
+.subscription__background-img-2 {
+	position: absolute;
+	right: -354px;
+	bottom: -180px;
+}
 
 /* ------------------------FOOTER------------------------ */
 
