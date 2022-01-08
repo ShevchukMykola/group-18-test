@@ -1099,15 +1099,38 @@ span {
     text-align: center;
 }
 
-.subscribe__form {
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 42px;
+}
+
+label {
+    display: flex;
     width: 600px;
+    height: 52px;
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+    width: 422px;
     height: 52px;
 }
 
 .subscribe__img {
     display: flex;
     justify-content: space-between;
-    max-width: 1920px;
+    margin: auto;
+    margin-top: 156px;
+    margin-left: -354px;
+}
+
+.img-hands+.img-hands {
+    margin-left: 1230px;
 }
 
 
