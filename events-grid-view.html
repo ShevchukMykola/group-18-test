@@ -21,22 +21,40 @@
     <!-- == Хедер == -->
     <header class="container">
 
-        <nav>
-            <a name="top"></a>
-            <a href="x">
-                <img src="./pic/Vector-logo.svg" alt="">
-                <img src="./pic/Vector-logo-x.svg" alt="">
+        <nav class="nav">
+
+
+            <a class="link logo" href="./events-grid-view.html">
+                <svg class="logo-icon" width="130" height="22">
+                    <use href="./pic/icon.svg#icon-logo"></use>
+                </svg>
             </a>
-            <ul>
-                <li>Contacts</li>
-                <li>Blog</li>
-                <li>Events</li>
-                <li>Courses</li>
-                <li>Courses</li>
+
+            <ul class="nav-bar">
+                <li class="nav-item">
+                    <a href="" class="link nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="link nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="link nav-link current">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="link nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="link nav-link">Contacts</a>
+                </li>
             </ul>
-            <ul>
-                <li>Get consultation</li>
-                <li>Log in / Register</li>
+
+            <ul class="account">
+                <li class="account-btn"> <a class="link acc-link" href=""> Get consultation</a></li>
+                <li class="login-form"> <a class="link acc-link-login" href="">
+                        <svg class="account-icon" width="20" height="20">
+                            <use href="./pic/icon.svg#icon-person"></use>
+                        </svg>
+                        Log in</a> / <a class="link acc-link-reg" href="">Register</a></li>
             </ul>
 
         </nav>
@@ -45,199 +63,356 @@
 
     <main class="container">
 
+        <!--  панель інструментів -->
+
+
         <!-- == Івенти == -->
-        <h2>Our events</h2>
-        <h3>Lectures, workshops & master-classes</h3>
+        <div class="event-title">
+            <h6 class="sub-title">Our events</h6>
+            <h1 class="general-title">Lectures, workshops & master-classes</h1>
+        </div>
 
         <!-- === панель інструментів === -->
 
 
         <!-- === заходи ===-->
 
-        <section class="event-list">
-            <ul>
+        <section>
+            <ul class="event-list">
                 <li class="event-item">
                     <article>
-                        <time datetime="08-05 T11:00-14:00">05 Aug 11:00 – 14:00 </time>
-                        <h3 class="event-title">Formation of the organizational structure of the company in the face of
-                            uncertainty.</h3>
-                        <p class="category">Onine master-class</p>
 
-                        <button type="button">View more</button>
+                        <div class="event-blok">
+                            <time class="time" datetime="08-05 T11:00-14:00"><span class="mounts"> 05
+                                    Aug</span><br>11:00 – 14:00
+                            </time>
+                            <h3 class="list-title">Formation of the organizational structure of the company in the
+                                face
+                                of
+                                uncertainty.</h3>
+
+                            <p class="category">Onine master-class</p>
+                        </div>
+                        <a href="x" class="link event-link">View more</a>
                     </article>
                 </li>
 
                 <li class="event-item">
                     <article>
-                        <time datetime="07-24 T11:00-12:30">24 Jul 11:00 – 12:30</time>
-                        <h3 class="event-title">Building a customer service department. Best Practices.</h3>
-                        <p class="category">Onine lecture</p>
 
-                        <button type="button">View more</button>
+                        <div class="event-blok">
+                            <time class="time" datetime="07-24 T11:00-12:30"><span class="mounts">24 Jul</span><br>11:00
+                                –
+                                12:30
+                            </time>
+                            <h3 class="list-title">Building a customer service department. Best Practices.</h3>
+
+                            <p class="category">Onine lecture</p>
+                        </div>
+                        <a href="x" class="link event-link">View more</a>
                     </article>
                 </li>
 
                 <li class="event-item">
                     <article>
-                        <time datetime="07-16 T10:00-13:00">16 Jul 10:00 – 13:00</time>
-                        <h3 class="event-title">How to apply methods of speculative design in practice. Worldbuilding
-                            prototyping.</h3>
-                        <p class="category">Onine workshop</p>
 
-                        <button type="button">View more</button>
+                        <div class="event-blok">
+                            <time class="time" datetime="07-16 T10:00-13:00"><span class="mounts">16 Jul</span><br>10:00
+                                –
+                                13:00
+                            </time>
+                            <h3 class="list-title">How to apply methods of speculative design in practice.
+                                Worldbuilding
+                                prototyping.</h3>
+                            <p class="category">Onine workshop</p>
+                        </div>
+                        <a href="x" class="link event-link">View more</a>
                     </article>
                 </li>
 
                 <li class="event-item">
                     <article>
-                        <time datetime="07-05 T09:00-14:00">10 Jul 9:00 – 14:00</time>
-                        <h3 class="event-title">Find and evaluate: search and assessment tools for candidates.</h3>
-                        <p class="category">Onine workshop</p>
 
-                        <button type="button">View more</button>
+                        <div class="event-blok">
+                            <time class="time" datetime="07-05 T09:00-14:00"><span class="mounts">10 Jul</span><br> 9:00
+                                –
+                                14:00
+                            </time>
+                            <h3 class="list-title">Find and evaluate: search and assessment tools for candidates.</h3>
+                            <p class="category">Onine workshop</p>
+
+                        </div><a href="x" class="link event-link">View more</a>
                     </article>
                 </li>
 
                 <li class="event-item">
                     <article>
-                        <time datetime="06-27 T15:00-19:00">27 Jun 15:00 – 19:00</time>
-                        <h3 class="event-title">Connection to Microsoft Excel and Google Sheets, Data Visualization in
-                            Power BI</h3>
-                        <p class="category">Onine master-class</p>
 
-                        <button type="button">View more</button>
+                        <div class="event-blok">
+                            <time class="time" datetime="06-27 T15:00-19:00"><span class="mounts">27 Jun</span><br>
+                                15:00 –
+                                19:00
+                            </time>
+                            <h3 class="list-title">Connection to Microsoft Excel and Google Sheets, Data Visualization
+                                in
+                                Power BI</h3>
+                            <p class="category">Onine master-class</p>
+                        </div>
+                        <a href="x" class="link event-link">View more</a>
                     </article>
                 </li>
 
                 <li class="event-item">
                     <article>
-                        <time datetime="06-15 T11:00-12:00">15 Jun 11:00 – 12:00</time>
-                        <h3 class="event-title">Marketing or growth hacking: main differences and what business needs
-                        </h3>
-                        <p class="category">Onine lecture</p>
 
-                        <button type="button">View more</button>
+                        <div class="event-blok">
+                            <time class="time" datetime="06-15 T11:00-12:00"><span class="mounts">15 Jun</span><br>
+                                11:00 –
+                                12:00
+                            </time>
+                            <h3 class="list-title">Marketing or growth hacking: main differences and what business
+                                needs
+                            </h3>
+                            <p class="category">Onine lecture</p>
+                        </div>
+                        <a href="x" class="link event-link">View more</a>
                     </article>
                 </li>
 
                 <li class="event-item">
                     <article>
-                        <time datetime="07-02 T11:00-13:00">02 Jul 11:00 – 13:00</time>
-                        <h3 class="event-title">How to brief a client and present your design to approve it from the
-                            first show.</h3>
-                        <p class="category">Onine lecture</p>
 
-                        <button type="button">View more</button>
+                        <div class="event-blok">
+                            <time class="time" datetime="07-02 T11:00-13:00"><span class="mounts">02 Jul</span><br>
+                                11:00 –
+                                13:00
+                            </time>
+                            <h3 class="list-title">How to brief a client and present your design to approve it from the
+                                first show.</h3>
+                            <p class="category">Onine lecture</p>
+                        </div>
+                        <a href="x" class="link event-link">View more</a>
                     </article>
                 </li>
 
                 <li class="event-item">
                     <article>
-                        <time datetime="05-29 T11:00-12:00">29 May 11:00 – 12:00</time>
-                        <h3 class="event-title">Who is a project manager and do I want to be PM?</h3>
-                        <p class="category">Onine lecture</p>
 
-                        <button type="button">View more</button>
+                        <div class="event-blok">
+                            <time class="time" datetime="05-29 T11:00-12:00"><span class="mounts">29 May</span><br>
+                                11:00 –
+                                12:00
+                            </time>
+                            <h3 class="list-title">Who is a project manager and do I want to be PM?</h3>
+                            <p class="category">Onine lecture</p>
+
+                        </div><a href="x" class="link event-link">View more</a>
                     </article>
                 </li>
 
                 <li class="event-item">
                     <article>
-                        <time datetime="05-18 T10:00-12:00">18 May 10:00 – 12:00</time>
-                        <h3 class="event-title">The company's business page as an additional tool to support the
-                            announcement of vacancies.</h3>
-                        <p class="category">Onine lecture</p>
 
-                        <button type="button">View more</button>
+                        <div class="event-blok">
+                            <time class="time" datetime="05-18 T10:00-12:00"><span class="mounts">18 May</span><br>
+                                10:00 –
+                                12:00
+                            </time>
+                            <h3 class="list-title">The company's business page as an additional tool to support the
+                                announcement of vacancies.</h3>
+                            <p class="category">Onine lecture</p>
+                        </div>
+                        <a href="x" class="link event-link">View more</a>
                     </article>
                 </li>
             </ul>
         </section>
 
         <!-- ==== сторрінки ==== -->
-        <ul class="pages">
-            <li><a href="x">1</a></li>
-            <li><a href="x">2</a></li>
-            <li><a href="x">3</a></li>
-            <li><a href="x">4</a></li>
-            <li><a href="x">&#10140;</a></li>
-        </ul>
-
+        <div class="catalog">
+            <ul class="pages">
+                <li><a class="link page-link" href="x">1</a></li>
+                <li><a class="link page-link" href="x">2</a></li>
+                <li><a class="link page-link" href="x">3</a></li>
+                <li><a class="link page-link" href="x">4</a></li>
+                <li><a class="link page-link next-page" href="x">
+                        <svg class="next-page-icon" width="24" height="24">
+                            <use href="./pic/icon.svg#icon-right-g"></use>
+                        </svg>
+                    </a></li>
+            </ul>
+        </div>
     </main>
 
-    <section class="container">
-        <!-- == Підписка == -->
+    <!-- == Підписка == -->
+    <section class="subscribe-bg">
 
-        <p>Don’t miss anything</p>
-        <em>Subscribe to the Createx School announcements</em>
-        <input type="email" placeholder="Your working email">
-        <button type="button">Subscribe</button>
+        <div class="subscribe-titles">
+            <h6 class="sub-title">Don’t miss anything</h6>
+            <h2 class="general-title">Subscribe to the Createx School announcements</h2>
+        </div>
+
+        <div class="box">
+            <div class="subscribe-pic-up"><img class="subscribe-img-top position" src="./pic/illustration.png" alt="">
+            </div>
+
+            <div class="subscribe-form">
+                <input class="subscribe-input" type="email" placeholder="Your working email">
+                <a class="link subscribe-link" href="">Subscribe</a>
+            </div>
+
+            <div class="subscribe-pic-down">
+                <img class="subscribe-img-bottom position" src="./pic/illustration.png" alt="">
+            </div>
+        </div>
+
+
+    </section>
+
     </section>
 
     <!-- == Підвал == -->
     <footer class="container">
 
-        <!-- === про нас === -->
-        <a href="x">
-            <img src="./pic/Footer-logo.svg" alt="">
-            <img src="./pic/Vector-logo-x.svg" alt="">
-        </a>
-        <p>Createx Online School is a leader in online studying. We have lots of courses and programs from the main
-            market experts.
-            We provide relevant approaches to online learning, internships and employment in the largest companies
-            in the country.</p>
+        <section class="footer">
 
-        <h2 hidden>socials</h2>
+            <div class="about">
+                <a class="link footer-logo" href="./events-grid-view.html">
+                    <svg class="logo-icon" width="130" height="22">
+                        <use href="./pic/icon.svg#icon-logo-footer"></use>
+                    </svg>
+                </a>
 
-        <ul>
-            <li><a href=""><img src="./pic/Facebook.svg" alt=""></a></li>
-            <li><a href=""><img src="./pic/Twitter.svg" alt=""></a></li>
-            <li><a href=""><img src="./pic/YouTube.svg" alt=""></a></li>
-            <li><a href=""><img src="./pic/telegram.svg" alt=""></a></li>
-            <li><a href=""><img src="./pic/Instagram.svg" alt=""></a></li>
-            <li><a href=""><img src="./pic/Linked-In.svg" alt=""></a></li>
-        </ul>
+                <p class="footer-text">Createx Online School is a leader in online studying. We have lots of courses and
+                    programs from the main
+                    market experts.
+                    We provide relevant approaches to online learning, internships and employment in the largest
+                    companies
+                    in the country.</p>
 
-        <h3>SITE MAP</h3>
-        <ul>
-            <li><a href="x">About Us</a></li>
-            <li><a href="x">Courses</a></li>
-            <li><a href="x">Events</a></li>
-            <li><a href="x">Blog</a></li>
-            <li><a href="x">Contacts</a></li>
-        </ul>
+                <h2 hidden>socials</h2>
 
-        <h3>COURSES</h3>
-        <ul>
-            <li><a href="x">Marketing</a></li>
-            <li><a href="x">Management</a></li>
-            <li><a href="x">HR & Recruting</a></li>
-            <li><a href="x">Design</a></li>
-            <li><a href="x">Development</a></li>
-        </ul>
+                <div class="socials">
+                    <ul class="socials-list">
+                        <li class="socials-item">
+                            <a href="" class="socials-link"><svg class="logo-icon" width="24" height="24">
+                                    <use href="./pic/icon.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials-item">
+                            <a href="" class="socials-link"><svg class=" logo-icon" width="24" height="24">
+                                    <use href="./pic/icon.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials-item">
+                            <a href="" class="socials-link"><svg class=" logo-icon" width="24" height="24">
+                                    <use href="./pic/icon.svg#icon-telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials-item">
+                            <a href="" class="socials-link"><svg class=" logo-icon" width="24" height="24">
+                                    <use href="./pic/icon.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials-item">
+                            <a href="" class="socials-link"><svg class=" logo-icon" width="24" height="24">
+                                    <use href="./pic/icon.svg#icon-linked-in"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials-item">
+                            <a href="" class="socials-link"><svg class=" logo-icon" width="24" height="24">
+                                    <use href="./pic/icon.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-        <h3>CONTACT US</h3>
-        <ul>
-            <li><a href="tel:(405) 555-0128" class="link">(405) 555-0128</a></li>
-            <li><a href="hello@createx.com" class="link">hello@createx.com</a></li>
-        </ul>
+            <div class="site-map">
+                <h3 class="site-map-title">site map</h3>
+                <ul class="site-map-list">
+                    <li class="site-map-item"><a class="link site-map-link" href="x">About Us</a></li>
+                    <li class="site-map-item"><a class="link site-map-link" href="x">Courses</a></li>
+                    <li class="site-map-item"><a class="link site-map-link" href="x">Events</a></li>
+                    <li class="site-map-item"><a class="link site-map-link" href="x">Blog</a></li>
+                    <li class="site-map-item"><a class="link site-map-link" href="x">Contacts</a></li>
+                </ul>
+            </div>
 
-        <h3>SIGN UP TO OUR NEWSLETTER</h3>
+            <div class="courses">
+                <h3 class="courses-title">courses</h3>
+                <ul class="courses-list">
+                    <li class="courses-item">
+                        <a class="courses-link link" href="x">Marketing</a>
+                    </li>
+                    <li class="courses-item">
+                        <a class="courses-link link" href="x">Management</a>
+                    </li>
+                    <li class="courses-item">
+                        <a class="courses-link link" href="x">HR & Recruting</a>
+                    </li>
+                    <li class="courses-item">
+                        <a class="courses-link link" href="x">Design</a>
+                    </li>
+                    <li class="courses-item">
+                        <a class="courses-link link" href="x">Development</a>
+                    </li>
+                </ul>
+            </div>
 
-        <input type="email" placeholder="Email address                    &#10140;">
-        <p>*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
+            <div class="contact-us">
+                <h3 class="contact-us-title">contact us</h3>
+                <ul class="contact-us-list">
+                    <li class="contact-us-item">
+                        <svg class="contact-us-pic" width="16" height="16">
+                            <use href="./pic/icon.svg#icon-iphone"></use>
+                        </svg>
+                        <a href="tel:(405) 555-0128" class="link contact-us-link">(405)
+                            555-0128</a>
+                    </li>
+                    <li class="contact-us-item">
+                        <svg class="contact-us-pic" width="16" height="16">
+                            <use href="./pic/icon.svg#icon-mail"></use>
+                        </svg><a href="mailto:hello@createx.com" class="link contact-us-link">hello@createx.com</a>
+                    </li>
+                </ul>
+            </div>
 
+            <div class="newsletter">
+                <h3 class="newslatter-title">sign up to our newsletter</h3>
 
-        <section class="copyright">
-            <p>&copy;All rights reserved.Made with <img src="./pic/Vector (Stroke).svg" alt=""> by Createx Studio </p>
+                <input class="newslatter-form" type="email"
+                    placeholder="Email address                                                  &#10140;">
+                <p class="newslatter-text">*Subscribe to our newsletter to receive communications and early updates from
+                    Createx SEO Agency.</p>
 
-
-            <a href="#top">GO TO TOP</a>
-            <!-- <p id="top"></p> -->
-
+            </div>
         </section>
 
+
     </footer>
+
+    <section class=" copyright">
+
+        <div class="container copyright-container">
+            <p class="copyright-text">&copy;All rights reserved.Made with
+                <svg class="stroke" width="16" height="16">
+                    <use href="./pic/icon.svg#icon-vector-stroke"></use>
+                </svg> by Createx Studio
+            </p>
+
+
+            <a class="link anchor" href="#top">GO TO TOP</a>
+            <!-- <p id="top"></p> -->
+        </div>
+
+    </section>
 </body>
 
 </html>
