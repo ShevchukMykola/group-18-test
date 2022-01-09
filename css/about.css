@@ -249,7 +249,7 @@ img {
 .container--about {
 	flex-direction: column;
 
-	background-image: url(../images/illustration-top.svg);
+	background-image: url(../images/background/illustration-top.svg);
 	background-repeat: no-repeat;
 	background-position: right 15px bottom 0px;
 }
@@ -276,6 +276,11 @@ img {
 
 /* -----------------------STATISTICS------------------------ */
 
+.stat {
+	background-image: url(../images/background/shapes-1.svg), url(../images/background/dots-1.svg);
+	background-repeat: no-repeat;
+	background-position: bottom 56px right calc(50% - 740px), bottom 137px left calc(50% - 640px);
+}
 .container--stat {
 	position: relative;
 	flex-direction: column;
@@ -320,7 +325,7 @@ img {
 .stat_background {
 	width: 810px;
 	height: 500px;
-	background-image: url(../images/stat-img.jpg);
+	background-image: url(../images/background/stat-img.jpg);
 	background-repeat: no-repeat;
 }
 .stat__list {
@@ -420,9 +425,15 @@ img {
 
 /* ----------------------DIRECTIONS---------------------- */
 
+.directions {
+	background-image: url(../images/background/circles-1.svg);
+	background-repeat: no-repeat;
+	background-position: bottom -142px right calc(50% - 885px);
+}
 .container--directions {
 	flex-direction: column;
 }
+
 .third-header--directions,
 .second-header--directions {
 	text-align: center;
@@ -536,11 +547,17 @@ img {
 
 /* -------------------STIDYING PROCESS------------------ */
 
+.studying-process {
+	background-image: url(../images/background/circles-1.svg), url(../images/background/shapes-2.svg);
+	background-repeat: no-repeat;
+	background-position: top -100px right calc(50% - 885px), bottom 0 left calc(50% - 788px);
+}
+
 .container__studying-process {
 	position: relative;
 	flex-direction: column;
 
-	background-image: url(../images/illustration-middle.svg);
+	background-image: url(../images/background/illustration-middle.svg);
 	background-repeat: no-repeat;
 	background-position: right 15px bottom 0px;
 }
@@ -723,6 +740,12 @@ img {
 
 .section--testimonials {
 	background-color: #f4f5f7;
+	background-image: url(../images/background/circles-3.svg), url(../images/background/circles-2.svg),
+		url(../images/background/shapes-3.svg), url(../images/background/dots-2.svg);
+	background-repeat: no-repeat;
+	background-position: bottom 0 right calc(50% - 890px), top 75px left calc(50% - 810px),
+		top 134px right calc(50% - 266px), top 554px left calc(50% - 545px);
+
 	padding-top: 100px;
 }
 .container--testimonials {
@@ -872,6 +895,9 @@ img {
 
 .section--jobes {
 	background-color: #f4f5f7;
+	background-image: url(../images/background/shapes-4.svg);
+	background-repeat: no-repeat;
+	background-position: top 0 left calc(50% - 810px);
 }
 
 .container--jobes {
@@ -1042,7 +1068,11 @@ img {
 /* ---------------------SUBSCRIPTION--------------------- */
 
 .section--subscription {
-	background: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+	background-image: url(../images/background/illustration-bottom.svg), url(../images/background/illustration-bottom.svg),
+		linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+	background-repeat: no-repeat;
+	background-position: bottom 0 left calc(50% - 777px), bottom 0 right calc(50% - 777px), 0 0;
+
 	padding-top: 120px;
 }
 .container--subscription {
