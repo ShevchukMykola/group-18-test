@@ -59,8 +59,14 @@ a {
 /* --------------------------------------HEADER------------------------------------- */
 
 .section--header {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+
 	padding-top: 20px;
 	padding-bottom: 80px;
+
+	background-color: #fff;
 }
 
 /* ------------------------header navigation------------------------ */

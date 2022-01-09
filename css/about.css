@@ -142,8 +142,14 @@ img {
 /* --------------------------------------HEADER------------------------------------- */
 
 .section--header {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+
 	padding-top: 20px;
 	padding-bottom: 80px;
+
+	background-color: #fff;
 }
 
 /* ------------------------header navigation------------------------ */
@@ -352,23 +358,6 @@ img {
 	line-height: 1.5;
 
 	margin-left: 16px;
-}
-.icon-dots-1 {
-	position: absolute;
-	bottom: -93px;
-	left: -90px;
-}
-
-.dots-1 {
-	position: absolute;
-	left: -75px;
-	bottom: -43px;
-	z-index: -1;
-}
-.shapes-1 {
-	position: absolute;
-	right: -120px;
-	bottom: -83px;
 }
 
 /* ------------------------VALUES------------------------ */
@@ -617,17 +606,6 @@ img {
 	color: var(--second-text-color);
 }
 
-.circles-1 {
-	position: absolute;
-	right: -203px;
-	top: -88px;
-}
-.shapes-2 {
-	position: absolute;
-	left: -150px;
-	bottom: -180px;
-}
-
 /* -------------------------TEAM------------------------- */
 
 .container--team {
@@ -864,26 +842,7 @@ img {
 .testimonials__slider-labels-item:not(:first-child) {
 	margin-left: 12px;
 }
-.circles-2 {
-	position: absolute;
-	left: -155px;
-	top: -25px;
-}
-.shapes-3 {
-	position: absolute;
-	left: 838px;
-	top: 34px;
-}
-.circles-3 {
-	position: absolute;
-	right: -330px;
-	bottom: -170px;
-}
-.dots-2 {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-}
+
 /* .testimonials__content
 	[value="eleanor"]:checked
 	~ .testimonials__list
@@ -928,12 +887,6 @@ img {
 }
 .jobes__link:hover .jobes__icon {
 	filter: hue-rotate(143deg) saturate(100);
-}
-
-.shapes-4 {
-	position: absolute;
-	left: -165px;
-	top: 10px;
 }
 
 /* -------------------------BLOG------------------------- */
@@ -1112,16 +1065,6 @@ img {
 .btn--subscription {
 	margin-left: 24px;
 	width: 154px;
-}
-.subscription__background-img-1 {
-	position: absolute;
-	left: -354px;
-	bottom: -180px;
-}
-.subscription__background-img-2 {
-	position: absolute;
-	right: -354px;
-	bottom: -180px;
 }
 
 /* ------------------------FOOTER------------------------ */
