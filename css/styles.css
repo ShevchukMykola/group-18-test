@@ -352,6 +352,14 @@ h6 {
 
 /* ========== підписка ============ */
 
+.background {
+  display: flex;
+  max-width: 1920px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .subscribe-bg {
   display: flex;
   max-width: 1920px;
