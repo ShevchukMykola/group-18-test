@@ -53,10 +53,10 @@ p {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.bg {
+.bg-box {
   position: relative;
 }
-.bg::before {
+.bg-box::before {
   content: "";
   position: absolute;
   background-image: linear-gradient(
@@ -71,6 +71,24 @@ p {
   bottom: 0;
   opacity: 0.2;
 }
+.bg {
+  position: relative;
+}
+/* .bg::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(
+    55.95deg,
+    rgba(255, 63, 58, 1) 0%,
+    rgba(247, 94, 5, 1) 100%
+  );
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+} */
 .hero-type {
   color: var(--accent-color);
   align-items: center;
@@ -274,7 +292,7 @@ p {
   align-items: center;
   color: var(--numerals-color-section4);
 }
-.sect4-name:hover {
+.sect4-test:hover .sect4-name {
   color: var(--accent-color);
 }
 
@@ -304,23 +322,13 @@ p {
 
   color: var(--article-name-color);
 }
-
-.join-section {
-  background-color: violet;
-  background-image: linear-gradient
-    (var(--article-name-color), var(--input-text-color));
-  background-size: cover;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  padding: 48px 60px;
+.bg-gradient {
+  position: relative;
 }
-
-/* .join-section::before {
+.bg-gradient::before {
   content: "";
   position: absolute;
+  display: inline-block;
   background-image: linear-gradient(
     55.95deg,
     rgba(255, 63, 58, 1) 0%,
@@ -332,14 +340,18 @@ p {
   right: 0;
   bottom: 0;
   opacity: 0.2;
-} */
+}
+.join-section {
+  position: relative;
+  padding: 48px 60px;
+}
 
 input {
   padding: 8px;
   font-family: inherit;
   font-size: 14px;
   line-height: 1.5;
-  color: var(--white-color);
+  color: var(--article-name-color);
 }
 
 label {
