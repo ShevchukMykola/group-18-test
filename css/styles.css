@@ -912,6 +912,7 @@ a {
     border-color: var(--color-active);
     color: var(--color-active);
     background-color: #ffffff;
+    cursor: pointer;
 }
 
 .event-online-list .event-online-item+.event-online-item {
