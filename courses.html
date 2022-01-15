@@ -59,13 +59,15 @@
             </svg>
           </li>
           <li class="header__authorization-item">
-            <a class="header__authorization-sign-in" href="">Log in&nbsp</a>
+            <a class="header__authorization-sign-in" href=""
+              >Log in / Register</a
+            >
           </li>
           <li class="header__authorization-item">
-            <span class="header__authorization-slash">&nbsp/&nbsp</span>
+            <span class="header__authorization-slash"></span>
           </li>
           <li class="header__authorization-item">
-            <a class="header__authorization-sign-up" href="">&nbspRegister</a>
+            <a class="header__authorization-sign-up" href=""></a>
           </li>
         </ul>
       </div>
@@ -128,8 +130,9 @@
               <div class="card-content">
                 <p class="department department__marketing">Marketing</p>
                 <p class="position">The Ultimate Google Ads Training Course</p>
-                <p class="name">
-                  <span class="name__salary">$100</span> Jerome Bell
+                <p class="staff">
+                  <span class="staff-salary">$100</span>
+                  <span class="staff-name">Jerome Bell</span>
                 </p>
               </div>
             </li>
@@ -138,8 +141,9 @@
               <div class="card-content">
                 <p class="department department__managment">Management</p>
                 <p class="position">Prduct Management Fundamentals</p>
-                <p class="name">
-                  <span class="name__salary">$480</span>by Marvin McKinney
+                <p class="staff">
+                  <span class="staff-salary">$480</span>
+                  <span class="staff-name">by Marvin McKinney</span>
                 </p>
               </div>
             </li>
@@ -151,8 +155,9 @@
               <div class="card-content">
                 <p class="department department__recruting">HR & Recruting</p>
                 <p class="position">HR Management and Analytics</p>
-                <p class="name">
-                  <span class="name__salary">$200</span>by Leslie Alexander Li
+                <p class="staff">
+                  <span class="staff-salary">$200</span>
+                  <span class="staff-name">by Leslie Alexander Li</span>
                 </p>
               </div>
             </li>
@@ -161,8 +166,9 @@
               <div class="card-content">
                 <p class="department department__marketing">Marketing</p>
                 <p class="position">Brand Management & PR Communications</p>
-                <p class="name">
-                  <span class="name__salary">$530</span>by Kristin Watson
+                <p class="staff">
+                  <span class="staff-salary">$530</span>
+                  <span class="staff-name">by Kristin Watson</span>
                 </p>
               </div>
             </li>
@@ -171,8 +177,9 @@
               <div class="card-content">
                 <p class="department department__design">Design</p>
                 <p class="position">Graphic Design Basic</p>
-                <p class="name">
-                  <span class="name__salary">$500</span>by Guy Hawkins
+                <p class="staff">
+                  <span class="staff-salary">$500</span>
+                  <span class="staff-name">by Guy Hawkins</span>
                 </p>
               </div>
             </li>
@@ -181,8 +188,9 @@
               <div class="card-content">
                 <p class="department department__managment">Management</p>
                 <p class="position">Business Development Management</p>
-                <p class="name">
-                  <span class="name__salary">$400</span>by Dianne Russell
+                <p class="staff">
+                  <span class="staff-salary">$400</span>
+                  <span class="staff-name">by Dianne Russell</span>
                 </p>
               </div>
             </li>
@@ -191,8 +199,9 @@
               <div class="card-content">
                 <p class="department department__development">Development</p>
                 <p class="position">Highload Software Architecture</p>
-                <p class="name">
-                  <span class="name__salary">$600</span>by Brooklyn Simmons
+                <p class="staff">
+                  <span class="staff-salary">$600</span>
+                  <span class="staff-name">by Brooklyn Simmons</span>
                 </p>
               </div>
             </li>
@@ -203,8 +212,9 @@
                 <p class="position">
                   Human Resources – Selection and Recruitment
                 </p>
-                <p class="name">
-                  <span class="name__salary">$150</span>by Kathryn Murphy
+                <p class="staff">
+                  <span class="staff-salary">$150</span>
+                  <span class="staff-name">by Kathryn Murphy</span>
                 </p>
               </div>
             </li>
@@ -213,8 +223,9 @@
               <div class="card-content">
                 <p class="department department__design">Design</p>
                 <p class="position">User Experience. Human-centered Design</p>
-                <p class="name">
-                  <span class="name__salary">$240</span>by Cody Fisher
+                <p class="staff">
+                  <span class="staff-salary">$240</span>
+                  <span class="staff-name">by Cody Fisher</span>
                 </p>
               </div>
             </li>
@@ -249,6 +260,8 @@
                 </p>
                 <div class="user-profile">
                   <img
+                    width="72px"
+                    height="72px"
                     src="./images/eleonor-pena.jpg"
                     alt="Photo Eleonor Pena"
                   />
@@ -341,7 +354,7 @@
           </div>
         </div>
       </section>
-      <footer class="footer section section--footer">
+      <footer class="footer section--footer">
         <div class="container container--footer">
           <div class="footer__main-content">
             <div class="footer__first-column">
@@ -467,6 +480,11 @@
                 type="text"
                 placeholder="Email address"
               />
+              <button class="btn-right" type="button">
+                <svg class="btn-right-arrow">
+                  <use href="./images/icons.svg#right"></use>
+                </svg>
+              </button>
               <p class="footer__input-comment">
                 *Subscribe to our newsletter to receive communications and early
                 updates from Createx SEO Agency.
