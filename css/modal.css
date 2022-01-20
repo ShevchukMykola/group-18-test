@@ -1,0 +1,253 @@
+.backdrop {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0, 0, 0, 0.2);
+
+	transition: opacity 250ms linear;
+
+	overflow-y: scroll;
+}
+.backdrop.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.modal {
+	width: 486px;
+
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translate(-50%);
+
+	border-radius: 4px;
+	padding: 48px;
+	background-color: #fff;
+}
+.modal--sign-in {
+	height: 653px;
+}
+.modal--sign-up {
+	height: 822px;
+}
+.modal::after {
+	display: block;
+	content: "";
+	position: absolute;
+	bottom: 135px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #e5e8ed;
+}
+.modal__colse-btn {
+	position: absolute;
+	top: 24px;
+	right: 24px;
+
+	border: none;
+	background-color: #fff;
+	color: #787a80;
+	transition: color 250ms linear;
+}
+.modal__colse-btn-icon {
+	fill: currentColor;
+}
+.modal__colse-btn:hover,
+.modal__colse-btn:focus {
+	color: var(--accent-color);
+	outline: none;
+	cursor: pointer;
+}
+
+.modal__title {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 150%;
+
+	display: block;
+	text-align: center;
+	margin-bottom: 24px;
+}
+.modal__text {
+	font-size: 14px;
+	line-height: 150%;
+
+	color: #787a80;
+
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+.modal__input-label {
+	position: relative;
+	font-size: 14px;
+	line-height: 150%;
+
+	color: var(--second-text-color);
+
+	display: block;
+	margin-bottom: 8px;
+}
+.modal__input {
+	display: block;
+
+	width: 100%;
+	height: 44px;
+	border: 1px solid #d7dadd;
+	border-radius: 4px;
+	padding: 11px 16px;
+
+	margin-bottom: 20px;
+
+	transition: border-color 250ms linear;
+}
+.modal__input::placeholder {
+	font-size: 14px;
+	line-height: 150%;
+
+	color: #9a9ca5;
+}
+.modal__input:focus {
+	outline: none;
+	border-color: var(--accent-color);
+}
+.modal__show-pass-btn,
+.modal__hide-pass-btn {
+	position: absolute;
+	top: 34px;
+	right: 10px;
+
+	border: none;
+	background-color: #fff;
+}
+.modal__show-pass-btn.is-hidden,
+.modal__hide-pass-btn.is-hidden {
+	display: none;
+}
+.modal__show-pass-btn:hover,
+.modal__hide-pass-btn:hover {
+	cursor: pointer;
+}
+
+.modal__checkbox-container {
+	display: flex;
+	margin-bottom: 24px;
+}
+.modal__checkbox {
+	position: absolute;
+	appearance: none;
+}
+.modal__checkbox-icon {
+	width: 16px;
+	height: 16px;
+	border: 1px solid #d7dadd;
+	border-radius: 4px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition: background-color 250ms linear, border-color 250ms linear;
+}
+.modal__checkbox-icon:hover {
+	cursor: pointer;
+}
+.modal__checkbox:checked + .modal__checkbox-label .modal__checkbox-icon {
+	background-color: var(--accent-color);
+	border-color: var(--accent-color);
+}
+.modal__checkbox:focus + .modal__checkbox-label .modal__checkbox-icon {
+	border-color: var(--accent-color);
+}
+.modal__checkbox-text {
+	font-size: 14px;
+	line-height: 150%;
+	color: var(--second-text-color);
+
+	margin-left: 12px;
+}
+.modal__forgot-pass-link {
+	font-size: 14px;
+	line-height: 1;
+	color: var(--accent-color);
+	display: block;
+	align-self: center;
+
+	margin-left: auto;
+
+	outline: 1px solid #fff;
+	outline-offset: 3px;
+	border-radius: 3px;
+	transition: outline-color 250ms linear;
+}
+.modal__forgot-pass-link:focus {
+	outline-color: var(--accent-color);
+}
+
+.modal__sign-in-btn {
+	width: 100%;
+	margin-bottom: 24px;
+}
+
+.modal__sign-up-text {
+	font-size: 14px;
+	line-height: 150%;
+	color: var(--second-text-color);
+
+	margin-bottom: 48px;
+}
+.modal__sign-up-link {
+	font-size: 14px;
+	line-height: 1;
+	color: var(--accent-color);
+	display: inline-block;
+	align-self: center;
+
+	outline: 1px solid #fff;
+	outline-offset: 3px;
+	border: none;
+	border-radius: 3px;
+	background-color: #fff;
+	transition: outline-color 250ms linear;
+}
+.modal__sign-up-link:focus {
+	outline-color: var(--accent-color);
+}
+.modal__sign-up-link:hover {
+	cursor: pointer;
+}
+
+.modal__sm-list-title {
+	font-size: 14px;
+	line-height: 150%;
+	color: #787a80;
+
+	display: block;
+	text-align: center;
+
+	margin-bottom: 16px;
+}
+.modal__sm-list {
+	display: flex;
+	justify-content: center;
+}
+.modal__sm-item:not(:first-child) {
+	margin-left: 15px;
+}
+.modal__sm-icon {
+	fill: currentColor;
+}
+.modal__sm-link {
+	color: #787a80;
+	transition: color 250ms linear;
+}
+.modal__sm-link:hover,
+.modal__sm-link:focus {
+	color: var(--accent-color);
+	outline: none;
+}
