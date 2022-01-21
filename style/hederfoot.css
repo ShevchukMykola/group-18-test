@@ -175,7 +175,7 @@ img {
   justify-content: flex-end;
   align-items: center;
   padding: 0px;
-  margin-left: 225px;
+  margin-left: auto;
 }
 
 .header__registrationtion {
@@ -210,6 +210,11 @@ img {
   outline-offset: 2px;
   color: var(--second-text-color);
   transition: color 250ms linear;
+}
+
+.header__authorization-sign-in:hover,
+.header__authorization-sign-up:hover {
+  cursor: pointer;
 }
 
 /* -------------------------header hero------------------------- */
@@ -1104,7 +1109,7 @@ span {
   text-align: center;
 }
 
-form {
+.subscribe__form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1112,13 +1117,13 @@ form {
   margin-top: 42px;
 }
 
-label {
+.subscribe__label {
   display: flex;
   width: 600px;
   height: 52px;
 }
 
-input {
+.subscribe__input {
   display: flex;
   flex-direction: column;
   margin-right: 24px;
