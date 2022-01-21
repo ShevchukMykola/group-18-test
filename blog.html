@@ -1,478 +1,660 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/classblog.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/classblog.css" />
+    <link rel="stylesheet" href="./css/header-footer.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+  </head>
 
-<body>
-
-    <header class="header section section--header">
-        <div class="container container--header">
-            <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item">
-                        <a class="header__nav-link" href="./index.html">
-                            <svg class="header__logo-icon" width="130" height="22">
-                                <use href="./images/icons.svg#icon-logo"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a class="header__nav-link " href="./about.html">About Us</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a class="header__nav-link" href="./courses.html">Courses</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a class="header__nav-link" href="./events-grid-view.html">Events</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a class="header__nav-link header__nav-link--current" href="./blog.html">Blog</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a class="header__nav-link" href="./course.html">Contacts</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="btn btn--header" type="button">Get consultation</button>
-            <ul class="header__authorization">
-                <li class="header__authorization-item">
-                    <svg class="header__authorization-icon" width="20" height="20">
-                        <use class="header__authorization-icon" href="./images/icons.svg#icon-person"></use>
-                    </svg>
-                </li>
-                <li class="header__authorization-item">
-                    <button class="header__authorization-sign-in" href="">&nbspLog in&nbsp</button>
-                </li>
-                <li class="header__authorization-item">
-                    <span class="header__authorization-slash">&nbsp/&nbsp</span>
-                </li>
-                <li class="header__authorization-item">
-                    <a class="header__authorization-sign-up" href="">&nbspRegister&nbsp</a>
-                </li>
-            </ul>
-        </div>
+  <body>
+    <header class="header section--header">
+      <div class="container--header">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./index.html">
+                <svg class="header__logo-icon" width="130" height="22">
+                  <use href="./images/icons.svg#icon-logo"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">About Us</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./courses.html">Courses</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./events-grid-view.html">Events</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link header__nav-link--current" href="./blog.html">Blog</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./contacts.html">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn btn--header" type="button">Get consultation</button>
+        <ul class="header__authorization">
+          <li class="header__authorization-item">
+            <svg class="header__authorization-icon" width="20" height="20">
+              <use class="header__authorization-icon" href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </li>
+          <li class="header__authorization-item">
+            <button class="header__authorization-sign-in" type="button" data-sign-in-open>
+              &nbspLog in&nbsp
+            </button>
+          </li>
+          <li class="header__authorization-item">
+            <span class="header__authorization-slash">&nbsp/&nbsp</span>
+          </li>
+          <li class="header__authorization-item">
+            <button class="header__authorization-sign-up" type="button" data-sign-up-open>
+              &nbspRegister&nbsp
+            </button>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
+      <!--OUR BLOGS-->
+      <section class="section-blog">
+        <div class="container">
+          <h2 class="pre-title">Our blog</h2>
+          <h1 class="blog-title">Createx School Journal</h1>
+          <div class="grey-bgr"></div>
 
-        <!--OUR BLOGS-->
-        <section class="section-blog">
-            <div class="container">
-                <h2 class="pre-title">
-                    Our blog
-                </h2>
-                <h1 class="blog-title">Createx School Journal</h1>
-                <div class="grey-bgr">
+          <div class="toolbar-general">
+            <div class="toolbar-left">
+              <ul class="toolbar-list list">
+                <li class="list-left"><button type="button" class="btn-left">All</button></li>
+                <li class="list-left">
+                  <button type="button" class="btn-left">
+                    <svg class="list-left-icon" width="16" height="16">
+                      <use href="./images/symbol-defs.svg#icon-files"></use>
+                    </svg>
+                    Articles
+                  </button>
+                </li>
+                <li class="list-left">
+                  <button type="button" class="btn-left">
+                    <svg class="list-left-icon" width="16" height="16">
+                      <use href="./images/symbol-defs.svg#icon-play"></use>
+                    </svg>
+                    Videos
+                  </button>
+                </li>
+                <li class="list-left">
+                  <button type="button" class="btn-left">
+                    <svg class="list-left-icon" width="16" height="16">
+                      <use href="./images/symbol-defs.svg#icon-microfone"></use>
+                    </svg>
+                    Podcasts
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="toolbar-right">
+              <p class="text-category">Blog category</p>
+              <select class="theme-select" name="themes" id="">
+                <option class="theme-text" value="all themes">all themes</option>
+                <option class="theme-text" value="Design">Design</option>
+                <option class="theme-text" value="Development">Development</option>
+                <option class="theme-text" value="HR & Recruting">HR & Recruting</option>
+                <option class="theme-text" value="Management">Management</option>
+                <option class="theme-text" value="Marketing">Marketing</option>
+              </select>
+            </div>
+            <!-- <div> -->
 
-                </div>
-
-                <div class="toolbar-general">
-
-                    <div class="toolbar-left">
-                        <ul class="toolbar-list list">
-                            <li class="list-left"> <button type="button" class="btn-left">All</button>
-
-                            </li>
-                            <li class="list-left"> <button type="button" class="btn-left">
-                                    <svg class="list-left-icon" width="16" height="16">
-                                        <use href="./images/symbol-defs.svg#icon-files">
-                                        </use>
-                                    </svg>
-                                    Articles</button>
-
-                            </li>
-                            <li class="list-left"> <button type="button" class="btn-left">
-                                    <svg class="list-left-icon" width="16" height="16">
-                                        <use href="./images/symbol-defs.svg#icon-play">
-                                        </use>
-                                    </svg>
-                                    Videos</button> </li>
-                            <li class="list-left"> <button type="button" class="btn-left">
-                                    <svg class="list-left-icon" width="16" height="16">
-                                        <use href="./images/symbol-defs.svg#icon-microfone">
-                                        </use>
-                                    </svg>
-                                    Podcasts</button> </li>
-                        </ul>
-                    </div>
-                    <div class="toolbar-right">
-                        <p class="text-category">Blog category</p>
-                        <select class="theme-select" name="themes" id="">
-                            <option class="theme-text" value="all themes">all themes</option>
-                            <option class="theme-text" value="Design">Design</option>
-                            <option class="theme-text" value="Development">Development</option>
-                            <option class="theme-text" value="HR & Recruting">HR & Recruting</option>
-                            <option class="theme-text" value="Management">Management</option>
-                            <option class="theme-text" value="Marketing">Marketing</option>
-
-                        </select>
-                    </div>
-                    <!-- <div> -->
-
-                    <input class="toolbar-search" type="text" name="" id="" placeholder="Search blog...">
-                    <!-- <svg class="list-left-icon" width="16" height="16">
+            <input class="toolbar-search" type="text" name="" id="" placeholder="Search blog..." />
+            <!-- <svg class="list-left-icon" width="16" height="16">
     <use href="./images/symbol-defs.svg#icon-microfone">
     </use>
 </svg>
 </div> -->
+          </div>
+          <div class="article-list">
+            <ul class="article-blocks list">
+              <div class="line-first">
+                <article>
+                  <li class="general-article-list">
+                    <img
+                      class="no-gap"
+                      src="./images/face.jpg"
+                      alt="Photo of the face"
+                      width="390"
+                      height="300"
+                    />
 
-
-                </div>
-                <div class="article-list">
-                    <ul class="article-blocks list">
-
-                        <div class="line-first">
-                            <article>
-                                <li class="general-article-list">
-                                    <img class="no-gap" src="./images/face.jpg" alt="Photo of the face" width="390"
-                                        height="300">
-
-                                    <div>
-                                        <ul class="info-article-list list">
-                                            <li class="blog-theme">Marketing</li>
-                                            <li class="blog-theme-date">
-                                                <svg class="theme-icon" width="16" height="16">
-                                                    <use href="./images/symbol-defs.svg#icon-calendar">
-                                                    </use>
-                                                </svg>
-                                                September 4, 2020
-                                            </li>
-                                            <li class="blog-theme-time">
-                                                <svg class="theme-icon" width="16" height="16">
-                                                    <use href="./images/symbol-defs.svg#icon-clock">
-                                                    </use>
-                                                </svg>
-                                                36 min
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h3 class="blog-theme-title">What is traffic arbitrage and does it really make
-                                        money?</h3>
-                                    <p class="blog-theme-text">Pharetra, ullamcorper iaculis viverra parturient sed id
-                                        sed. Convallis proin dignissim lacus, purus gravida...</p>
-                                    <a href="" class="blog-action-link link">Listen
-                                        <svg class="line-theme-icon" width="16" height="16">
-                                            <use href="./images/symbol-defs.svg#icon-line_red">
-                                            </use>
-                                        </svg>
-                                    </a>
-
-                                </li>
-                            </article>
-
-                            <article>
-                                <li class="general-article-list">
-                                    <img class="no-gap" src="./images/notebook.jpg" alt="Notebook" width="390"
-                                        height="300">
-
-                                    <div>
-                                        <ul class="info-article-list list">
-                                            <li class="blog-theme">Development</li>
-                                            <li class="blog-theme-date">
-                                                <svg class="theme-icon" width="16" height="16">
-                                                    <use href="./images/symbol-defs.svg#icon-calendar">
-                                                    </use>
-                                                </svg>
-                                                September 1, 2020
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                    <h3 class="blog-theme-title">How to choose the first programming language for a
-                                        beginner</h3>
-                                    <p class="blog-theme-text">Turpis sed at magna laoreet gravida consequat tortor
-                                        placerat. Gravida vitae aliquet enim egestas dui...</p>
-                                    <a href="" class="blog-action-link link">Read
-                                        <svg class="line-theme-icon" width="16" height="16">
-                                            <use href="./images/symbol-defs.svg#icon-line_red">
-                                            </use>
-                                        </svg>
-                                    </a>
-
-                                </li>
-                            </article>
-                            <article>
-                                <li class="general-article-list">
-                                    <img class="no-gap" src="./images/hat.jpg" alt="Man with hat" width="390"
-                                        height="300">
-
-                                    <div>
-                                        <ul class="info-article-list list">
-                                            <li class="blog-theme">Design</li>
-                                            <li class="blog-theme-date">
-                                                <svg class="theme-icon" width="16" height="16">
-                                                    <use href="./images/symbol-defs.svg#icon-calendar">
-                                                    </use>
-                                                </svg>
-                                                August 8, 2020
-                                            </li>
-                                            <li class="blog-theme-time">
-                                                <svg class="theme-icon" width="16" height="16">
-                                                    <use href="./images/symbol-defs.svg#icon-clock">
-                                                    </use>
-                                                </svg>
-                                                40 min
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h3 class="blog-theme-title">Should you choose a creative profession if you are
-                                        attracted to creativity?</h3>
-                                    <p class="blog-theme-text">Curabitur nisl tincidunt eros venenatis vestibulum ac
-                                        placerat. Tortor, viverra sed vulputate ultrices...</p>
-                                    <a href="" class="blog-action-link link">Watch
-                                        <svg class="line-theme-icon" width="16" height="16">
-                                            <use href="./images/symbol-defs.svg#icon-line_red">
-                                            </use>
-                                        </svg>
-                                    </a>
-
-                                </li>
-                            </article>
-                        </div>
-                        <div class="line-second">
-                            <article>
-                                <li class="general-article-list">
-                                    <img class="no-gap" src="./images/glasses.jpg" alt="Glasses on a table" width="705"
-                                        height="300">
-
-                                    <div>
-                                        <ul class="info-article-list list">
-                                            <li class="blog-theme">HR & Recruting</li>
-                                            <li class="blog-theme-date">
-                                                <svg class="theme-icon" width="16" height="16">
-                                                    <use href="./images/symbol-defs.svg#icon-calendar">
-                                                    </use>
-                                                </svg>
-                                                August 3, 2020
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                    <h3 class="blog-theme-title">HR statistics: job search, interviews, hiring and
-                                        recruiting</h3>
-                                    <p class="blog-theme-text">Massa, lectus nibh consectetur aliquet nunc risus aenean.
-                                        Leo hac netus bibendum diam adipiscing aenean nisl. Molestie
-                                        nullam ante mattis ac sit vitae pellentesque mi etiam. Morbi commodo tempor,
-                                        massa vivamus. A molestie id semper
-                                        fermentum pretium...</p>
-                                    <a href="" class="blog-action-link link">Read
-                                        <svg class="line-theme-icon" width="16" height="16">
-                                            <use href="./images/symbol-defs.svg#icon-line_red">
-                                            </use>
-                                        </svg>
-                                    </a>
-
-                                </li>
-                            </article>
-                            <article>
-                                <li class="general-article-list">
-                                    <img class="no-gap" src="./images/lamps.jpg" alt="Lamps" width="495" height="300">
-
-                                    <div>
-                                        <ul class="info-article-list list">
-                                            <li class="blog-theme">Management</li>
-                                            <li class="blog-theme-date">
-                                                <svg class="theme-icon" width="16" height="16">
-                                                    <use href="./images/symbol-defs.svg#icon-calendar">
-                                                    </use>
-                                                </svg>
-                                                August 2, 2020
-                                            </li>
-                                            <li class="blog-theme-time">
-                                                <svg class="theme-icon" width="16" height="16">
-                                                    <use href="./images/symbol-defs.svg#icon-clock">
-                                                    </use>
-                                                </svg>
-                                                45 min
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h3 class="blog-theme-title">What to do and who to talk to if you want to get
-                                        feedback on the product</h3>
-                                    <p class="blog-theme-text">Neque a, senectus consectetur odio in aliquet nec eu.
-                                        Ultricies ac nibh urna urna sagittis faucibus. Curabitur nisl
-                                        tincidunt eros venenatis...</p>
-                                    <a href="" class="blog-action-link link">Watch
-                                        <svg class="line-theme-icon" width="16" height="16">
-                                            <use href="./images/symbol-defs.svg#icon-line_red">
-                                            </use>
-                                        </svg>
-                                    </a>
-
-                                </li>
-                            </article>
-                        </div>
-                        <div class="line-third">
-                            <article>
-                                <li class="general-article-list">
-                                    <img class="no-gap" src="./images/finish.jpg" alt="Road with finish" width="390"
-                                        height="300">
-
-                                    <div>
-                                        <ul class="info-article-list list">
-                                            <li class="blog-theme">Design</li>
-                                            <li class="blog-theme-date">
-                                                <svg class="theme-icon" width="16" height="16">
-                                                    <use href="./images/symbol-defs.svg#icon-calendar">
-                                                    </use>
-                                                </svg>
-                                                July 28, 2020
-                                            </li>
-                                            <li class="blog-theme-time">
-                                                <svg class="theme-icon" width="16" height="16">
-                                                    <use href="./images/symbol-defs.svg#icon-clock">
-                                                    </use>
-                                                </svg>
-                                                36 min
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h3 class="blog-theme-title">What are color profiles and how they work in graphic
-                                        design</h3>
-                                    <p class="blog-theme-text">Aliquam vulputate hendrerit quam sollicitudin urna enim
-                                        viverra gravida. Consectetur urna arcu eleifend...</p>
-                                    <a href="" class="blog-action-link link">Listen
-                                        <svg class="line-theme-icon" width="16" height="16">
-                                            <use href="./images/symbol-defs.svg#icon-line_red">
-                                            </use>
-                                        </svg>
-                                    </a>
-
-                                </li>
-                            </article>
-                            <article>
-                                <li class="general-article-list">
-                                    <img class="no-gap" src="./images/flower.jpg" alt="Photo of flowers" width="390"
-                                        height="300">
-
-                                    <div>
-                                        <ul class="info-article-list list">
-                                            <li class="blog-theme">Management</li>
-                                            <li class="blog-theme-date">
-                                                <svg class="theme-icon" width="16" height="16">
-                                                    <use href="./images/symbol-defs.svg#icon-calendar">
-                                                    </use>
-                                                </svg>
-                                                July 15, 2020
-                                            </li>
-                                            <li class="blog-theme-time">
-                                                <svg class="theme-icon" width="16" height="16">
-                                                    <use href="./images/symbol-defs.svg#icon-clock">
-                                                    </use>
-                                                </svg>
-                                                45 min
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h3 class="blog-theme-title">Startup: how to build a team that will live longer than
-                                        a year</h3>
-                                    <p class="blog-theme-text">Nisi, massa ut sit faucibus et diam. Faucibus at
-                                        malesuada at justo scelerisque in nisi, urna...</p>
-                                    <a href="" class="blog-action-link link">Watch
-                                        <svg class="line-theme-icon" width="16" height="16">
-                                            <use href="./images/symbol-defs.svg#icon-line_red">
-                                            </use>
-                                        </svg>
-                                    </a>
-
-                                </li>
-                            </article>
-                            <article>
-                                <li class="general-article-list">
-                                    <img class="no-gap" src="./images/print_mashine.jpg" alt="Print print_mashine"
-                                        width="390" height="300">
-
-                                    <div>
-                                        <ul class="info-article-list list">
-                                            <li class="blog-theme">Marketing</li>
-                                            <li class="blog-theme-date">
-                                                <svg class="theme-icon" width="16" height="16">
-                                                    <use href="./images/symbol-defs.svg#icon-calendar">
-                                                    </use>
-                                                </svg>
-                                                July 9, 2020
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                    <h3 class="blog-theme-title">How to get customers to love your business from the
-                                        start</h3>
-                                    <p class="blog-theme-text">Malesuada in augue mi feugiat morbi a aliquet enim.
-                                        Elementum lacus, pellentesque etiam arcu tristique ac...</p>
-                                    <a href="" class="blog-action-link link">Read
-                                        <svg class="line-theme-icon" width="16" height="16">
-                                            <use href="./images/symbol-defs.svg#icon-line_red">
-                                            </use>
-                                        </svg>
-                                    </a>
-
-                                </li>
-                            </article>
-                        </div>
-                    </ul>
-                </div>
-                <ul class="page-number list">
-                    <li class="page-number-item">
-                        <a href="" class="link">1</a>
-                    </li>
-                    <li class="page-number-item">
-                        <a href="" class="link">2</a>
-                    </li>
-                    <li class="page-number-item">
-                        <a href="" class="link">3</a>
-                    </li>
-                    <li class="page-number-item">
-                        <a href="" class="link">4</a>
-                    </li>
-                    <li class="page-number-item">
-                        <a href="" class="link">
-                            <svg class="page-number-line-icon" width="16" height="16">
-                                <use href="./images/symbol-defs.svg#icon-line_red">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-        </section>
-
-        <!--SUBSCRIBE-->
-
-        <section class="section-subscribe">
-            <div class="container subscribe-wrapp">
-
-                <div class="subscribe-photo no-gap">
-                    <img class="photo-men" src="./images/men_books.jpg" alt="Men with men books">
-                </div>
-
-                <div class="subscribe-info">
-                    <h2 class="subscribe-title">Want to get the best articles weekly? <br>
-                        Subscribe to our newsletter!</h2>
-                    <div class="subscribe-registration">
-                        <input class="email-input" type="text" placeholder="Your working email">
-                        <button class="subscripe-btn">Subscribe</button>
+                    <div>
+                      <ul class="info-article-list list">
+                        <li class="blog-theme">Marketing</li>
+                        <li class="blog-theme-date">
+                          <svg class="theme-icon" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-calendar"></use>
+                          </svg>
+                          September 4, 2020
+                        </li>
+                        <li class="blog-theme-time">
+                          <svg class="theme-icon" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-clock"></use>
+                          </svg>
+                          36 min
+                        </li>
+                      </ul>
                     </div>
-                    <label class="agree-sign">
-                        <input type="checkbox">
-                        I agree to receive communications from Createx Online School
-                    </label>
-                </div>
+                    <h3 class="blog-theme-title">
+                      What is traffic arbitrage and does it really make money?
+                    </h3>
+                    <p class="blog-theme-text">
+                      Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin
+                      dignissim lacus, purus gravida...
+                    </p>
+                    <a href="" class="blog-action-link link"
+                      >Listen
+                      <svg class="line-theme-icon" width="16" height="16">
+                        <use href="./images/symbol-defs.svg#icon-line_red"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </article>
 
+                <article>
+                  <li class="general-article-list">
+                    <img
+                      class="no-gap"
+                      src="./images/notebook.jpg"
+                      alt="Notebook"
+                      width="390"
+                      height="300"
+                    />
+
+                    <div>
+                      <ul class="info-article-list list">
+                        <li class="blog-theme">Development</li>
+                        <li class="blog-theme-date">
+                          <svg class="theme-icon" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-calendar"></use>
+                          </svg>
+                          September 1, 2020
+                        </li>
+                      </ul>
+                    </div>
+                    <h3 class="blog-theme-title">
+                      How to choose the first programming language for a beginner
+                    </h3>
+                    <p class="blog-theme-text">
+                      Turpis sed at magna laoreet gravida consequat tortor placerat. Gravida vitae
+                      aliquet enim egestas dui...
+                    </p>
+                    <a href="" class="blog-action-link link"
+                      >Read
+                      <svg class="line-theme-icon" width="16" height="16">
+                        <use href="./images/symbol-defs.svg#icon-line_red"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </article>
+                <article>
+                  <li class="general-article-list">
+                    <img
+                      class="no-gap"
+                      src="./images/hat.jpg"
+                      alt="Man with hat"
+                      width="390"
+                      height="300"
+                    />
+
+                    <div>
+                      <ul class="info-article-list list">
+                        <li class="blog-theme">Design</li>
+                        <li class="blog-theme-date">
+                          <svg class="theme-icon" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-calendar"></use>
+                          </svg>
+                          August 8, 2020
+                        </li>
+                        <li class="blog-theme-time">
+                          <svg class="theme-icon" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-clock"></use>
+                          </svg>
+                          40 min
+                        </li>
+                      </ul>
+                    </div>
+                    <h3 class="blog-theme-title">
+                      Should you choose a creative profession if you are attracted to creativity?
+                    </h3>
+                    <p class="blog-theme-text">
+                      Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor,
+                      viverra sed vulputate ultrices...
+                    </p>
+                    <a href="" class="blog-action-link link"
+                      >Watch
+                      <svg class="line-theme-icon" width="16" height="16">
+                        <use href="./images/symbol-defs.svg#icon-line_red"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </article>
+              </div>
+              <div class="line-second">
+                <article>
+                  <li class="general-article-list">
+                    <img
+                      class="no-gap"
+                      src="./images/glasses.jpg"
+                      alt="Glasses on a table"
+                      width="705"
+                      height="300"
+                    />
+
+                    <div>
+                      <ul class="info-article-list list">
+                        <li class="blog-theme">HR & Recruting</li>
+                        <li class="blog-theme-date">
+                          <svg class="theme-icon" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-calendar"></use>
+                          </svg>
+                          August 3, 2020
+                        </li>
+                      </ul>
+                    </div>
+                    <h3 class="blog-theme-title">
+                      HR statistics: job search, interviews, hiring and recruiting
+                    </h3>
+                    <p class="blog-theme-text">
+                      Massa, lectus nibh consectetur aliquet nunc risus aenean. Leo hac netus
+                      bibendum diam adipiscing aenean nisl. Molestie nullam ante mattis ac sit vitae
+                      pellentesque mi etiam. Morbi commodo tempor, massa vivamus. A molestie id
+                      semper fermentum pretium...
+                    </p>
+                    <a href="" class="blog-action-link link"
+                      >Read
+                      <svg class="line-theme-icon" width="16" height="16">
+                        <use href="./images/symbol-defs.svg#icon-line_red"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </article>
+                <article>
+                  <li class="general-article-list">
+                    <img
+                      class="no-gap"
+                      src="./images/lamps.jpg"
+                      alt="Lamps"
+                      width="495"
+                      height="300"
+                    />
+
+                    <div>
+                      <ul class="info-article-list list">
+                        <li class="blog-theme">Management</li>
+                        <li class="blog-theme-date">
+                          <svg class="theme-icon" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-calendar"></use>
+                          </svg>
+                          August 2, 2020
+                        </li>
+                        <li class="blog-theme-time">
+                          <svg class="theme-icon" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-clock"></use>
+                          </svg>
+                          45 min
+                        </li>
+                      </ul>
+                    </div>
+                    <h3 class="blog-theme-title">
+                      What to do and who to talk to if you want to get feedback on the product
+                    </h3>
+                    <p class="blog-theme-text">
+                      Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna
+                      urna sagittis faucibus. Curabitur nisl tincidunt eros venenatis...
+                    </p>
+                    <a href="" class="blog-action-link link"
+                      >Watch
+                      <svg class="line-theme-icon" width="16" height="16">
+                        <use href="./images/symbol-defs.svg#icon-line_red"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </article>
+              </div>
+              <div class="line-third">
+                <article>
+                  <li class="general-article-list">
+                    <img
+                      class="no-gap"
+                      src="./images/finish.jpg"
+                      alt="Road with finish"
+                      width="390"
+                      height="300"
+                    />
+
+                    <div>
+                      <ul class="info-article-list list">
+                        <li class="blog-theme">Design</li>
+                        <li class="blog-theme-date">
+                          <svg class="theme-icon" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-calendar"></use>
+                          </svg>
+                          July 28, 2020
+                        </li>
+                        <li class="blog-theme-time">
+                          <svg class="theme-icon" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-clock"></use>
+                          </svg>
+                          36 min
+                        </li>
+                      </ul>
+                    </div>
+                    <h3 class="blog-theme-title">
+                      What are color profiles and how they work in graphic design
+                    </h3>
+                    <p class="blog-theme-text">
+                      Aliquam vulputate hendrerit quam sollicitudin urna enim viverra gravida.
+                      Consectetur urna arcu eleifend...
+                    </p>
+                    <a href="" class="blog-action-link link"
+                      >Listen
+                      <svg class="line-theme-icon" width="16" height="16">
+                        <use href="./images/symbol-defs.svg#icon-line_red"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </article>
+                <article>
+                  <li class="general-article-list">
+                    <img
+                      class="no-gap"
+                      src="./images/flower.jpg"
+                      alt="Photo of flowers"
+                      width="390"
+                      height="300"
+                    />
+
+                    <div>
+                      <ul class="info-article-list list">
+                        <li class="blog-theme">Management</li>
+                        <li class="blog-theme-date">
+                          <svg class="theme-icon" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-calendar"></use>
+                          </svg>
+                          July 15, 2020
+                        </li>
+                        <li class="blog-theme-time">
+                          <svg class="theme-icon" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-clock"></use>
+                          </svg>
+                          45 min
+                        </li>
+                      </ul>
+                    </div>
+                    <h3 class="blog-theme-title">
+                      Startup: how to build a team that will live longer than a year
+                    </h3>
+                    <p class="blog-theme-text">
+                      Nisi, massa ut sit faucibus et diam. Faucibus at malesuada at justo
+                      scelerisque in nisi, urna...
+                    </p>
+                    <a href="" class="blog-action-link link"
+                      >Watch
+                      <svg class="line-theme-icon" width="16" height="16">
+                        <use href="./images/symbol-defs.svg#icon-line_red"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </article>
+                <article>
+                  <li class="general-article-list">
+                    <img
+                      class="no-gap"
+                      src="./images/print_mashine.jpg"
+                      alt="Print print_mashine"
+                      width="390"
+                      height="300"
+                    />
+
+                    <div>
+                      <ul class="info-article-list list">
+                        <li class="blog-theme">Marketing</li>
+                        <li class="blog-theme-date">
+                          <svg class="theme-icon" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-calendar"></use>
+                          </svg>
+                          July 9, 2020
+                        </li>
+                      </ul>
+                    </div>
+                    <h3 class="blog-theme-title">
+                      How to get customers to love your business from the start
+                    </h3>
+                    <p class="blog-theme-text">
+                      Malesuada in augue mi feugiat morbi a aliquet enim. Elementum lacus,
+                      pellentesque etiam arcu tristique ac...
+                    </p>
+                    <a href="" class="blog-action-link link"
+                      >Read
+                      <svg class="line-theme-icon" width="16" height="16">
+                        <use href="./images/symbol-defs.svg#icon-line_red"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </article>
+              </div>
+            </ul>
+          </div>
+          <ul class="page-number list">
+            <li class="page-number-item">
+              <a href="" class="link">1</a>
+            </li>
+            <li class="page-number-item">
+              <a href="" class="link">2</a>
+            </li>
+            <li class="page-number-item">
+              <a href="" class="link">3</a>
+            </li>
+            <li class="page-number-item">
+              <a href="" class="link">4</a>
+            </li>
+            <li class="page-number-item">
+              <a href="" class="link">
+                <svg class="page-number-line-icon" width="16" height="16">
+                  <use href="./images/symbol-defs.svg#icon-line_red"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--SUBSCRIBE-->
+
+      <section class="section-subscribe">
+        <div class="container subscribe-wrapp">
+          <div class="subscribe-photo no-gap">
+            <img class="photo-men" src="./images/men_books.jpg" alt="Men with men books" />
+          </div>
+
+          <div class="subscribe-info">
+            <h2 class="subscribe-title">
+              Want to get the best articles weekly? <br />
+              Subscribe to our newsletter!
+            </h2>
+            <div class="subscribe-registration">
+              <input class="email-input" type="text" placeholder="Your working email" />
+              <button class="subscripe-btn">Subscribe</button>
             </div>
-        </section>
+            <label class="agree-sign">
+              <input type="checkbox" />
+              I agree to receive communications from Createx Online School
+            </label>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <footer class="footer section--footer" id="footer">
+      <div class="container--footer">
+        <div class="footer__main-content">
+          <div class="footer__first-column">
+            <a class="footer__logo" href="./index.html">
+              <svg class="footer__logo-icon" width="130" height="22">
+                <use href="./images/icons.svg#icon-logo"></use>
+              </svg>
+            </a>
+            <p class="footer__text">
+              Createx Online School is a leader in online studying. We have lots of courses and
+              programs from the main market experts. We provide relevant approaches to online
+              learning, internships and employment in the largest companies in the country.
+            </p>
+            <ul class="footer__sm-list">
+              <li class="footer__sm-item">
+                <a class="footer__sm-link" href="">
+                  <svg class="footer__sm-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__sm-item">
+                <a class="footer__sm-link" href="">
+                  <svg class="footer__sm-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__sm-item">
+                <a class="footer__sm-link" href="">
+                  <svg class="footer__sm-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__sm-item">
+                <a class="footer__sm-link" href="">
+                  <svg class="footer__sm-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__sm-item">
+                <a class="footer__sm-link" href="">
+                  <svg class="footer__sm-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__sm-item">
+                <a class="footer__sm-link" href="">
+                  <svg class="footer__sm-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linked-in"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <h2 class="footer__nav-header">SITE MAP</h2>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="./about.html">About Us</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="./courses.html">Courses</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="./events-grid-view.html">Events</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="./contacts.html">Contacts</a>
+            </li>
+          </ul>
+
+          <ul class="footer__courses-list">
+            <li class="footer__courses-item">
+              <h2 class="footer__courses-header">COURSES</h2>
+            </li>
+            <li class="footer__courses-item">
+              <a class="footer__courses-link" href="">Marketing</a>
+            </li>
+            <li class="footer__courses-item">
+              <a class="footer__courses-link" href="">Management</a>
+            </li>
+            <li class="footer__courses-item">
+              <a class="footer__courses-link" href="">HR & Recruting</a>
+            </li>
+            <li class="footer__courses-item">
+              <a class="footer__courses-link" href="">Design</a>
+            </li>
+            <li class="footer__courses-item">
+              <a class="footer__courses-link" href="">Development</a>
+            </li>
+          </ul>
+
+          <address class="footer__address">
+            <h2 class="footer__address-header">CONTACT US</h2>
+            <a class="footer__address-link" href="phone:4055550128">
+              <svg class="footer__address-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              (405) 555-0128
+            </a>
+            <a class="footer__address-link" href="mailto:hello@createx.com">
+              <svg class="footer__address-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              hello@createx.com
+            </a>
+          </address>
+
+          <div class="footer__input">
+            <h2 class="footer__input-header">SIGN UP TO OUR NEWSLETTER</h2>
+            <div class="footer__input-window-container">
+              <input class="footer__input-window" type="text" placeholder="Email address" />
+              <button class="footer__input-btn" type="submit">
+                <svg class="footer__input-btn-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="footer__input-comment">
+              *Subscribe to our newsletter to receive communications and early updates from Createx
+              SEO Agency.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__bottom-text">© All rights reserved. Made with&nbsp&nbsp</p>
+          <svg class="footer__heart-icon" width="16" height="16">
+            <use href="./images/icons.svg#icon-heart"></use>
+          </svg>
+          <p class="footer__bottom-text">&nbsp&nbspby Createx Studio</p>
+          <a class="footer__bottom-link" href="#top">GO TO TOP</a>
+        </div>
+      </div>
+    </footer>
     <!-- 
 <footer class="footer section section--footer" id="footer">
     <div class="container container--footer">
@@ -614,6 +796,218 @@
         </div>
     </div>
 </footer> -->
-</body>
 
+    <div class="backdrop is-hidden" data-sign-in-modal>
+      <div class="modal modal--sign-in">
+        <button class="modal__colse-btn" type="button" data-sign-in-close>
+          <svg class="modal__colse-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <form class="modal__sign-in-form" name="sign-in-form">
+          <span class="modal__title">Sign in</span>
+          <p class="modal__text">
+            Sign in to your account using email and password provided during registration.
+          </p>
+          <label class="modal__input-label">
+            Email
+            <input
+              class="modal__input"
+              type="email"
+              name="email"
+              placeholder="Your working email"
+              autocomplete="off"
+            />
+          </label>
+          <label class="modal__input-label">
+            Password
+            <input class="modal__input" type="password" name="password" data-password />
+            <button class="modal__show-pass-btn" type="button" data-show-pass>
+              <svg class="modal__show-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-opened-eye"></use>
+              </svg>
+            </button>
+            <button class="modal__hide-pass-btn is-hidden" type="button" data-hide-pass>
+              <svg class="modal__hide-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-closed-eye"></use>
+              </svg>
+            </button>
+          </label>
+          <div class="modal__checkbox-container">
+            <input
+              class="modal__checkbox"
+              type="checkbox"
+              name="keep-signed-in"
+              id="sign-in-checkbox"
+            />
+            <label class="modal__checkbox-label" for="sign-in-checkbox">
+              <span class="modal__checkbox-icon">
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+            </label>
+            <span class="modal__checkbox-text">Keep me signed in</span>
+            <a class="modal__forgot-pass-link" href="">Forgot password?</a>
+          </div>
+          <button class="btn modal__sign-in-btn" type="submit">Sign in</button>
+          <p class="modal__sign-up-text">
+            Don't have an account?&nbsp
+            <button class="modal__sign-up-link" type="button" data-go-to-sign-up>Sign up</button>
+          </p>
+          <span class="modal__sm-list-title">Or sign in with</span>
+          <ul class="modal__sm-list">
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-google"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linked-in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-sign-up-modal>
+      <div class="modal modal--sign-up">
+        <button class="modal__colse-btn" type="button" data-sign-up-close>
+          <svg class="modal__colse-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <form class="modal__sign-up-form" name="sign-up-form">
+          <span class="modal__title">Sign up</span>
+          <p class="modal__text">
+            Registration takes less than a minute but gives you full control over your studying.
+          </p>
+          <label class="modal__input-label">
+            Full Name
+            <input
+              class="modal__input"
+              type="text"
+              name="name"
+              placeholder="Your full name"
+              autocomplete="off"
+            />
+          </label>
+          <label class="modal__input-label">
+            Email
+            <input
+              class="modal__input"
+              type="email"
+              name="email"
+              placeholder="Your working email"
+              autocomplete="off"
+            />
+          </label>
+          <label class="modal__input-label">
+            Password
+            <input class="modal__input" type="password" name="password" data-password />
+            <button class="modal__show-pass-btn" type="button" data-show-pass>
+              <svg class="modal__show-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-opened-eye"></use>
+              </svg>
+            </button>
+            <button class="modal__hide-pass-btn is-hidden" type="button" data-hide-pass>
+              <svg class="modal__hide-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-closed-eye"></use>
+              </svg>
+            </button>
+          </label>
+          <label class="modal__input-label">
+            Confirm Password
+            <input class="modal__input" type="password" name="password" data-password />
+            <button class="modal__show-pass-btn" type="button" data-show-pass>
+              <svg class="modal__show-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-opened-eye"></use>
+              </svg>
+            </button>
+            <button class="modal__hide-pass-btn is-hidden" type="button" data-hide-pass>
+              <svg class="modal__hide-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-closed-eye"></use>
+              </svg>
+            </button>
+          </label>
+          <div class="modal__checkbox-container">
+            <input
+              class="modal__checkbox"
+              type="checkbox"
+              name="remember-me"
+              id="sign-up-checkbox"
+            />
+            <label class="modal__checkbox-label" for="sign-up-checkbox">
+              <span class="modal__checkbox-icon">
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+            </label>
+            <span class="modal__checkbox-text">Remember me</span>
+          </div>
+          <button class="btn modal__sign-in-btn" type="submit">Sign in</button>
+          <p class="modal__sign-up-text">
+            Already have an account?&nbsp
+            <button class="modal__sign-up-link" type="button" data-go-to-sign-in>Sign in</button>
+          </p>
+          <span class="modal__sm-list-title">Or sign in with</span>
+          <ul class="modal__sm-list">
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-google"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linked-in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
+    <script src="./js/show-hide-pass.js"></script>
+  </body>
 </html>

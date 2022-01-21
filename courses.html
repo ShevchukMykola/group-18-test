@@ -1,329 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Courses</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/courses.css" />
+    <link rel="stylesheet" href="./css/header-footer.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
-  <title>Courses</title>
-  <link rel="stylesheet" href="./css/modern-normalize.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/courses.css" />
-</head>
-
-<body>
-  <header class="header section section--header">
-    <div class="container container--header">
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="./index.html">
-              <svg class="header__logo-icon" width="130" height="22">
-                <use href="./images/icons.svg#icon-logo"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="./about.html">About Us</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link header__nav-link--current" href="./courses.html">Courses</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="./events-grid-view.html">Events</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="./blog.html">Blog</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="./course.html">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="header__get-consult-btn" type="button">
-        Get consultation
-      </button>
-      <ul class="header__authorization">
-        <li class="header__authorization-item">
-          <svg class="header__authorization-icon" width="20" height="20">
-            <use class="header__authorization-icon" href="./images/icons.svg#icon-person"></use>
-          </svg>
-        </li>
-        <li class="header__authorization-item">
-          <a class="header__authorization-sign-in" href="">Log in&nbsp</a>
-        </li>
-        <li class="header__authorization-item">
-          <span class="header__authorization-slash">&nbsp/&nbsp</span>
-        </li>
-        <li class="header__authorization-item">
-          <a class="header__authorization-sign-up" href="">&nbspRegister</a>
-        </li>
-      </ul>
-    </div>
-  </header>
-  <main>
-    <section class="section container-courses">
-      <div class="container-1">
-        <div class="page-title">
-          <h6>Enjoy your studying!</h6>
-          <h1>Our online courses</h1>
-        </div>
-        <div class="tabs">
-          <ul class="filter">
-            <li>
-              <button class="filter-button" type="button">
-                All<span class="top-index">17</span>
-              </button>
+  <body>
+    <header class="header section--header">
+      <div class="container container--header">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./index.html">
+                <svg class="header__logo-icon" width="130" height="22">
+                  <use href="./images/icons.svg#icon-logo"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <button class="filter-button" type="button">
-                Marketing<span class="top-index">4</span>
-              </button>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./about.html">About Us</a>
             </li>
-            <li>
-              <button class="filter-button" type="button">
-                Management<span class="top-index">3</span>
-              </button>
+            <li class="header__nav-item">
+              <a class="header__nav-link header__nav-link--current" href="./courses.html"
+                >Courses</a
+              >
             </li>
-            <li>
-              <button class="filter-button" type="button">
-                HR & Recruting<span class="top-index">5</span>
-              </button>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./events-grid-view.html">Events</a>
             </li>
-            <li>
-              <button class="filter-button" type="button">
-                Design<span class="top-index">2</span>
-              </button>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./blog.html">Blog</a>
             </li>
-            <li>
-              <button class="filter-button" type="button">
-                Development<span class="top-index">3</span>
-              </button>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./contacts.html">Contacts</a>
             </li>
           </ul>
-          <div class="filter-box">
-            <input class="filter-input-field" type="text" placeholder="Search course..." />
-            <svg class="filter-search" width="16" height="16">
-              <use href="./images/icons.svg#search"></use>
+        </nav>
+        <button class="btn btn--header" type="button">Get consultation</button>
+        <ul class="header__authorization">
+          <li class="header__authorization-item">
+            <svg class="header__authorization-icon" width="20" height="20">
+              <use class="header__authorization-icon" href="./images/icons.svg#icon-person"></use>
             </svg>
-          </div>
-        </div>
-
-        <ul class="cards">
-          <li class="card">
-            <img src="./images/staff-1.jpg" alt="photo of Jerome Bell" />
-            <div class="card-content">
-              <p class="department department__marketing">Marketing</p>
-              <p class="position">The Ultimate Google Ads Training Course</p>
-              <p class="name">
-                <span class="name__salary">$100</span> Jerome Bell
-              </p>
-            </div>
           </li>
-          <li class="card">
-            <img src="./images/staff-2.jpg" alt="photo of Marvin McKinney" />
-            <div class="card-content">
-              <p class="department department__managment">Management</p>
-              <p class="position">Prduct Management Fundamentals</p>
-              <p class="name">
-                <span class="name__salary">$480</span>by Marvin McKinney
-              </p>
-            </div>
+          <li class="header__authorization-item">
+            <button class="header__authorization-sign-in" type="button" data-sign-in-open>
+              &nbspLog in&nbsp
+            </button>
           </li>
-          <li class="card">
-            <img src="./images/staff-3.jpg" alt="photo of Leslie Alexander Li" />
-            <div class="card-content">
-              <p class="department department__recruting">HR & Recruting</p>
-              <p class="position">HR Management and Analytics</p>
-              <p class="name">
-                <span class="name__salary">$200</span>by Leslie Alexander Li
-              </p>
-            </div>
+          <li class="header__authorization-item">
+            <span class="header__authorization-slash">&nbsp/&nbsp</span>
           </li>
-          <li class="card">
-            <img src="./images/staff-4.jpg" alt="photo of Kristin Watson" />
-            <div class="card-content">
-              <p class="department department__marketing">Marketing</p>
-              <p class="position">Brand Management & PR Communications</p>
-              <p class="name">
-                <span class="name__salary">$530</span>by Kristin Watson
-              </p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="./images/staff-5.jpg" alt="photo of Guy Hawkins" />
-            <div class="card-content">
-              <p class="department department__design">Design</p>
-              <p class="position">Graphic Design Basic</p>
-              <p class="name">
-                <span class="name__salary">$500</span>by Guy Hawkins
-              </p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="./images/staff-6.jpg" alt="photo of Dianne Russell" />
-            <div class="card-content">
-              <p class="department department__managment">Management</p>
-              <p class="position">Business Development Management</p>
-              <p class="name">
-                <span class="name__salary">$400</span>by Dianne Russell
-              </p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="./images/staff-7.jpg" alt="photo of Brooklyn Simmons" />
-            <div class="card-content">
-              <p class="department department__development">Development</p>
-              <p class="position">Highload Software Architecture</p>
-              <p class="name">
-                <span class="name__salary">$600</span>by Brooklyn Simmons
-              </p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="./images/staff-8.jpg" alt="photo of Kathryn Murphy" />
-            <div class="card-content">
-              <p class="department department__recruting">HR & Recruting</p>
-              <p class="position">
-                Human Resources – Selection and Recruitment
-              </p>
-              <p class="name">
-                <span class="name__salary">$150</span>by Kathryn Murphy
-              </p>
-            </div>
-          </li>
-          <li class="card">
-            <img src="./images/staff-9.jpg" alt="photo of Cody Fisher" />
-            <div class="card-content">
-              <p class="department department__design">Design</p>
-              <p class="position">User Experience. Human-centered Design</p>
-              <p class="name">
-                <span class="name__salary">$240</span>by Cody Fisher
-              </p>
-            </div>
+          <li class="header__authorization-item">
+            <button class="header__authorization-sign-up" type="button" data-sign-up-open>
+              &nbspRegister&nbsp
+            </button>
           </li>
         </ul>
-        <div class="load-more">
-          <svg class="load-more-convert">
-            <use href="./images/icons.svg#convert"></use>
-          </svg>
-          <button class="load-more-button">Load more</button>
-        </div>
       </div>
-    </section>
-    <section class="section testimonials-heading">
-      <div class="container-1 container-testimonials">
-        <div class="page-title page-title__margin">
-          <h6>TESTIMONIALS</h6>
-          <h1>What our students say</h1>
-        </div>
-        <div class="testimonial">
-          <div class="review-content">
-            <svg class="review-content-braces">
-              <use href="./images/icons.svg#braces"></use>
+    </header>
+    <main>
+      <section class="section container-courses">
+        <div class="container-1">
+          <div class="page-title">
+            <h6>Enjoy your studying!</h6>
+            <h1>Our online courses</h1>
+          </div>
+          <div class="tabs">
+            <ul class="filter">
+              <li>
+                <button class="filter-button" type="button">
+                  All<span class="top-index">17</span>
+                </button>
+              </li>
+              <li>
+                <button class="filter-button" type="button">
+                  Marketing<span class="top-index">4</span>
+                </button>
+              </li>
+              <li>
+                <button class="filter-button" type="button">
+                  Management<span class="top-index">3</span>
+                </button>
+              </li>
+              <li>
+                <button class="filter-button" type="button">
+                  HR & Recruting<span class="top-index">5</span>
+                </button>
+              </li>
+              <li>
+                <button class="filter-button" type="button">
+                  Design<span class="top-index">2</span>
+                </button>
+              </li>
+              <li>
+                <button class="filter-button" type="button">
+                  Development<span class="top-index">3</span>
+                </button>
+              </li>
+            </ul>
+            <div class="filter-box">
+              <input class="filter-input-field" type="text" placeholder="Search course..." />
+              <svg class="filter-search" width="16" height="16">
+                <use href="./images/icons.svg#search"></use>
+              </svg>
+            </div>
+          </div>
+
+          <ul class="cards">
+            <li class="card">
+              <img src="./images/staff-1.jpg" alt="photo of Jerome Bell" />
+              <div class="card-content">
+                <p class="department department__marketing">Marketing</p>
+                <p class="position">The Ultimate Google Ads Training Course</p>
+                <p class="name"><span class="name__salary">$100</span> Jerome Bell</p>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./images/staff-2.jpg" alt="photo of Marvin McKinney" />
+              <div class="card-content">
+                <p class="department department__managment">Management</p>
+                <p class="position">Prduct Management Fundamentals</p>
+                <p class="name"><span class="name__salary">$480</span>by Marvin McKinney</p>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./images/staff-3.jpg" alt="photo of Leslie Alexander Li" />
+              <div class="card-content">
+                <p class="department department__recruting">HR & Recruting</p>
+                <p class="position">HR Management and Analytics</p>
+                <p class="name"><span class="name__salary">$200</span>by Leslie Alexander Li</p>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./images/staff-4.jpg" alt="photo of Kristin Watson" />
+              <div class="card-content">
+                <p class="department department__marketing">Marketing</p>
+                <p class="position">Brand Management & PR Communications</p>
+                <p class="name"><span class="name__salary">$530</span>by Kristin Watson</p>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./images/staff-5.jpg" alt="photo of Guy Hawkins" />
+              <div class="card-content">
+                <p class="department department__design">Design</p>
+                <p class="position">Graphic Design Basic</p>
+                <p class="name"><span class="name__salary">$500</span>by Guy Hawkins</p>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./images/staff-6.jpg" alt="photo of Dianne Russell" />
+              <div class="card-content">
+                <p class="department department__managment">Management</p>
+                <p class="position">Business Development Management</p>
+                <p class="name"><span class="name__salary">$400</span>by Dianne Russell</p>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./images/staff-7.jpg" alt="photo of Brooklyn Simmons" />
+              <div class="card-content">
+                <p class="department department__development">Development</p>
+                <p class="position">Highload Software Architecture</p>
+                <p class="name"><span class="name__salary">$600</span>by Brooklyn Simmons</p>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./images/staff-8.jpg" alt="photo of Kathryn Murphy" />
+              <div class="card-content">
+                <p class="department department__recruting">HR & Recruting</p>
+                <p class="position">Human Resources – Selection and Recruitment</p>
+                <p class="name"><span class="name__salary">$150</span>by Kathryn Murphy</p>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./images/staff-9.jpg" alt="photo of Cody Fisher" />
+              <div class="card-content">
+                <p class="department department__design">Design</p>
+                <p class="position">User Experience. Human-centered Design</p>
+                <p class="name"><span class="name__salary">$240</span>by Cody Fisher</p>
+              </div>
+            </li>
+          </ul>
+          <div class="load-more">
+            <svg class="load-more-convert">
+              <use href="./images/icons.svg#convert"></use>
             </svg>
-            <div class="review-subcontent">
-              <p class="student-say-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Justo, amet lectus quam viverra mus lobortis fermentum amet,
-                eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus
-                ornare turpis quis non. Congue tortor in euismod vulputate
-                etiam eros. Pulvinar neque pharetra arcu diam maecenas diam
-                integer in.
-              </p>
-              <div class="user-profile">
-                <img src="./images/eleonor-pena.jpg" alt="Photo Eleonor Pena" />
-                <div class="name-position">
-                  <p>Eleanor Pena</p>
-                  <p>Position, Course</p>
+            <button class="load-more-button">Load more</button>
+          </div>
+        </div>
+      </section>
+      <section class="section testimonials-heading">
+        <div class="container-1 container-testimonials">
+          <div class="page-title page-title__margin">
+            <h6>TESTIMONIALS</h6>
+            <h1>What our students say</h1>
+          </div>
+          <div class="testimonial">
+            <div class="review-content">
+              <svg class="review-content-braces">
+                <use href="./images/icons.svg#braces"></use>
+              </svg>
+              <div class="review-subcontent">
+                <p class="student-say-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
+                  viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id
+                  turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam
+                  eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                </p>
+                <div class="user-profile">
+                  <img src="./images/eleonor-pena.jpg" alt="Photo Eleonor Pena" />
+                  <div class="name-position">
+                    <p>Eleanor Pena</p>
+                    <p>Position, Course</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="slider-controls">
-          <button class="slider-button" type="button">
-            <svg class="slider-button-caption">
-              <use href="./images/icons.svg#left"></use>
-            </svg>
-          </button>
+          <div class="slider-controls">
+            <button class="slider-button" type="button">
+              <svg class="slider-button-caption">
+                <use href="./images/icons.svg#left"></use>
+              </svg>
+            </button>
 
-          <ul class="slider-controls-dots">
-            <li class="slider-dot">
-              <!-- <svg class="dot"><use href="./images/icons.svg#dot"></use></svg> -->
-            </li>
-            <li class="slider-dot"></li>
-            <li class="slider-dot"></li>
-            <li class="slider-dot"></li>
-            <li class="slider-dot"></li>
-          </ul>
+            <ul class="slider-controls-dots">
+              <li class="slider-dot">
+                <!-- <svg class="dot"><use href="./images/icons.svg#dot"></use></svg> -->
+              </li>
+              <li class="slider-dot"></li>
+              <li class="slider-dot"></li>
+              <li class="slider-dot"></li>
+              <li class="slider-dot"></li>
+            </ul>
 
-          <button class="slider-button" type="button">
-            <svg class="slider-button-caption">
-              <use href="./images/icons.svg#right"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container certificate">
-        <div class="certificate-info">
-          <div class="page-title page-title__certificate">
-            <h6>Createx Certificate</h6>
-            <h1>Your expertise will be confirmed</h1>
+            <button class="slider-button" type="button">
+              <svg class="slider-button-caption">
+                <use href="./images/icons.svg#right"></use>
+              </svg>
+            </button>
           </div>
-          <p class="certificate-info-text">
-            We are accredited by international professional organizations and
-            institutes:
-          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container certificate">
+          <div class="certificate-info">
+            <div class="page-title page-title__certificate">
+              <h6>Createx Certificate</h6>
+              <h1>Your expertise will be confirmed</h1>
+            </div>
+            <p class="certificate-info-text">
+              We are accredited by international professional organizations and institutes:
+            </p>
 
-          <ul class="certificate-logos">
-            <li>
-              <img src="./images/logo.png" alt="logo-1" width="105" />
-            </li>
-            <li>
-              <img src="./images/logo-2.png" alt="logo-2" width="105" />
-            </li>
-            <li>
-              <img src="./images/logo-3.png" alt="logo-3" width="105" />
-            </li>
-          </ul>
-        </div>
+            <ul class="certificate-logos">
+              <li>
+                <img src="./images/logo.png" alt="logo-1" width="105" />
+              </li>
+              <li>
+                <img src="./images/logo-2.png" alt="logo-2" width="105" />
+              </li>
+              <li>
+                <img src="./images/logo-3.png" alt="logo-3" width="105" />
+              </li>
+            </ul>
+          </div>
 
-        <img class="image-certificate" src="./images/certificate.jpg" alt="our certificate" width="705px"
-          height="500px" />
-      </div>
-    </section>
-    <section class="section subscribe">
-      <div class="container-1">
-        <div class="page-title page-title_subscribe">
-          <h6>Don’t miss anything</h6>
-          <h1>Subscribe to the Createx School announcements</h1>
+          <img
+            class="image-certificate"
+            src="./images/certificate.jpg"
+            alt="our certificate"
+            width="705px"
+            height="500px"
+          />
         </div>
-        <div class="form-subscribe">
-          <input class="form-subscribe-field" type="email" name="" id="emailadress" placeholder="Your working email" />
-          <input class="form-subscribe-button" type="button" value="Subscribe" />
+      </section>
+      <section class="section subscribe">
+        <div class="container-1">
+          <div class="page-title page-title_subscribe">
+            <h6>Don’t miss anything</h6>
+            <h1>Subscribe to the Createx School announcements</h1>
+          </div>
+          <div class="form-subscribe">
+            <input
+              class="form-subscribe-field"
+              type="email"
+              name=""
+              id="emailadress"
+              placeholder="Your working email"
+            />
+            <input class="form-subscribe-button" type="button" value="Subscribe" />
+          </div>
         </div>
-      </div>
-    </section>
-    <footer class="footer section section--footer">
-      <div class="container container--footer">
+      </section>
+    </main>
+    <footer class="footer section--footer" id="footer">
+      <div class="container--footer">
         <div class="footer__main-content">
           <div class="footer__first-column">
-            <a class="footer__logo" href="./course.html">
+            <a class="footer__logo" href="./index.html">
               <svg class="footer__logo-icon" width="130" height="22">
                 <use href="./images/icons.svg#icon-logo"></use>
               </svg>
             </a>
             <p class="footer__text">
-              Createx Online School is a leader in online studying. We have
-              lots of courses and programs from the main market experts. We
-              provide relevant approaches to online learning, internships and
-              employment in the largest companies in the country.
+              Createx Online School is a leader in online studying. We have lots of courses and
+              programs from the main market experts. We provide relevant approaches to online
+              learning, internships and employment in the largest companies in the country.
             </p>
             <ul class="footer__sm-list">
               <li class="footer__sm-item">
@@ -379,16 +375,16 @@
               <a class="footer__nav-link" href="./about.html">About Us</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="">Courses</a>
+              <a class="footer__nav-link" href="./courses.html">Courses</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="">Events</a>
+              <a class="footer__nav-link" href="./events-grid-view.html">Events</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="">Blog</a>
+              <a class="footer__nav-link" href="./blog.html">Blog</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="">Contacts</a>
+              <a class="footer__nav-link" href="./contacts.html">Contacts</a>
             </li>
           </ul>
 
@@ -431,18 +427,23 @@
 
           <div class="footer__input">
             <h2 class="footer__input-header">SIGN UP TO OUR NEWSLETTER</h2>
-            <input class="footer__input-window" type="text" placeholder="Email address" />
+            <div class="footer__input-window-container">
+              <input class="footer__input-window" type="text" placeholder="Email address" />
+              <button class="footer__input-btn" type="submit">
+                <svg class="footer__input-btn-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
             <p class="footer__input-comment">
-              *Subscribe to our newsletter to receive communications and early
-              updates from Createx SEO Agency.
+              *Subscribe to our newsletter to receive communications and early updates from Createx
+              SEO Agency.
             </p>
           </div>
         </div>
 
         <div class="footer__bottom">
-          <p class="footer__bottom-text">
-            © All rights reserved. Made with&nbsp&nbsp
-          </p>
+          <p class="footer__bottom-text">© All rights reserved. Made with&nbsp&nbsp</p>
           <svg class="footer__heart-icon" width="16" height="16">
             <use href="./images/icons.svg#icon-heart"></use>
           </svg>
@@ -451,7 +452,218 @@
         </div>
       </div>
     </footer>
-  </main>
-</body>
 
+    <div class="backdrop is-hidden" data-sign-in-modal>
+      <div class="modal modal--sign-in">
+        <button class="modal__colse-btn" type="button" data-sign-in-close>
+          <svg class="modal__colse-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <form class="modal__sign-in-form" name="sign-in-form">
+          <span class="modal__title">Sign in</span>
+          <p class="modal__text">
+            Sign in to your account using email and password provided during registration.
+          </p>
+          <label class="modal__input-label">
+            Email
+            <input
+              class="modal__input"
+              type="email"
+              name="email"
+              placeholder="Your working email"
+              autocomplete="off"
+            />
+          </label>
+          <label class="modal__input-label">
+            Password
+            <input class="modal__input" type="password" name="password" data-password />
+            <button class="modal__show-pass-btn" type="button" data-show-pass>
+              <svg class="modal__show-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-opened-eye"></use>
+              </svg>
+            </button>
+            <button class="modal__hide-pass-btn is-hidden" type="button" data-hide-pass>
+              <svg class="modal__hide-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-closed-eye"></use>
+              </svg>
+            </button>
+          </label>
+          <div class="modal__checkbox-container">
+            <input
+              class="modal__checkbox"
+              type="checkbox"
+              name="keep-signed-in"
+              id="sign-in-checkbox"
+            />
+            <label class="modal__checkbox-label" for="sign-in-checkbox">
+              <span class="modal__checkbox-icon">
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+            </label>
+            <span class="modal__checkbox-text">Keep me signed in</span>
+            <a class="modal__forgot-pass-link" href="">Forgot password?</a>
+          </div>
+          <button class="btn modal__sign-in-btn" type="submit">Sign in</button>
+          <p class="modal__sign-up-text">
+            Don't have an account?&nbsp
+            <button class="modal__sign-up-link" type="button" data-go-to-sign-up>Sign up</button>
+          </p>
+          <span class="modal__sm-list-title">Or sign in with</span>
+          <ul class="modal__sm-list">
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-google"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linked-in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-sign-up-modal>
+      <div class="modal modal--sign-up">
+        <button class="modal__colse-btn" type="button" data-sign-up-close>
+          <svg class="modal__colse-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <form class="modal__sign-up-form" name="sign-up-form">
+          <span class="modal__title">Sign up</span>
+          <p class="modal__text">
+            Registration takes less than a minute but gives you full control over your studying.
+          </p>
+          <label class="modal__input-label">
+            Full Name
+            <input
+              class="modal__input"
+              type="text"
+              name="name"
+              placeholder="Your full name"
+              autocomplete="off"
+            />
+          </label>
+          <label class="modal__input-label">
+            Email
+            <input
+              class="modal__input"
+              type="email"
+              name="email"
+              placeholder="Your working email"
+              autocomplete="off"
+            />
+          </label>
+          <label class="modal__input-label">
+            Password
+            <input class="modal__input" type="password" name="password" data-password />
+            <button class="modal__show-pass-btn" type="button" data-show-pass>
+              <svg class="modal__show-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-opened-eye"></use>
+              </svg>
+            </button>
+            <button class="modal__hide-pass-btn is-hidden" type="button" data-hide-pass>
+              <svg class="modal__hide-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-closed-eye"></use>
+              </svg>
+            </button>
+          </label>
+          <label class="modal__input-label">
+            Confirm Password
+            <input class="modal__input" type="password" name="password" data-password />
+            <button class="modal__show-pass-btn" type="button" data-show-pass>
+              <svg class="modal__show-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-opened-eye"></use>
+              </svg>
+            </button>
+            <button class="modal__hide-pass-btn is-hidden" type="button" data-hide-pass>
+              <svg class="modal__hide-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-closed-eye"></use>
+              </svg>
+            </button>
+          </label>
+          <div class="modal__checkbox-container">
+            <input
+              class="modal__checkbox"
+              type="checkbox"
+              name="remember-me"
+              id="sign-up-checkbox"
+            />
+            <label class="modal__checkbox-label" for="sign-up-checkbox">
+              <span class="modal__checkbox-icon">
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+            </label>
+            <span class="modal__checkbox-text">Remember me</span>
+          </div>
+          <button class="btn modal__sign-in-btn" type="submit">Sign in</button>
+          <p class="modal__sign-up-text">
+            Already have an account?&nbsp
+            <button class="modal__sign-up-link" type="button" data-go-to-sign-in>Sign in</button>
+          </p>
+          <span class="modal__sm-list-title">Or sign in with</span>
+          <ul class="modal__sm-list">
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-google"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linked-in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
+    <script src="./js/show-hide-pass.js"></script>
+  </body>
 </html>
