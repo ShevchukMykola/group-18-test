@@ -1,607 +1,633 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<link rel="stylesheet" href="./css/about.css" />
-		<link rel="stylesheet" href="./css/modal.css" />
-		<title>About Us</title>
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+    <title>About Us</title>
+  </head>
 
-	<body id="top">
-		<header class="header section section--header">
-			<div class="container container--header">
-				<nav class="header__nav">
-					<ul class="header__nav-list">
-						<li class="header__nav-item">
-							<a class="header__nav-link" href="./index.html">
-								<svg class="header__logo-icon" width="130" height="22">
-									<use href="./images/icons.svg#icon-logo"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="header__nav-item">
-							<a class="header__nav-link header__nav-link--current" href="">About Us</a>
-						</li>
-						<li class="header__nav-item">
-							<a class="header__nav-link" href="">Courses</a>
-						</li>
-						<li class="header__nav-item">
-							<a class="header__nav-link" href="">Events</a>
-						</li>
-						<li class="header__nav-item">
-							<a class="header__nav-link" href="">Blog</a>
-						</li>
-						<li class="header__nav-item">
-							<a class="header__nav-link" href="#contacts">Contacts</a>
-						</li>
-					</ul>
-				</nav>
-				<button class="btn btn--header" type="button">Get consultation</button>
-				<ul class="header__authorization">
-					<li class="header__authorization-item">
-						<svg class="header__authorization-icon" width="20" height="20">
-							<use class="header__authorization-icon" href="./images/icons.svg#icon-person"></use>
-						</svg>
-					</li>
-					<li class="header__authorization-item">
-						<button class="header__authorization-sign-in" type="button" data-sign-in-open>&nbspLog in&nbsp</button>
-					</li>
-					<li class="header__nav-item">
-						<a class="header__nav-link" href="./courses.html">Courses</a>
-					</li>
-					<li class="header__authorization-item">
-						<button class="header__authorization-sign-up" type="button" data-sign-up-open>&nbspRegister&nbsp</button>
-					</li>
-				</ul>
-			</div>
-		</section>
-		<section class="stat section section--stat">
-			<div class="container container--stat">
-				<div class="stat__play-btn-container">
-					<button class="stat__play-btn" type="button">
-						<svg class="stat__play-video-icon" width="52" height="52">
-							<use href="./images/icons.svg#icon-play-video"></use>
-						</svg>
-					</button>
-					<span class="stat__play-btn-text">Watch Video</span>
-				</div>
-				<div class="stat__list-container">
-					<div class="stat_background"></div>
-					<ul class="stat__list">
-						<li class="stat__item">
-							<span class="stat__number">1200</span>
-							<span class="stat__text">students graduated</span>
-						</li>
-						<li class="stat__item">
-							<span class="stat__number">84</span>
-							<span class="stat__text">completed courses</span>
-						</li>
-						<li class="stat__item">
-							<span class="stat__number">16</span>
-							<span class="stat__text">qualified tutors</span>
-						</li>
-						<li class="stat__item">
-							<span class="stat__number">5</span>
-							<span class="stat__text">years of experience</span>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-		<section class="values section section--values">
-			<div class="container container--values">
-				<h3 class="third-header third-header--values">We always stand for</h3>
-				<h2 class="second-header second-header--values">Our core values</h2>
-				<div class="value__list-container">
-					<ul class="value__list">
-						<li class="value__item">
-							<div class="value__item-container">
-								<svg class="value__icon" width="48" height="48">
-									<use href="./images/icons.svg#icon-structure"></use>
-								</svg>
-								<h4 class="value__item-header">Structured Approach</h4>
-								<p class="value__item-text">Aenean urna dictum adipiscing nec, cras quisque. Nunc in
-									mauris.</p>
-							</div>
-						</li>
-						<li class="value__item">
-							<div class="value__item-container">
-								<svg class="value__icon" width="48" height="48">
-									<use href="./images/icons.svg#icon-chat"></use>
-								</svg>
-								<h4 class="value__item-header">Professional Feedbacks</h4>
-								<p class="value__item-text">Culpa nostrud commodo ea consequat reprehenderit aliquip.
-								</p>
-							</div>
-						</li>
-						<li class="value__item">
-							<div class="value__item-container">
-								<svg class="value__icon" width="48" height="48">
-									<use href="./images/icons.svg#icon-target"></use>
-								</svg>
-								<h4 class="value__item-header">Efficiency</h4>
-								<p class="value__item-text">Viverra scelerisque consequat net. Adipisicing esse
-									consequat.</p>
-							</div>
-						</li>
-						<li class="value__item">
-							<div class="value__item-container">
-								<svg class="value__icon" width="48" height="48">
-									<use href="./images/icons.svg#icon-calendar"></use>
-								</svg>
-								<h4 class="value__item-header">Flexible Shedule</h4>
-								<p class="value__item-text">Aute eiusmod dolore dolore deserunt veniam ad deserunt.</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-		<section class="directions section section--directions">
-			<div class="container container--directions">
-				<h3 class="third-header third-header--directions">our main directions</h3>
-				<h2 class="second-header second-header--directions">What do we teach</h2>
-				<ul class="directions__list">
-					<li class="directions__item">
-						<img src="./images/marketing.jpg" alt="five paper clips" width=" 380" />
-						<div class="directions__item-description">
-							<h4 class="directions__item-header directions__item-header-1">Marketing</h4>
-							<p class="directions__item-text">
-								Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus.
-								Viverra
-								scelerisque consequat.
-							</p>
-							<a class="directions__item-link" href="">
-								Check courses
-								<svg class="directions__red-arrow" width="24" height="24">
-									<use href="./images/icons.svg#icon-red-arrow"></use>
-								</svg>
-							</a>
-						</div>
-					</li>
-					<li class="directions__item">
-						<img src="./images/management.jpg" alt="puzzle" width=" 380" />
-						<div class="directions__item-description">
-							<h4 class="directions__item-header directions__item-header-2">Management</h4>
-							<p class="directions__item-text">
-								Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus.
-								Viverra
-								scelerisque consequat.
-							</p>
-							<a class="directions__item-link" href="">
-								Check courses
-								<svg class="directions__red-arrow" width="24" height="24">
-									<use href="./images/icons.svg#icon-red-arrow"></use>
-								</svg>
-							</a>
-						</div>
-					</li>
-					<li class="directions__item">
-						<img src="./images/recruting.jpg" alt="cubes" width=" 380" />
-						<div class="directions__item-description">
-							<h4 class="directions__item-header directions__item-header-3">HR & Recruting</h4>
-							<p class="directions__item-text">
-								Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus.
-								Viverra
-								scelerisque consequat.
-							</p>
-							<a class="directions__item-link" href="">
-								Check courses
-								<svg class="directions__red-arrow" width="24" height="24">
-									<use href="./images/icons.svg#icon-red-arrow"></use>
-								</svg>
-							</a>
-						</div>
-					</li>
-					<li class="directions__item">
-						<img src="./images/design.jpg" alt="three design examples" width=" 380" />
-						<div class="directions__item-description">
-							<h4 class="directions__item-header directions__item-header-4">Design</h4>
-							<p class="directions__item-text">
-								Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus.
-								Viverra
-								scelerisque consequat.
-							</p>
-							<a class="directions__item-link" href="">
-								Check courses
-								<svg class="directions__red-arrow" width="24" height="24">
-									<use href="./images/icons.svg#icon-red-arrow"></use>
-								</svg>
-							</a>
-						</div>
-					</li>
-					<li class="directions__item">
-						<img src="./images/development.jpg" alt="code on the screen" width=" 380" />
-						<div class="directions__item-description">
-							<h4 class="directions__item-header directions__item-header-5">Development</h4>
-							<p class="directions__item-text">
-								Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus.
-								Viverra
-								scelerisque consequat.
-							</p>
-							<a class="directions__item-link" href="">
-								Check courses
-								<svg class="directions__red-arrow" width="24" height="24">
-									<use href="./images/icons.svg#icon-red-arrow"></use>
-								</svg>
-							</a>
-						</div>
-					</li>
-					<li class="directions__item directions__item--last">
-						<div class="directions__item-description">
-							<p class="directions__item-text">
-								New studying program
-								<br />
-								coming soon...
-							</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</section>
-		<section class="studying-process section section--studying-process">
-			<div class="container container__studying-process">
-				<h3 class="third-header">Studying process</h3>
-				<h2 class="second-header">That’s how we do it</h2>
-				<div class="studying-process__list-container">
-					<ul class="studying-process__list">
-						<li class="studying-process__item">
-							<h4 class="studying-process__item-first-header">STEP 1</h4>
-							<h5 class="studying-process__item-second-header">Watching online video lectures</h5>
-							<p class="studying-process__item-text">
-								Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet
-								gravida massa
-								neque.
-							</p>
-						</li>
-						<li class="studying-process__item">
-							<h4 class="studying-process__item-first-header">STEP 2</h4>
-							<h5 class="studying-process__item-second-header">Passing test</h5>
-							<p class="studying-process__item-text">
-								Facilisis pellentesque quis accumsan ultricies. Eu egestas eget feugiat lacus, amet,
-								sollicitudin
-								egestas laoreet etiam.
-							</p>
-						</li>
-						<li class="studying-process__item">
-							<h4 class="studying-process__item-first-header">STEP 3</h4>
-							<h5 class="studying-process__item-second-header">Curator’s feedback</h5>
-							<p class="studying-process__item-text">
-								Eget amet, enim pharetra leo egestas nisi, odio imperdiet facilisis. Aliquet orci varius
-								volutpat
-								egestas facilisi lobortis.
-							</p>
-						</li>
-						<li class="studying-process__item">
-							<h4 class="studying-process__item-first-header">STEP 4</h4>
-							<h5 class="studying-process__item-second-header">Corrections if needed</h5>
-							<p class="studying-process__item-text">
-								Non tempor pulvinar tincidunt aliquam. Placerat ultricies malesuada dui auctor.
-							</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-		<section class="team section section--team">
-			<div class="container container--team">
-				<h3 class="third-header third-header--team">Best tutors are all here</h3>
-				<h2 class="second-header second-header--team">Meet our team</h2>
-				<ul class="team__list">
-					<li class="team__item">
-						<div class="team__item-img">
-							<img src="./images/team/dianne.png" alt="Dianne" />
-							<ul class="team__item-sm-list">
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-facebook"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-instagram"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-linked-in"></use>
-										</svg>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="team__item-description">
-							<h4 class="team__item-header">Dianne Russell</h4>
-							<p class="team__item-text">Founder and CEO</p>
-						</div>
-					</li>
+  <body id="top">
+    <header class="header section section--header">
+      <div class="container container--header">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./index.html">
+                <svg class="header__logo-icon" width="130" height="22">
+                  <use href="./images/icons.svg#icon-logo"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link header__nav-link--current" href="">About Us</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">Courses</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">Events</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">Blog</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn btn--header" type="button">Get consultation</button>
+        <ul class="header__authorization">
+          <li class="header__authorization-item">
+            <svg class="header__authorization-icon" width="20" height="20">
+              <use class="header__authorization-icon" href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </li>
+          <li class="header__authorization-item">
+            <button class="header__authorization-sign-in" type="button" data-sign-in-open>
+              &nbspLog in&nbsp
+            </button>
+          </li>
+          <li class="header__authorization-item">
+            <span class="header__authorization-slash">&nbsp/&nbsp</span>
+          </li>
+          <li class="header__authorization-item">
+            <button class="header__authorization-sign-up" type="button" data-sign-up-open>
+              &nbspRegister&nbsp
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="about section section--about">
+        <div class="container container--about">
+          <h3 class="third-header third-header--about">About us</h3>
+          <h1 class="main-header main-header--about">Createx Online School</h1>
+          <p class="bold-text bold-text--about">
+            Createx Online School is a leader in online studying. We have lots of courses and
+            programs from the main market experts.
+          </p>
+          <p class="normal-text normal-text--about">
+            We provide relevant approaches to online learning, internships and employment in the
+            largest companies in the country. Our educational programs help you get a new specialty
+            from scratch. During your studies, we will help you find a job. Check the courses and
+            online events that we organise.
+          </p>
+          <ul class="about__btns-list">
+            <li class="about__btns-item">
+              <a class="btn-link btn-link--empty" href="">Explore events</a>
+            </li>
+            <li class="about__btns-item">
+              <a class="btn-link" href="#footer">Browse courses</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="stat section section--stat">
+        <div class="container container--stat">
+          <div class="stat__play-btn-container">
+            <button class="stat__play-btn" type="button">
+              <svg class="stat__play-video-icon" width="52" height="52">
+                <use href="./images/icons.svg#icon-play-video"></use>
+              </svg>
+            </button>
+            <span class="stat__play-btn-text">Watch Video</span>
+          </div>
+          <div class="stat__list-container">
+            <div class="stat_background"></div>
+            <ul class="stat__list">
+              <li class="stat__item">
+                <span class="stat__number">1200</span>
+                <span class="stat__text">students graduated</span>
+              </li>
+              <li class="stat__item">
+                <span class="stat__number">84</span>
+                <span class="stat__text">completed courses</span>
+              </li>
+              <li class="stat__item">
+                <span class="stat__number">16</span>
+                <span class="stat__text">qualified tutors</span>
+              </li>
+              <li class="stat__item">
+                <span class="stat__number">5</span>
+                <span class="stat__text">years of experience</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="values section section--values">
+        <div class="container container--values">
+          <h3 class="third-header third-header--values">We always stand for</h3>
+          <h2 class="second-header second-header--values">Our core values</h2>
+          <div class="value__list-container">
+            <ul class="value__list">
+              <li class="value__item">
+                <div class="value__item-container">
+                  <svg class="value__icon" width="48" height="48">
+                    <use href="./images/icons.svg#icon-structure"></use>
+                  </svg>
+                  <h4 class="value__item-header">Structured Approach</h4>
+                  <p class="value__item-text">
+                    Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris.
+                  </p>
+                </div>
+              </li>
+              <li class="value__item">
+                <div class="value__item-container">
+                  <svg class="value__icon" width="48" height="48">
+                    <use href="./images/icons.svg#icon-chat"></use>
+                  </svg>
+                  <h4 class="value__item-header">Professional Feedbacks</h4>
+                  <p class="value__item-text">
+                    Culpa nostrud commodo ea consequat reprehenderit aliquip.
+                  </p>
+                </div>
+              </li>
+              <li class="value__item">
+                <div class="value__item-container">
+                  <svg class="value__icon" width="48" height="48">
+                    <use href="./images/icons.svg#icon-target"></use>
+                  </svg>
+                  <h4 class="value__item-header">Efficiency</h4>
+                  <p class="value__item-text">
+                    Viverra scelerisque consequat net. Adipisicing esse consequat.
+                  </p>
+                </div>
+              </li>
+              <li class="value__item">
+                <div class="value__item-container">
+                  <svg class="value__icon" width="48" height="48">
+                    <use href="./images/icons.svg#icon-calendar"></use>
+                  </svg>
+                  <h4 class="value__item-header">Flexible Shedule</h4>
+                  <p class="value__item-text">
+                    Aute eiusmod dolore dolore deserunt veniam ad deserunt.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="directions section section--directions">
+        <div class="container container--directions">
+          <h3 class="third-header third-header--directions">our main directions</h3>
+          <h2 class="second-header second-header--directions">What do we teach</h2>
+          <ul class="directions__list">
+            <li class="directions__item">
+              <img src="./images/marketing.jpg" alt="five paper clips" width=" 380" />
+              <div class="directions__item-description">
+                <h4 class="directions__item-header directions__item-header-1">Marketing</h4>
+                <p class="directions__item-text">
+                  Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra
+                  faucibus. Viverra scelerisque consequat.
+                </p>
+                <a class="directions__item-link" href="">
+                  Check courses
+                  <svg class="directions__red-arrow" width="24" height="24">
+                    <use href="./images/icons.svg#icon-red-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="directions__item">
+              <img src="./images/management.jpg" alt="puzzle" width=" 380" />
+              <div class="directions__item-description">
+                <h4 class="directions__item-header directions__item-header-2">Management</h4>
+                <p class="directions__item-text">
+                  Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra
+                  faucibus. Viverra scelerisque consequat.
+                </p>
+                <a class="directions__item-link" href="">
+                  Check courses
+                  <svg class="directions__red-arrow" width="24" height="24">
+                    <use href="./images/icons.svg#icon-red-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="directions__item">
+              <img src="./images/recruting.jpg" alt="cubes" width=" 380" />
+              <div class="directions__item-description">
+                <h4 class="directions__item-header directions__item-header-3">HR & Recruting</h4>
+                <p class="directions__item-text">
+                  Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra
+                  faucibus. Viverra scelerisque consequat.
+                </p>
+                <a class="directions__item-link" href="">
+                  Check courses
+                  <svg class="directions__red-arrow" width="24" height="24">
+                    <use href="./images/icons.svg#icon-red-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="directions__item">
+              <img src="./images/design.jpg" alt="three design examples" width=" 380" />
+              <div class="directions__item-description">
+                <h4 class="directions__item-header directions__item-header-4">Design</h4>
+                <p class="directions__item-text">
+                  Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra
+                  faucibus. Viverra scelerisque consequat.
+                </p>
+                <a class="directions__item-link" href="">
+                  Check courses
+                  <svg class="directions__red-arrow" width="24" height="24">
+                    <use href="./images/icons.svg#icon-red-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="directions__item">
+              <img src="./images/development.jpg" alt="code on the screen" width=" 380" />
+              <div class="directions__item-description">
+                <h4 class="directions__item-header directions__item-header-5">Development</h4>
+                <p class="directions__item-text">
+                  Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra
+                  faucibus. Viverra scelerisque consequat.
+                </p>
+                <a class="directions__item-link" href="">
+                  Check courses
+                  <svg class="directions__red-arrow" width="24" height="24">
+                    <use href="./images/icons.svg#icon-red-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="directions__item directions__item--last">
+              <div class="directions__item-description">
+                <p class="directions__item-text">
+                  New studying program
+                  <br />
+                  coming soon...
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="studying-process section section--studying-process">
+        <div class="container container__studying-process">
+          <h3 class="third-header">Studying process</h3>
+          <h2 class="second-header">That’s how we do it</h2>
+          <div class="studying-process__list-container">
+            <ul class="studying-process__list">
+              <li class="studying-process__item">
+                <h4 class="studying-process__item-first-header">STEP 1</h4>
+                <h5 class="studying-process__item-second-header">Watching online video lectures</h5>
+                <p class="studying-process__item-text">
+                  Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl,
+                  imperdiet gravida massa neque.
+                </p>
+              </li>
+              <li class="studying-process__item">
+                <h4 class="studying-process__item-first-header">STEP 2</h4>
+                <h5 class="studying-process__item-second-header">Passing test</h5>
+                <p class="studying-process__item-text">
+                  Facilisis pellentesque quis accumsan ultricies. Eu egestas eget feugiat lacus,
+                  amet, sollicitudin egestas laoreet etiam.
+                </p>
+              </li>
+              <li class="studying-process__item">
+                <h4 class="studying-process__item-first-header">STEP 3</h4>
+                <h5 class="studying-process__item-second-header">Curator’s feedback</h5>
+                <p class="studying-process__item-text">
+                  Eget amet, enim pharetra leo egestas nisi, odio imperdiet facilisis. Aliquet orci
+                  varius volutpat egestas facilisi lobortis.
+                </p>
+              </li>
+              <li class="studying-process__item">
+                <h4 class="studying-process__item-first-header">STEP 4</h4>
+                <h5 class="studying-process__item-second-header">Corrections if needed</h5>
+                <p class="studying-process__item-text">
+                  Non tempor pulvinar tincidunt aliquam. Placerat ultricies malesuada dui auctor.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="team section section--team">
+        <div class="container container--team">
+          <h3 class="third-header third-header--team">Best tutors are all here</h3>
+          <h2 class="second-header second-header--team">Meet our team</h2>
+          <ul class="team__list">
+            <li class="team__item">
+              <div class="team__item-img">
+                <img src="./images/team/dianne.png" alt="Dianne" />
+                <ul class="team__item-sm-list">
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linked-in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="team__item-description">
+                <h4 class="team__item-header">Dianne Russell</h4>
+                <p class="team__item-text">Founder and CEO</p>
+              </div>
+            </li>
 
-					<li class="team__item">
-						<div class="team__item-img">
-							<img src="./images/team/jerome.png" alt="Jerome" />
-							<ul class="team__item-sm-list">
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-facebook"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-instagram"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-linked-in"></use>
-										</svg>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="team__item-description">
-							<h4 class="team__item-header">Jerome Bell</h4>
-							<p class="team__item-text">Founder and Program Director</p>
-						</div>
-					</li>
+            <li class="team__item">
+              <div class="team__item-img">
+                <img src="./images/team/jerome.png" alt="Jerome" />
+                <ul class="team__item-sm-list">
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linked-in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="team__item-description">
+                <h4 class="team__item-header">Jerome Bell</h4>
+                <p class="team__item-text">Founder and Program Director</p>
+              </div>
+            </li>
 
-					<li class="team__item">
-						<div class="team__item-img">
-							<img src="./images/team/kristin.png" alt="Kristin" />
-							<ul class="team__item-sm-list">
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-facebook"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-instagram"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-linked-in"></use>
-										</svg>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="team__item-description">
-							<h4 class="team__item-header">Kristin Watson</h4>
-							<p class="team__item-text">Marketer, Curator of Marketing Course</p>
-						</div>
-					</li>
+            <li class="team__item">
+              <div class="team__item-img">
+                <img src="./images/team/kristin.png" alt="Kristin" />
+                <ul class="team__item-sm-list">
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linked-in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="team__item-description">
+                <h4 class="team__item-header">Kristin Watson</h4>
+                <p class="team__item-text">Marketer, Curator of Marketing Course</p>
+              </div>
+            </li>
 
-					<li class="team__item">
-						<div class="team__item-img">
-							<img src="./images/team/marvin.png" alt="marvin" />
-							<ul class="team__item-sm-list">
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-facebook"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-instagram"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-linked-in"></use>
-										</svg>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="team__item-description">
-							<h4 class="team__item-header">Marvin McKinney</h4>
-							<p class="team__item-text">PM, Curator of Management Course</p>
-						</div>
-					</li>
+            <li class="team__item">
+              <div class="team__item-img">
+                <img src="./images/team/marvin.png" alt="marvin" />
+                <ul class="team__item-sm-list">
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linked-in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="team__item-description">
+                <h4 class="team__item-header">Marvin McKinney</h4>
+                <p class="team__item-text">PM, Curator of Management Course</p>
+              </div>
+            </li>
 
-					<li class="team__item">
-						<div class="team__item-img">
-							<img src="./images/team/leslie.png" alt="Leslie" />
-							<ul class="team__item-sm-list">
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-facebook"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-instagram"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-linked-in"></use>
-										</svg>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="team__item-description">
-							<h4 class="team__item-header">Leslie Alexander Li</h4>
-							<p class="team__item-text">Curator of HR & Recruting Course</p>
-						</div>
-					</li>
+            <li class="team__item">
+              <div class="team__item-img">
+                <img src="./images/team/leslie.png" alt="Leslie" />
+                <ul class="team__item-sm-list">
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linked-in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="team__item-description">
+                <h4 class="team__item-header">Leslie Alexander Li</h4>
+                <p class="team__item-text">Curator of HR & Recruting Course</p>
+              </div>
+            </li>
 
-					<li class="team__item">
-						<div class="team__item-img">
-							<img src="./images/team/kathryn.png" alt="Kathryn" />
-							<ul class="team__item-sm-list">
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-facebook"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-instagram"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-linked-in"></use>
-										</svg>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="team__item-description">
-							<h4 class="team__item-header">Kathryn Murphy</h4>
-							<p class="team__item-text">Analyst and Marketing specialist</p>
-						</div>
-					</li>
+            <li class="team__item">
+              <div class="team__item-img">
+                <img src="./images/team/kathryn.png" alt="Kathryn" />
+                <ul class="team__item-sm-list">
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linked-in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="team__item-description">
+                <h4 class="team__item-header">Kathryn Murphy</h4>
+                <p class="team__item-text">Analyst and Marketing specialist</p>
+              </div>
+            </li>
 
-					<li class="team__item">
-						<div class="team__item-img">
-							<img src="./images/team/brooklyn.png" alt="Brooklyn" />
-							<ul class="team__item-sm-list">
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-facebook"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-instagram"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-linked-in"></use>
-										</svg>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="team__item-description">
-							<h4 class="team__item-header">Brooklyn Simmons</h4>
-							<p class="team__item-text">Curator of Development Course</p>
-						</div>
-					</li>
+            <li class="team__item">
+              <div class="team__item-img">
+                <img src="./images/team/brooklyn.png" alt="Brooklyn" />
+                <ul class="team__item-sm-list">
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linked-in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="team__item-description">
+                <h4 class="team__item-header">Brooklyn Simmons</h4>
+                <p class="team__item-text">Curator of Development Course</p>
+              </div>
+            </li>
 
-					<li class="team__item">
-						<div class="team__item-img">
-							<img src="./images/team/cody.png" alt="Cody" />
-							<ul class="team__item-sm-list">
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-facebook"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-instagram"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="team__item-sm-item">
-									<a class="team__item-sm-link" href="">
-										<svg class="team__item-sm-icon" width="20" height="20">
-											<use href="./images/icons.svg#icon-linked-in"></use>
-										</svg>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="team__item-description">
-							<h4 class="team__item-header">Cody Fisher</h4>
-							<p class="team__item-text">UX Designer, Curator of Design Course</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</section>
-		<section class="testimonials section section--testimonials">
-			<div class="container container--testimonials">
-				<h3 class="third-header third-header-testimonials">TESTIMONIALS</h3>
-				<h2 class="second-header second-header-testimonials">What our students say</h2>
-				<div class="testimonials__content">
-					<button class="testimonials__prev-btn" type="button">
-						<svg class="testimonials__prev-btn-icon" width="24" height="24">
-							<use href="./images/icons.svg#icon-prev-btn"></use>
-						</svg>
-					</button>
+            <li class="team__item">
+              <div class="team__item-img">
+                <img src="./images/team/cody.png" alt="Cody" />
+                <ul class="team__item-sm-list">
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__item-sm-item">
+                    <a class="team__item-sm-link" href="">
+                      <svg class="team__item-sm-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linked-in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="team__item-description">
+                <h4 class="team__item-header">Cody Fisher</h4>
+                <p class="team__item-text">UX Designer, Curator of Design Course</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="testimonials section section--testimonials">
+        <div class="container container--testimonials">
+          <h3 class="third-header third-header-testimonials">TESTIMONIALS</h3>
+          <h2 class="second-header second-header-testimonials">What our students say</h2>
+          <div class="testimonials__content">
+            <button class="testimonials__prev-btn" type="button">
+              <svg class="testimonials__prev-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-prev-btn"></use>
+              </svg>
+            </button>
 
-					<ul class="testimonials__list">
-						<li class="testimonials__item" data-category="eleanor">
-							<div class="testimonials__item-container">
-								<p class="testimonials__text">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
-									viverra mus
-									lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus
-									ornare turpis
-									quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra
-									arcu diam maecenas
-									diam integer in.
-								</p>
-								<div class="pesponse__author">
-									<img src="./images/testimonials-eleanor.jpg" alt="Eleanor Pena" />
-									<div class="testimonials__author-description">
-										<h4 class="testimonials__author-name">Eleanor Pena</h4>
-										<p class="testimonials__author-info">Position, Course</p>
-									</div>
-								</div>
-								<svg class="braces" width="28" height="20">
-									<use href="./images/icons.svg#icon-braces"></use>
-								</svg>
-							</div>
-						</li>
-						<!-- <li class="testimonials__item" data-category="person-2">
+            <ul class="testimonials__list">
+              <li class="testimonials__item" data-category="eleanor">
+                <div class="testimonials__item-container">
+                  <p class="testimonials__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
+                    viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae
+                    id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate
+                    etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                  </p>
+                  <div class="pesponse__author">
+                    <img src="./images/testimonials-eleanor.jpg" alt="Eleanor Pena" />
+                    <div class="testimonials__author-description">
+                      <h4 class="testimonials__author-name">Eleanor Pena</h4>
+                      <p class="testimonials__author-info">Position, Course</p>
+                    </div>
+                  </div>
+                  <svg class="braces" width="28" height="20">
+                    <use href="./images/icons.svg#icon-braces"></use>
+                  </svg>
+                </div>
+              </li>
+              <!-- <li class="testimonials__item" data-category="person-2">
 								<div class="testimonials__item-container">
 									<p class="testimonials__text">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus
@@ -618,573 +644,654 @@
 									</div>
 								</div>
 							</li> -->
-					</ul>
+            </ul>
 
-					<button class="testimonials__next-btn" type="button">
-						<svg class="testimonials__next-btn-icon" width="24" height="24">
-							<use href="./images/icons.svg#icon-next-btn"></use>
-						</svg>
-					</button>
-				</div>
-				<!-- <input type="radio" name="testimonials" id="eleanor" value="eleanor" checked />
+            <button class="testimonials__next-btn" type="button">
+              <svg class="testimonials__next-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-next-btn"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- <input type="radio" name="testimonials" id="eleanor" value="eleanor" checked />
 					<input type="radio" name="testimonials" id="person-2" value="person-2" />
 					<input type="radio" name="testimonials" id="person-3" value="person-3" />
 					<input type="radio" name="testimonials" id="person-4" value="person-4" />
 					<input type="radio" name="testimonials" id="person-5" value="person-5" /> -->
-				<ul class="testimonials__slider-labels">
-					<li class="testimonials__slider-labels-item">
-						<label for="eleanor">
-							<div class="testimonials__slider-label"></div>
-						</label>
-					</li>
-					<li class="testimonials__slider-labels-item">
-						<label for="person-2">
-							<div class="testimonials__slider-label"></div>
-						</label>
-					</li>
-					<li class="testimonials__slider-labels-item">
-						<label for="person-3">
-							<div class="testimonials__slider-label"></div>
-						</label>
-					</li>
-					<li class="testimonials__slider-labels-item">
-						<label for="person-4">
-							<div class="testimonials__slider-label"></div>
-						</label>
-					</li>
-					<li class="testimonials__slider-labels-item">
-						<label for="person-5">
-							<div class="testimonials__slider-label"></div>
-						</label>
-					</li>
-				</ul>
-			</div>
-		</section>
-		<section class="jobes section section--jobes">
-			<div class="container container--jobes">
-				<h3 class="third-header third-header--jobes">best jobs for you</h3>
-				<h2 class="second-header second-header--jobes">Our students work here</h2>
-				<ul class="jobes__list">
-					<li class="jobes__item">
-						<a class="jobes__link" href="">
-							<img class="jobes__icon" src="./images/logo-1.png" alt="InDepth Consulting logo"
-								width="120" />
-						</a>
-					</li>
-					<li class="jobes__item">
-						<a class="jobes__link" href="">
-							<img class="jobes__icon" src="./images/logo-2.png" alt="Higher Fit logo" width="120" />
-						</a>
-					</li>
-					<li class="jobes__item">
-						<a class="jobes__link" href="">
-							<img class="jobes__icon" src="./images/logo-3.png" alt="Sentinal Consulting logo"
-								width="120" />
-						</a>
-					</li>
-					<li class="jobes__item">
-						<a class="jobes__link" href="">
-							<img class="jobes__icon" src="./images/logo-4.png" alt="Happy Home logo" width="120" />
-						</a>
-					</li>
-					<li class="jobes__item">
-						<a class="jobes__link" href="">
-							<img class="jobes__icon" src="./images/logo-5.png" alt="ForSale logo" width="120" />
-						</a>
-					</li>
-					<li class="jobes__item">
-						<a class="jobes__link" href="">
-							<img class="jobes__icon" src="./images/logo-6.png" alt="Sunset Realty logo" width="120" />
-						</a>
-					</li>
-					<li class="jobes__item">
-						<a class="jobes__link" href="">
-							<img class="jobes__icon" src="./images/logo-7.png" alt="Atlantis Health logo" width="120" />
-						</a>
-					</li>
-					<li class="jobes__item">
-						<a class="jobes__link" href="">
-							<img class="jobes__icon" src="./images/logo-8.png" alt="Del Mar Strategy logo"
-								width="120" />
-						</a>
-					</li>
-					<li class="jobes__item">
-						<a class="jobes__link" href="">
-							<img class="jobes__icon" src="./images/logo-9.png" alt="Complete Health logo" width="120" />
-						</a>
-					</li>
-					<li class="jobes__item">
-						<a class="jobes__link" href="">
-							<img class="jobes__icon" src="./images/logo-10.png" alt="National logo" width="120" />
-						</a>
-					</li>
-					<li class="jobes__item">
-						<a class="jobes__link" href="">
-							<img class="jobes__icon" src="./images/logo-11.png" alt="Ultimate Gym logo" width="120" />
-						</a>
-					</li>
-					<li class="jobes__item">
-						<a class="jobes__link" href="">
-							<img class="jobes__icon" src="./images/logo-12.png" alt="United Strategy logo"
-								width="120" />
-						</a>
-					</li>
-				</ul>
-			</div>
-		</section>
-		<section class="blog section section--blog">
-			<div class="container container--blog">
-				<h3 class="third-header">Our blog</h3>
-				<h2 class="second-header">Latest posts</h2>
-				<button class="btn btn--blog" type="button">Go to blog</button>
-				<ul class="blog__list">
-					<li class="blog__item">
-						<div class="blog__item-container">
-							<img class="blog__img" src="./images/podcast.jpg" alt="podcast image" width="380" />
-							<div class="blog__img-icon">
-								<svg width="16" height="16">
-									<use href="./images/icons.svg#icon-mic"></use>
-								</svg>
-								<span class="blog__img-icon-text">Podcast</span>
-							</div>
-							<div class="blog__item-description">
-								<ul class="blog__item-description-list">
-									<li class="blog__item-description-item">
-										<span class="blog__item-description-text">Marketing</span>
-									</li>
-									<li class="blog__item-description-item">
-										<svg class="blog__item-description-icon" width="16" height="16">
-											<use href="./images/icons.svg#icon-calendar-mini"></use>
-										</svg>
-										<span class="blog__item-description-text">September 4, 2020</span>
-									</li>
-									<li class="blog__item-description-item">
-										<svg class="blog__item-description-icon" width="16" height="16">
-											<use href="./images/icons.svg#icon-clock-mini"></use>
-										</svg>
-										<span class="blog__item-description-text">36 min</span>
-									</li>
-								</ul>
-							</div>
-							<h4 class="blog__item-title">What is traffic arbitrage and does it really make money?</h4>
-							<p class="blog__item-text">
-								Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim
-								lacus, purus
-								gravida...
-							</p>
-							<a class="blog__item-link" href="">
-								Listen
-								<svg class="blog__red-arrow" width="24" height="24">
-									<use href="./images/icons.svg#icon-red-arrow"></use>
-								</svg>
-							</a>
-						</div>
-					</li>
-					<li class="blog__item">
-						<div class="blog__item-container">
-							<img class="blog__img" src="./images/video.jpg" alt="podcast image" width="380" />
-							<div class="blog__img-icon">
-								<svg width="16" height="16">
-									<use href="./images/icons.svg#icon-play"></use>
-								</svg>
-								<span class="blog__img-icon-text">Video</span>
-							</div>
-							<div class="blog__item-description">
-								<ul class="blog__item-description-list">
-									<li class="blog__item-description-item">
-										<span class="blog__item-description-text">Management</span>
-									</li>
-									<li class="blog__item-description-item">
-										<svg class="blog__item-description-icon" width="16" height="16">
-											<use href="./images/icons.svg#icon-calendar-mini"></use>
-										</svg>
-										<span class="blog__item-description-text">August 25, 2020</span>
-									</li>
-									<li class="blog__item-description-item">
-										<svg class="blog__item-description-icon" width="16" height="16">
-											<use href="./images/icons.svg#icon-clock-mini"></use>
-										</svg>
-										<span class="blog__item-description-text">45 min</span>
-									</li>
-								</ul>
-							</div>
-							<h4 class="blog__item-title">
-								What to do and who to talk to if you want to get feedback on the product
-							</h4>
-							<p class="blog__item-text">
-								Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna
-								sagittis faucibus...
-							</p>
-							<a class="blog__item-link" href="">
-								Watch
-								<svg class="blog__red-arrow" width="24" height="24">
-									<use href="./images/icons.svg#icon-red-arrow"></use>
-								</svg>
-							</a>
-						</div>
-					</li>
-					<li class="blog__item">
-						<div class="blog__item-container">
-							<img class="blog__img" src="./images/article.jpg" alt="podcast image" width="380" />
-							<div class="blog__img-icon">
-								<svg width="16" height="16">
-									<use href="./images/icons.svg#icon-file"></use>
-								</svg>
-								<span class="blog__img-icon-text">Article</span>
-							</div>
-							<a class="blog__item-link" href="">
-								Listen
-								<svg class="directions__red-arrow" width="24" height="24">
-									<use href="./images/icons.svg#icon-red-arrow"></use>
-								</svg>
-							</a>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</section>
-		<section class="subscription section section--subscription">
-			<div class="container container--subscription">
-				<h3 class="third-header third-header--subscription">Don’t miss anything</h3>
-				<h2 class="second-header second-header--subscription">
-					Subscribe to the Createx School
-					<br />
-					announcements
-				</h2>
-				<div class="subscription-form">
-					<input class="subscription__input" type="email" placeholder="Your working email" />
-					<button class="btn btn--subscription">Subscribe</button>
-				</div>
-			</div>
-		</section>
-	</main>
-	<footer class="footer section section--footer" id="footer">
-		<div class="container container--footer">
-			<div class="footer__main-content">
-				<div class="footer__first-column">
-					<a class="footer__logo" href="./index.html">
-						<svg class="footer__logo-icon" width="130" height="22">
-							<use href="./images/icons.svg#icon-logo"></use>
-						</svg>
-					</a>
-					<p class="footer__text">
-						Createx Online School is a leader in online studying. We have lots of courses and programs from
-						the main
-						market experts. We provide relevant approaches to online learning, internships and employment in
-						the
-						largest companies in the country.
-					</p>
-					<ul class="footer__sm-list">
-						<li class="footer__sm-item">
-							<a class="footer__sm-link" href="">
-								<svg class="footer__sm-icon" width="24" height="24">
-									<use href="./images/icons.svg#icon-facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="footer__sm-item">
-							<a class="footer__sm-link" href="">
-								<svg class="footer__sm-icon" width="24" height="24">
-									<use href="./images/icons.svg#icon-twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="footer__sm-item">
-							<a class="footer__sm-link" href="">
-								<svg class="footer__sm-icon" width="24" height="24">
-									<use href="./images/icons.svg#icon-youtube"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="footer__sm-item">
-							<a class="footer__sm-link" href="">
-								<svg class="footer__sm-icon" width="24" height="24">
-									<use href="./images/icons.svg#icon-telegram"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="footer__sm-item">
-							<a class="footer__sm-link" href="">
-								<svg class="footer__sm-icon" width="24" height="24">
-									<use href="./images/icons.svg#icon-instagram"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="footer__sm-item">
-							<a class="footer__sm-link" href="">
-								<svg class="footer__sm-icon" width="24" height="24">
-									<use href="./images/icons.svg#icon-linked-in"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
+          <ul class="testimonials__slider-labels">
+            <li class="testimonials__slider-labels-item">
+              <label for="eleanor">
+                <div class="testimonials__slider-label"></div>
+              </label>
+            </li>
+            <li class="testimonials__slider-labels-item">
+              <label for="person-2">
+                <div class="testimonials__slider-label"></div>
+              </label>
+            </li>
+            <li class="testimonials__slider-labels-item">
+              <label for="person-3">
+                <div class="testimonials__slider-label"></div>
+              </label>
+            </li>
+            <li class="testimonials__slider-labels-item">
+              <label for="person-4">
+                <div class="testimonials__slider-label"></div>
+              </label>
+            </li>
+            <li class="testimonials__slider-labels-item">
+              <label for="person-5">
+                <div class="testimonials__slider-label"></div>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="jobes section section--jobes">
+        <div class="container container--jobes">
+          <h3 class="third-header third-header--jobes">best jobs for you</h3>
+          <h2 class="second-header second-header--jobes">Our students work here</h2>
+          <ul class="jobes__list">
+            <li class="jobes__item">
+              <a class="jobes__link" href="">
+                <img
+                  class="jobes__icon"
+                  src="./images/logo-1.png"
+                  alt="InDepth Consulting logo"
+                  width="120"
+                />
+              </a>
+            </li>
+            <li class="jobes__item">
+              <a class="jobes__link" href="">
+                <img
+                  class="jobes__icon"
+                  src="./images/logo-2.png"
+                  alt="Higher Fit logo"
+                  width="120"
+                />
+              </a>
+            </li>
+            <li class="jobes__item">
+              <a class="jobes__link" href="">
+                <img
+                  class="jobes__icon"
+                  src="./images/logo-3.png"
+                  alt="Sentinal Consulting logo"
+                  width="120"
+                />
+              </a>
+            </li>
+            <li class="jobes__item">
+              <a class="jobes__link" href="">
+                <img
+                  class="jobes__icon"
+                  src="./images/logo-4.png"
+                  alt="Happy Home logo"
+                  width="120"
+                />
+              </a>
+            </li>
+            <li class="jobes__item">
+              <a class="jobes__link" href="">
+                <img class="jobes__icon" src="./images/logo-5.png" alt="ForSale logo" width="120" />
+              </a>
+            </li>
+            <li class="jobes__item">
+              <a class="jobes__link" href="">
+                <img
+                  class="jobes__icon"
+                  src="./images/logo-6.png"
+                  alt="Sunset Realty logo"
+                  width="120"
+                />
+              </a>
+            </li>
+            <li class="jobes__item">
+              <a class="jobes__link" href="">
+                <img
+                  class="jobes__icon"
+                  src="./images/logo-7.png"
+                  alt="Atlantis Health logo"
+                  width="120"
+                />
+              </a>
+            </li>
+            <li class="jobes__item">
+              <a class="jobes__link" href="">
+                <img
+                  class="jobes__icon"
+                  src="./images/logo-8.png"
+                  alt="Del Mar Strategy logo"
+                  width="120"
+                />
+              </a>
+            </li>
+            <li class="jobes__item">
+              <a class="jobes__link" href="">
+                <img
+                  class="jobes__icon"
+                  src="./images/logo-9.png"
+                  alt="Complete Health logo"
+                  width="120"
+                />
+              </a>
+            </li>
+            <li class="jobes__item">
+              <a class="jobes__link" href="">
+                <img
+                  class="jobes__icon"
+                  src="./images/logo-10.png"
+                  alt="National logo"
+                  width="120"
+                />
+              </a>
+            </li>
+            <li class="jobes__item">
+              <a class="jobes__link" href="">
+                <img
+                  class="jobes__icon"
+                  src="./images/logo-11.png"
+                  alt="Ultimate Gym logo"
+                  width="120"
+                />
+              </a>
+            </li>
+            <li class="jobes__item">
+              <a class="jobes__link" href="">
+                <img
+                  class="jobes__icon"
+                  src="./images/logo-12.png"
+                  alt="United Strategy logo"
+                  width="120"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="blog section section--blog">
+        <div class="container container--blog">
+          <h3 class="third-header">Our blog</h3>
+          <h2 class="second-header">Latest posts</h2>
+          <button class="btn btn--blog" type="button">Go to blog</button>
+          <ul class="blog__list">
+            <li class="blog__item">
+              <div class="blog__item-container">
+                <img class="blog__img" src="./images/podcast.jpg" alt="podcast image" width="380" />
+                <div class="blog__img-icon">
+                  <svg width="16" height="16">
+                    <use href="./images/icons.svg#icon-mic"></use>
+                  </svg>
+                  <span class="blog__img-icon-text">Podcast</span>
+                </div>
+                <div class="blog__item-description">
+                  <ul class="blog__item-description-list">
+                    <li class="blog__item-description-item">
+                      <span class="blog__item-description-text">Marketing</span>
+                    </li>
+                    <li class="blog__item-description-item">
+                      <svg class="blog__item-description-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-calendar-mini"></use>
+                      </svg>
+                      <span class="blog__item-description-text">September 4, 2020</span>
+                    </li>
+                    <li class="blog__item-description-item">
+                      <svg class="blog__item-description-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-clock-mini"></use>
+                      </svg>
+                      <span class="blog__item-description-text">36 min</span>
+                    </li>
+                  </ul>
+                </div>
+                <h4 class="blog__item-title">
+                  What is traffic arbitrage and does it really make money?
+                </h4>
+                <p class="blog__item-text">
+                  Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin
+                  dignissim lacus, purus gravida...
+                </p>
+                <a class="blog__item-link" href="">
+                  Listen
+                  <svg class="blog__red-arrow" width="24" height="24">
+                    <use href="./images/icons.svg#icon-red-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="blog__item">
+              <div class="blog__item-container">
+                <img class="blog__img" src="./images/video.jpg" alt="podcast image" width="380" />
+                <div class="blog__img-icon">
+                  <svg width="16" height="16">
+                    <use href="./images/icons.svg#icon-play"></use>
+                  </svg>
+                  <span class="blog__img-icon-text">Video</span>
+                </div>
+                <div class="blog__item-description">
+                  <ul class="blog__item-description-list">
+                    <li class="blog__item-description-item">
+                      <span class="blog__item-description-text">Management</span>
+                    </li>
+                    <li class="blog__item-description-item">
+                      <svg class="blog__item-description-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-calendar-mini"></use>
+                      </svg>
+                      <span class="blog__item-description-text">August 25, 2020</span>
+                    </li>
+                    <li class="blog__item-description-item">
+                      <svg class="blog__item-description-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-clock-mini"></use>
+                      </svg>
+                      <span class="blog__item-description-text">45 min</span>
+                    </li>
+                  </ul>
+                </div>
+                <h4 class="blog__item-title">
+                  What to do and who to talk to if you want to get feedback on the product
+                </h4>
+                <p class="blog__item-text">
+                  Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna
+                  sagittis faucibus...
+                </p>
+                <a class="blog__item-link" href="">
+                  Watch
+                  <svg class="blog__red-arrow" width="24" height="24">
+                    <use href="./images/icons.svg#icon-red-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="blog__item">
+              <div class="blog__item-container">
+                <img class="blog__img" src="./images/article.jpg" alt="podcast image" width="380" />
+                <div class="blog__img-icon">
+                  <svg width="16" height="16">
+                    <use href="./images/icons.svg#icon-file"></use>
+                  </svg>
+                  <span class="blog__img-icon-text">Article</span>
+                </div>
+                <a class="blog__item-link" href="">
+                  Listen
+                  <svg class="directions__red-arrow" width="24" height="24">
+                    <use href="./images/icons.svg#icon-red-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="subscription section section--subscription">
+        <div class="container container--subscription">
+          <h3 class="third-header third-header--subscription">Don’t miss anything</h3>
+          <h2 class="second-header second-header--subscription">
+            Subscribe to the Createx School
+            <br />
+            announcements
+          </h2>
+          <div class="subscription-form">
+            <input class="subscription__input" type="email" placeholder="Your working email" />
+            <button class="btn btn--subscription">Subscribe</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer section section--footer" id="footer">
+      <div class="container container--footer">
+        <div class="footer__main-content">
+          <div class="footer__first-column">
+            <a class="footer__logo" href="./index.html">
+              <svg class="footer__logo-icon" width="130" height="22">
+                <use href="./images/icons.svg#icon-logo"></use>
+              </svg>
+            </a>
+            <p class="footer__text">
+              Createx Online School is a leader in online studying. We have lots of courses and
+              programs from the main market experts. We provide relevant approaches to online
+              learning, internships and employment in the largest companies in the country.
+            </p>
+            <ul class="footer__sm-list">
+              <li class="footer__sm-item">
+                <a class="footer__sm-link" href="">
+                  <svg class="footer__sm-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__sm-item">
+                <a class="footer__sm-link" href="">
+                  <svg class="footer__sm-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__sm-item">
+                <a class="footer__sm-link" href="">
+                  <svg class="footer__sm-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__sm-item">
+                <a class="footer__sm-link" href="">
+                  <svg class="footer__sm-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__sm-item">
+                <a class="footer__sm-link" href="">
+                  <svg class="footer__sm-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__sm-item">
+                <a class="footer__sm-link" href="">
+                  <svg class="footer__sm-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linked-in"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-				<ul class="footer__nav-list">
-					<li class="footer__nav-item">
-						<h2 class="footer__nav-header">SITE MAP</h2>
-					</li>
-					<li class="footer__nav-item">
-						<a class="footer__nav-link" href="./about.html">About Us</a>
-					</li>
-					<li class="footer__nav-item">
-						<a class="footer__nav-link" href="">Courses</a>
-					</li>
-					<li class="footer__nav-item">
-						<a class="footer__nav-link" href="">Events</a>
-					</li>
-					<li class="footer__nav-item">
-						<a class="footer__nav-link" href="">Blog</a>
-					</li>
-					<li class="footer__nav-item">
-						<a class="footer__nav-link" href="">Contacts</a>
-					</li>
-				</ul>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <h2 class="footer__nav-header">SITE MAP</h2>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="./about.html">About Us</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="">Courses</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="">Events</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="">Blog</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="">Contacts</a>
+            </li>
+          </ul>
 
-				<ul class="footer__courses-list">
-					<li class="footer__courses-item">
-						<h2 class="footer__courses-header">COURSES</h2>
-					</li>
-					<li class="footer__courses-item">
-						<a class="footer__courses-link" href="">Marketing</a>
-					</li>
-					<li class="footer__courses-item">
-						<a class="footer__courses-link" href="">Management</a>
-					</li>
-					<li class="footer__courses-item">
-						<a class="footer__courses-link" href="">HR & Recruting</a>
-					</li>
-					<li class="footer__courses-item">
-						<a class="footer__courses-link" href="">Design</a>
-					</li>
-					<li class="footer__courses-item">
-						<a class="footer__courses-link" href="">Development</a>
-					</li>
-				</ul>
+          <ul class="footer__courses-list">
+            <li class="footer__courses-item">
+              <h2 class="footer__courses-header">COURSES</h2>
+            </li>
+            <li class="footer__courses-item">
+              <a class="footer__courses-link" href="">Marketing</a>
+            </li>
+            <li class="footer__courses-item">
+              <a class="footer__courses-link" href="">Management</a>
+            </li>
+            <li class="footer__courses-item">
+              <a class="footer__courses-link" href="">HR & Recruting</a>
+            </li>
+            <li class="footer__courses-item">
+              <a class="footer__courses-link" href="">Design</a>
+            </li>
+            <li class="footer__courses-item">
+              <a class="footer__courses-link" href="">Development</a>
+            </li>
+          </ul>
 
-					<address class="footer__address" id="contacts">
-						<h2 class="footer__address-header">CONTACT US</h2>
-						<a class="footer__address-link" href="phone:4055550128">
-							<svg class="footer__address-icon" width="16" height="16">
-								<use href="./images/icons.svg#icon-phone"></use>
-							</svg>
-							(405) 555-0128
-						</a>
-						<a class="footer__address-link" href="mailto:hello@createx.com">
-							<svg class="footer__address-icon" width="16" height="16">
-								<use href="./images/icons.svg#icon-mail"></use>
-							</svg>
-							hello@createx.com
-						</a>
-					</address>
+          <address class="footer__address" id="contacts">
+            <h2 class="footer__address-header">CONTACT US</h2>
+            <a class="footer__address-link" href="phone:4055550128">
+              <svg class="footer__address-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              (405) 555-0128
+            </a>
+            <a class="footer__address-link" href="mailto:hello@createx.com">
+              <svg class="footer__address-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              hello@createx.com
+            </a>
+          </address>
 
-				<div class="footer__input">
-					<h2 class="footer__input-header">SIGN UP TO OUR NEWSLETTER</h2>
-					<div class="footer__input-window-container">
-						<input class="footer__input-window" type="text" placeholder="Email address" />
-						<button class="footer__input-btn" type="submit">
-							<svg class="footer__input-btn-icon" width="16" height="16">
-								<use href="./images/icons.svg#icon-arrow"></use>
-							</svg>
-						</button>
-					</div>
-					<p class="footer__input-comment">
-						*Subscribe to our newsletter to receive communications and early updates from Createx SEO
-						Agency.
-					</p>
-				</div>
-			</div>
+          <div class="footer__input">
+            <h2 class="footer__input-header">SIGN UP TO OUR NEWSLETTER</h2>
+            <div class="footer__input-window-container">
+              <input class="footer__input-window" type="text" placeholder="Email address" />
+              <button class="footer__input-btn" type="submit">
+                <svg class="footer__input-btn-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="footer__input-comment">
+              *Subscribe to our newsletter to receive communications and early updates from Createx
+              SEO Agency.
+            </p>
+          </div>
+        </div>
 
-			<div class="footer__bottom">
-				<p class="footer__bottom-text">© All rights reserved. Made with&nbsp&nbsp</p>
-				<svg class="footer__heart-icon" width="16" height="16">
-					<use href="./images/icons.svg#icon-heart"></use>
-				</svg>
-				<p class="footer__bottom-text">&nbsp&nbspby Createx Studio</p>
-				<a class="footer__bottom-link" href="#top">GO TO TOP</a>
-			</div>
-		</footer>
-		<div class="backdrop is-hidden" data-sign-in-modal>
-			<div class="modal modal--sign-in">
-				<button class="modal__colse-btn" type="button" data-sign-in-close>
-					<svg class="modal__colse-btn-icon" width="24" height="24">
-						<use href="./images/icons.svg#icon-cross"></use>
-					</svg>
-				</button>
-				<form class="modal__sign-in-form" name="sign-in-form">
-					<span class="modal__title">Sign in</span>
-					<p class="modal__text">Sign in to your account using email and password provided during registration.</p>
-					<label class="modal__input-label">
-						Email
-						<input class="modal__input" type="email" name="email" placeholder="Your working email" autocomplete="off" />
-					</label>
-					<label class="modal__input-label">
-						Password
-						<input class="modal__input" type="password" name="password" data-password />
-						<button class="modal__show-pass-btn" type="button" data-show-pass>
-							<svg class="modal__show-pass-icon" width="16" height="16">
-								<use href="./images/icons.svg#icon-opened-eye"></use>
-							</svg>
-						</button>
-						<button class="modal__hide-pass-btn is-hidden" type="button" data-hide-pass>
-							<svg class="modal__hide-pass-icon" width="16" height="16">
-								<use href="./images/icons.svg#icon-closed-eye"></use>
-							</svg>
-						</button>
-					</label>
-					<div class="modal__checkbox-container">
-						<input class="modal__checkbox" type="checkbox" name="keep-signed-in" id="sign-in-checkbox" />
-						<label class="modal__checkbox-label" for="sign-in-checkbox">
-							<span class="modal__checkbox-icon">
-								<svg width="10" height="8">
-									<use href="./images/icons.svg#icon-check"></use>
-								</svg>
-							</span>
-						</label>
-						<span class="modal__checkbox-text">Keep me signed in</span>
-						<a class="modal__forgot-pass-link" href="">Forgot password?</a>
-					</div>
-					<button class="btn modal__sign-in-btn" type="submit">Sign in</button>
-					<p class="modal__sign-up-text">
-						Don't have an account?&nbsp
-						<button class="modal__sign-up-link" type="button" data-go-to-sign-up>Sign up</button>
-					</p>
-					<span class="modal__sm-list-title">Or sign in with</span>
-					<ul class="modal__sm-list">
-						<li class="modal__sm-item">
-							<a class="modal__sm-link" href="">
-								<svg class="modal__sm-icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="modal__sm-item">
-							<a class="modal__sm-link" href="">
-								<svg class="modal__sm-icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-google"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="modal__sm-item">
-							<a class="modal__sm-link" href="">
-								<svg class="modal__sm-icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="modal__sm-item">
-							<a class="modal__sm-link" href="">
-								<svg class="modal__sm-icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-linked-in"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</form>
-			</div>
-		</div>
+        <div class="footer__bottom">
+          <p class="footer__bottom-text">© All rights reserved. Made with&nbsp&nbsp</p>
+          <svg class="footer__heart-icon" width="16" height="16">
+            <use href="./images/icons.svg#icon-heart"></use>
+          </svg>
+          <p class="footer__bottom-text">&nbsp&nbspby Createx Studio</p>
+          <a class="footer__bottom-link" href="#top">GO TO TOP</a>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop is-hidden" data-sign-in-modal>
+      <div class="modal modal--sign-in">
+        <button class="modal__colse-btn" type="button" data-sign-in-close>
+          <svg class="modal__colse-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <form class="modal__sign-in-form" name="sign-in-form">
+          <span class="modal__title">Sign in</span>
+          <p class="modal__text">
+            Sign in to your account using email and password provided during registration.
+          </p>
+          <label class="modal__input-label">
+            Email
+            <input
+              class="modal__input"
+              type="email"
+              name="email"
+              placeholder="Your working email"
+              autocomplete="off"
+            />
+          </label>
+          <label class="modal__input-label">
+            Password
+            <input class="modal__input" type="password" name="password" data-password />
+            <button class="modal__show-pass-btn" type="button" data-show-pass>
+              <svg class="modal__show-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-opened-eye"></use>
+              </svg>
+            </button>
+            <button class="modal__hide-pass-btn is-hidden" type="button" data-hide-pass>
+              <svg class="modal__hide-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-closed-eye"></use>
+              </svg>
+            </button>
+          </label>
+          <div class="modal__checkbox-container">
+            <input
+              class="modal__checkbox"
+              type="checkbox"
+              name="keep-signed-in"
+              id="sign-in-checkbox"
+            />
+            <label class="modal__checkbox-label" for="sign-in-checkbox">
+              <span class="modal__checkbox-icon">
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+            </label>
+            <span class="modal__checkbox-text">Keep me signed in</span>
+            <a class="modal__forgot-pass-link" href="">Forgot password?</a>
+          </div>
+          <button class="btn modal__sign-in-btn" type="submit">Sign in</button>
+          <p class="modal__sign-up-text">
+            Don't have an account?&nbsp
+            <button class="modal__sign-up-link" type="button" data-go-to-sign-up>Sign up</button>
+          </p>
+          <span class="modal__sm-list-title">Or sign in with</span>
+          <ul class="modal__sm-list">
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-google"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linked-in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
 
-		<div class="backdrop is-hidden" data-sign-up-modal>
-			<div class="modal modal--sign-up">
-				<button class="modal__colse-btn" type="button" data-sign-up-close>
-					<svg class="modal__colse-btn-icon" width="24" height="24">
-						<use href="./images/icons.svg#icon-cross"></use>
-					</svg>
-				</button>
-				<form class="modal__sign-up-form" name="sign-up-form">
-					<span class="modal__title">Sign up</span>
-					<p class="modal__text">
-						Registration takes less than a minute but gives you full control over your studying.
-					</p>
-					<label class="modal__input-label">
-						Full Name
-						<input class="modal__input" type="text" name="name" placeholder="Your full name" autocomplete="off" />
-					</label>
-					<label class="modal__input-label">
-						Email
-						<input class="modal__input" type="email" name="email" placeholder="Your working email" autocomplete="off" />
-					</label>
-					<label class="modal__input-label">
-						Password
-						<input class="modal__input" type="password" name="password" data-password />
-						<button class="modal__show-pass-btn" type="button" data-show-pass>
-							<svg class="modal__show-pass-icon" width="16" height="16">
-								<use href="./images/icons.svg#icon-opened-eye"></use>
-							</svg>
-						</button>
-						<button class="modal__hide-pass-btn is-hidden" type="button" data-hide-pass>
-							<svg class="modal__hide-pass-icon" width="16" height="16">
-								<use href="./images/icons.svg#icon-closed-eye"></use>
-							</svg>
-						</button>
-					</label>
-					<label class="modal__input-label">
-						Confirm Password
-						<input class="modal__input" type="password" name="password" data-password />
-						<button class="modal__show-pass-btn" type="button" data-show-pass>
-							<svg class="modal__show-pass-icon" width="16" height="16">
-								<use href="./images/icons.svg#icon-opened-eye"></use>
-							</svg>
-						</button>
-						<button class="modal__hide-pass-btn is-hidden" type="button" data-hide-pass>
-							<svg class="modal__hide-pass-icon" width="16" height="16">
-								<use href="./images/icons.svg#icon-closed-eye"></use>
-							</svg>
-						</button>
-					</label>
-					<div class="modal__checkbox-container">
-						<input class="modal__checkbox" type="checkbox" name="remember-me" id="sign-up-checkbox" />
-						<label class="modal__checkbox-label" for="sign-up-checkbox">
-							<span class="modal__checkbox-icon">
-								<svg width="10" height="8">
-									<use href="./images/icons.svg#icon-check"></use>
-								</svg>
-							</span>
-						</label>
-						<span class="modal__checkbox-text">Remember me</span>
-					</div>
-					<button class="btn modal__sign-in-btn" type="submit">Sign in</button>
-					<p class="modal__sign-up-text">
-						Already have an account?&nbsp
-						<button class="modal__sign-up-link" type="button" data-go-to-sign-in>Sign in</button>
-					</p>
-					<span class="modal__sm-list-title">Or sign in with</span>
-					<ul class="modal__sm-list">
-						<li class="modal__sm-item">
-							<a class="modal__sm-link" href="">
-								<svg class="modal__sm-icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="modal__sm-item">
-							<a class="modal__sm-link" href="">
-								<svg class="modal__sm-icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-google"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="modal__sm-item">
-							<a class="modal__sm-link" href="">
-								<svg class="modal__sm-icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="modal__sm-item">
-							<a class="modal__sm-link" href="">
-								<svg class="modal__sm-icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-linked-in"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</form>
-			</div>
-		</div>
+    <div class="backdrop is-hidden" data-sign-up-modal>
+      <div class="modal modal--sign-up">
+        <button class="modal__colse-btn" type="button" data-sign-up-close>
+          <svg class="modal__colse-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <form class="modal__sign-up-form" name="sign-up-form">
+          <span class="modal__title">Sign up</span>
+          <p class="modal__text">
+            Registration takes less than a minute but gives you full control over your studying.
+          </p>
+          <label class="modal__input-label">
+            Full Name
+            <input
+              class="modal__input"
+              type="text"
+              name="name"
+              placeholder="Your full name"
+              autocomplete="off"
+            />
+          </label>
+          <label class="modal__input-label">
+            Email
+            <input
+              class="modal__input"
+              type="email"
+              name="email"
+              placeholder="Your working email"
+              autocomplete="off"
+            />
+          </label>
+          <label class="modal__input-label">
+            Password
+            <input class="modal__input" type="password" name="password" data-password />
+            <button class="modal__show-pass-btn" type="button" data-show-pass>
+              <svg class="modal__show-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-opened-eye"></use>
+              </svg>
+            </button>
+            <button class="modal__hide-pass-btn is-hidden" type="button" data-hide-pass>
+              <svg class="modal__hide-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-closed-eye"></use>
+              </svg>
+            </button>
+          </label>
+          <label class="modal__input-label">
+            Confirm Password
+            <input class="modal__input" type="password" name="password" data-password />
+            <button class="modal__show-pass-btn" type="button" data-show-pass>
+              <svg class="modal__show-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-opened-eye"></use>
+              </svg>
+            </button>
+            <button class="modal__hide-pass-btn is-hidden" type="button" data-hide-pass>
+              <svg class="modal__hide-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-closed-eye"></use>
+              </svg>
+            </button>
+          </label>
+          <div class="modal__checkbox-container">
+            <input
+              class="modal__checkbox"
+              type="checkbox"
+              name="remember-me"
+              id="sign-up-checkbox"
+            />
+            <label class="modal__checkbox-label" for="sign-up-checkbox">
+              <span class="modal__checkbox-icon">
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+            </label>
+            <span class="modal__checkbox-text">Remember me</span>
+          </div>
+          <button class="btn modal__sign-in-btn" type="submit">Sign in</button>
+          <p class="modal__sign-up-text">
+            Already have an account?&nbsp
+            <button class="modal__sign-up-link" type="button" data-go-to-sign-in>Sign in</button>
+          </p>
+          <span class="modal__sm-list-title">Or sign in with</span>
+          <ul class="modal__sm-list">
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-google"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linked-in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
 
-		<script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script>
 
-		<script src="./js/show-hide-pass.js"></script>
-	</body>
+    <script src="./js/show-hide-pass.js"></script>
+  </body>
 </html>
