@@ -7,6 +7,9 @@ body {
 	font-family: Lato, sans-serif;
 	color: var(--main-text-color);
 }
+body.modal-open {
+	overflow: hidden;
+}
 ul,
 h1,
 h2,
@@ -237,6 +240,7 @@ img {
 .header__authorization-sign-in:hover,
 .header__authorization-sign-up:hover {
 	color: var(--accent-color);
+	cursor: pointer;
 
 	transition: color 250ms linear;
 }
