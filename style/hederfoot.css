@@ -795,14 +795,14 @@ span {
   width: 84px;
   height: 20px;
 }
+  
 
 .social-icon {
   margin: auto;
   color: #ffffff99;
+  opacity: 0;
 }
-.social-icon::before {
-  display: none;
-}
+
 
 .social-icon::after {
   display: flex;
@@ -871,6 +871,7 @@ span {
     0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04),
     0px 4px 4px -4px rgba(30, 33, 44, 0.03);
   border-radius: 4px;
+  outline: 0;
 }
 
 .box-brackets {
@@ -947,7 +948,7 @@ span {
   background-size: contain;
 
   border-radius: 4px;
-  z-index: 1;
+  outline: 1;
 }
 /* .team-social:hover,
 .team-social:focus {
@@ -956,11 +957,13 @@ span {
 .social-icon:hover,
 .social-icon:focus {
   background: transparent;
-  color: #fff;
+  color: #fff; 
+  opacity: 1;
 }
 
 .icon {
   fill: currentColor;
+
 }
 
 /* ------------------------BLOG------------------------ */
