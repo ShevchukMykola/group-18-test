@@ -270,6 +270,14 @@ img {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
+.hero-buttomm-about{
+  margin-right: 24px;
+  background: content-box;
+  width: 142px;
+  height: 52px;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
 
 .buttomm-play {
   width: 171px;
@@ -285,10 +293,26 @@ img {
   line-height: 1.5;
 }
 
+
+
+
 .play-icon {
   margin-right: 16px;
-  background-color: var(--accent-color 56%);
   fill: var(--accent-color);
+}
+.play-icon::after {
+  content: "";
+  position: absolute;
+  
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  fill: #ff403a77;
+  opacity: 0;
+}
+
+.play-icon:hover::after {
+  opacity: 1;
 }
 
 /* -------------------------header hover/focus------------------------ */
@@ -312,18 +336,6 @@ img {
 .authorization-icon {
   fill: currentColor;
 }
-
-/* .play-icon:hover,
-.play-icon:focus {
-  fill: #f75e0540;
-  stroke: transparent;
-  stroke-width: 8px;
-  stroke-opacity: 0.65;
-  transform: scale(1.5);
-}
-.play-icon {
-  fill: currentColor;
-} */
 
 /* ------------------------ABOUT------------------------ */
 
@@ -503,6 +515,8 @@ span {
 
 .benefits-list-icon {
   display: flex;
+  margin: auto;
+  padding: auto;
   justify-content: center;
   align-items: center;
   width: 307px;
@@ -511,11 +525,7 @@ span {
   border-radius: 4px;
   text-align: center;
   color: #9a9ca5;
-}
-
-.benefits-list-icon {
-  margin: auto;
-  padding: auto;
+  transition: border 250ms linear;
 }
 
 .benefints-box {
@@ -549,6 +559,7 @@ span {
 .benefits-list-icon:focus {
   border: 1px solid#ff3f3a;
   color: #ff3f3a;
+  transition: color 250ms linear;
 }
 
 .list-icon {
@@ -777,6 +788,7 @@ span {
 }
 
 .team-card {
+  position: relative;
   padding: 20px 20px 0 20px;
   height: 340px;
   width: 285px;
@@ -784,6 +796,26 @@ span {
   top: 0px;
   border-radius: 4px;
   background-color: #ffcf2d;
+}
+
+.team-card::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+
+  background-image: linear-gradient( rgba(30, 33, 44, 0) 43.9%,
+    rgba(30, 33, 44, 0.03) 55.21%,
+    rgba(30, 33, 44, 0.33) 68.73%,
+    rgba(30, 33, 44, 0.56) 76.17%,
+    rgba(30, 33, 44, 0.768225) 83.75%,
+    rgba(30, 33, 44, 0.92) 91.49%,
+    #1e212c 100%);
+    opacity: 0;
+    transition: opacity 250 ms linear;
 }
 
 .team-social {
@@ -795,18 +827,23 @@ span {
   width: 84px;
   height: 20px;
 }
+.team-card:hover::after{
+  opacity: 1;
+  transition: opacity 250ms linear;
+}
   
 
 .social-icon {
+  display: flex;
   margin: auto;
   color: #ffffff99;
-  opacity: 0;
+  z-index: -1;
 }
 
-
-.social-icon::after {
-  display: flex;
+.team-card:hover .social-icon{
+  z-index: 1;
 }
+
 .icon {
   width: 20px;
   height: 20px;
@@ -842,6 +879,12 @@ span {
   display: flex;
   margin-top: 208px;
 }
+
+/* .testimonials-buttom::after{
+  content: "";
+  display: flex;
+
+} */
 
 .buttom {
   padding: 0;
@@ -925,45 +968,23 @@ span {
 .buttom:focus {
   background: #ff3f3a;
   color: #fff;
+  transition: background 250ms linear;
 }
 
 .testimonials-icon {
   fill: currentColor;
 }
 
-.team-card:hover,
-.team-card:focus {
-  background: linear-gradient(
-      180deg,
-      rgba(30, 33, 44, 0) 43.9%,
-      rgba(30, 33, 44, 0.03) 55.21%,
-      rgba(30, 33, 44, 0.33) 68.73%,
-      rgba(30, 33, 44, 0.56) 76.17%,
-      rgba(30, 33, 44, 0.768225) 83.75%,
-      rgba(30, 33, 44, 0.92) 91.49%,
-      #1e212c 100%
-    ),
-    #ffcf2d;
-  background-position: bottom;
-  background-size: contain;
-
-  border-radius: 4px;
-  outline: 1;
-}
-/* .team-social:hover,
-.team-social:focus {
-  display: initial;
-} */
 .social-icon:hover,
 .social-icon:focus {
   background: transparent;
   color: #fff; 
-  opacity: 1;
+ transition: color 250ms linear;
 }
 
 .icon {
   fill: currentColor;
-
+  transition: fill 250ms linear
 }
 
 /* ------------------------BLOG------------------------ */
