@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Grid View</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="./css/modal.css">
+</head>
+
+<body>
+    <!-- == Хедер == -->
+    <!-- <header class="container">
+
+        <nav class="nav">
+
+
+            <a class="link logo" href="./index.html">
+                <svg class="logo-icon" width="130" height="22">
+                    <use href="./pic/icon.svg#icon-logo"></use>
+                </svg>
+            </a>
+
+            <ul class="nav-bar">
+                <li class="nav-item">
+                    <a href="./about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./courses.html">Courses</a>
+                </li>
+                <li class="nav-item header__nav-link--current">
+                    <a href="./events-grid-view.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./course.html">Contacts</a>
+                </li>
+            </ul>
+
+            <ul class=" account">
+                <li class="account-btn"> <a class="link acc-link" href=""> Get consultation</a></li>
+                <li class="login-form"> <a class="link acc-link-login" href="">
+                        <svg class="account-icon" width="20" height="20">
+                            <use href="./pic/icon.svg#icon-person"></use>
+                        </svg>
+                        Log in</a> / <a class="link acc-link-reg" href="">Register</a></li>
+            </ul>
+
+        </nav>
+
+    </header> -->
+    <header class="header section--header">
+      <div class="container--header">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./index.html">
+                <svg class="header__logo-icon" width="130" height="22">
+                  <use href="./images/icons.svg#icon-logo"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./about.html">About Us</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./courses.html">Courses</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link header__nav-link--current" href="./events-grid-view.html">Events</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./contacts.html">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn btn--header" type="button">Get consultation</button>
+        <ul class="header__authorization">
+          <li class="header__authorization-item">
+            <svg class="header__authorization-icon" width="20" height="20">
+              <use class="header__authorization-icon" href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </li>
+          <li class="header__authorization-item">
+            <button class="header__authorization-sign-in" type="button" data-sign-in-open>
+              &nbspLog in&nbsp
+            </button>
+          </li>
+          <li class="header__authorization-item">
+            <span class="header__authorization-slash">&nbsp/&nbsp</span>
+          </li>
+          <li class="header__authorization-item">
+            <button class="header__authorization-sign-up" type="button" data-sign-up-open>
+              &nbspRegister&nbsp
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="container">
+
+        <!--  панель інструментів -->
+
+
+        <!-- == Івенти == -->
+        <div class="event-title">
+            <h6 class="sub-title">Our events</h6>
+            <h1 class="general-title">Lectures, workshops & master-classes</h1>
+        </div>
+
+        <!-- === панель інструментів === -->
+
+
+        <!-- === заходи ===-->
+
+        <section>
+            <ul class="event-list">
+                <li class="event-item">
+                    <article>
+
+                        <div class="event-blok">
+                            <time class="time" datetime="08-05 T11:00-14:00"><span class="mounts"> 05
+                                    Aug</span><br>11:00 – 14:00
+                            </time>
+                            <h3 class="list-title">Formation of the organizational structure of the company in the
+                                face
+                                of
+                                uncertainty.</h3>
+
+                            <p class="category">Onine master-class</p>
+                        </div>
+                        <a href="x" class="link event-link">View more</a>
+                    </article>
+                </li>
+
+                <li class="event-item">
+                    <article>
+
+                        <div class="event-blok">
+                            <time class="time" datetime="07-24 T11:00-12:30"><span class="mounts">24 Jul</span><br>11:00
+                                –
+                                12:30
+                            </time>
+                            <h3 class="list-title">Building a customer service department. Best Practices.</h3>
+
+                            <p class="category">Onine lecture</p>
+                        </div>
+                        <a href="x" class="link event-link">View more</a>
+                    </article>
+                </li>
+
+                <li class="event-item">
+                    <article>
+
+                        <div class="event-blok">
+                            <time class="time" datetime="07-16 T10:00-13:00"><span class="mounts">16 Jul</span><br>10:00
+                                –
+                                13:00
+                            </time>
+                            <h3 class="list-title">How to apply methods of speculative design in practice.
+                                Worldbuilding
+                                prototyping.</h3>
+                            <p class="category">Onine workshop</p>
+                        </div>
+                        <a href="x" class="link event-link">View more</a>
+                    </article>
+                </li>
+
+                <li class="event-item">
+                    <article>
+
+                        <div class="event-blok">
+                            <time class="time" datetime="07-05 T09:00-14:00"><span class="mounts">10 Jul</span><br> 9:00
+                                –
+                                14:00
+                            </time>
+                            <h3 class="list-title">Find and evaluate: search and assessment tools for candidates.</h3>
+                            <p class="category">Onine workshop</p>
+
+                        </div><a href="x" class="link event-link">View more</a>
+                    </article>
+                </li>
+
+                <li class="event-item">
+                    <article>
+
+                        <div class="event-blok">
+                            <time class="time" datetime="06-27 T15:00-19:00"><span class="mounts">27 Jun</span><br>
+                                15:00 –
+                                19:00
+                            </time>
+                            <h3 class="list-title">Connection to Microsoft Excel and Google Sheets, Data Visualization
+                                in
+                                Power BI</h3>
+                            <p class="category">Onine master-class</p>
+                        </div>
+                        <a href="x" class="link event-link">View more</a>
+                    </article>
+                </li>
+
+                <li class="event-item">
+                    <article>
+
+                        <div class="event-blok">
+                            <time class="time" datetime="06-15 T11:00-12:00"><span class="mounts">15 Jun</span><br>
+                                11:00 –
+                                12:00
+                            </time>
+                            <h3 class="list-title">Marketing or growth hacking: main differences and what business
+                                needs
+                            </h3>
+                            <p class="category">Onine lecture</p>
+                        </div>
+                        <a href="x" class="link event-link">View more</a>
+                    </article>
+                </li>
+
+                <li class="event-item">
+                    <article>
+
+                        <div class="event-blok">
+                            <time class="time" datetime="07-02 T11:00-13:00"><span class="mounts">02 Jul</span><br>
+                                11:00 –
+                                13:00
+                            </time>
+                            <h3 class="list-title">How to brief a client and present your design to approve it from the
+                                first show.</h3>
+                            <p class="category">Onine lecture</p>
+                        </div>
+                        <a href="x" class="link event-link">View more</a>
+                    </article>
+                </li>
+
+                <li class="event-item">
+                    <article>
+
+                        <div class="event-blok">
+                            <time class="time" datetime="05-29 T11:00-12:00"><span class="mounts">29 May</span><br>
+                                11:00 –
+                                12:00
+                            </time>
+                            <h3 class="list-title">Who is a project manager and do I want to be PM?</h3>
+                            <p class="category">Onine lecture</p>
+
+                        </div><a href="x" class="link event-link">View more</a>
+                    </article>
+                </li>
+
+                <li class="event-item">
+                    <article>
+
+                        <div class="event-blok">
+                            <time class="time" datetime="05-18 T10:00-12:00"><span class="mounts">18 May</span><br>
+                                10:00 –
+                                12:00
+                            </time>
+                            <h3 class="list-title">The company's business page as an additional tool to support the
+                                announcement of vacancies.</h3>
+                            <p class="category">Onine lecture</p>
+                        </div>
+                        <a href="x" class="link event-link">View more</a>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ==== сторрінки ==== -->
+        <div class="catalog">
+            <ul class="pages">
+                <li><a class="link page-link" href="x">1</a></li>
+                <li><a class="link page-link" href="x">2</a></li>
+                <li><a class="link page-link" href="x">3</a></li>
+                <li><a class="link page-link" href="x">4</a></li>
+                <li><a class="link page-link next-page" href="x">
+                        <svg class="next-page-icon" width="24" height="24">
+                            <use href="./pic/icon.svg#icon-right-g"></use>
+                        </svg>
+                    </a></li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- == Підписка == -->
+    <section class="subscribe-bg">
+
+        <div class="subscribe-titles">
+            <h6 class="sub-title">Don’t miss anything</h6>
+            <h2 class="general-title">Subscribe to the Createx School announcements</h2>
+        </div>
+
+        <div class="box">
+            <div class="subscribe-pic-up"><img class="subscribe-img-top position" src="./pic/illustration.png" alt="">
+            </div>
+
+            <div class="subscribe-form">
+                <input class="subscribe-input" type="email" placeholder="Your working email">
+                <a class="link subscribe-link" href="">Subscribe</a>
+            </div>
+
+            <div class="subscribe-pic-down">
+                <img class="subscribe-img-bottom position" src="./pic/illustration.png" alt="">
+            </div>
+        </div>
+
+
+    </section>
+
+    </section>
+
+    <!-- == Підвал == -->
+    <!-- <footer class="background">
+        <div class="container">
+            <section class="footer">
+
+                <div class="about">
+                    <a class="link footer-logo" href="./events-grid-view.html">
+                        <svg class="logo-icon" width="130" height="22">
+                            <use href="./pic/icon.svg#icon-logo-footer"></use>
+                        </svg>
+                    </a>
+
+                    <p class="footer-text">Createx Online School is a leader in online studying. We have lots of courses
+                        and
+                        programs from the main
+                        market experts.
+                        We provide relevant approaches to online learning, internships and employment in the largest
+                        companies
+                        in the country.</p>
+
+                    <h2 hidden>socials</h2>
+
+                    <div class="socials">
+                        <ul class="socials-list">
+                            <li class="socials-item">
+                                <a href="" class="socials-link"><svg class="logo-icon" width="24" height="24">
+                                        <use href="./pic/icon.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a href="" class="socials-link"><svg class=" logo-icon" width="24" height="24">
+                                        <use href="./pic/icon.svg#icon-youtube"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a href="" class="socials-link"><svg class=" logo-icon" width="24" height="24">
+                                        <use href="./pic/icon.svg#icon-telegram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a href="" class="socials-link"><svg class=" logo-icon" width="24" height="24">
+                                        <use href="./pic/icon.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a href="" class="socials-link"><svg class=" logo-icon" width="24" height="24">
+                                        <use href="./pic/icon.svg#icon-linked-in"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a href="" class="socials-link"><svg class=" logo-icon" width="24" height="24">
+                                        <use href="./pic/icon.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="site-map">
+                    <h3 class="site-map-title">site map</h3>
+                    <ul class="site-map-list">
+                        <li class="site-map-item"><a class="link site-map-link" href="x">About Us</a></li>
+                        <li class="site-map-item"><a class="link site-map-link" href="x">Courses</a></li>
+                        <li class="site-map-item"><a class="link site-map-link" href="x">Events</a></li>
+                        <li class="site-map-item"><a class="link site-map-link" href="x">Blog</a></li>
+                        <li class="site-map-item"><a class="link site-map-link" href="x">Contacts</a></li>
+                    </ul>
+                </div>
+
+                <div class="courses">
+                    <h3 class="courses-title">courses</h3>
+                    <ul class="courses-list">
+                        <li class="courses-item">
+                            <a class="courses-link link" href="x">Marketing</a>
+                        </li>
+                        <li class="courses-item">
+                            <a class="courses-link link" href="x">Management</a>
+                        </li>
+                        <li class="courses-item">
+                            <a class="courses-link link" href="x">HR & Recruting</a>
+                        </li>
+                        <li class="courses-item">
+                            <a class="courses-link link" href="x">Design</a>
+                        </li>
+                        <li class="courses-item">
+                            <a class="courses-link link" href="x">Development</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact-us">
+                    <h3 class="contact-us-title">contact us</h3>
+                    <ul class="contact-us-list">
+                        <li class="contact-us-item">
+                            <svg class="contact-us-pic" width="16" height="16">
+                                <use href="./pic/icon.svg#icon-iphone"></use>
+                            </svg>
+                            <a href="tel:(405) 555-0128" class="link contact-us-link">(405)
+                                555-0128</a>
+                        </li>
+                        <li class="contact-us-item">
+                            <svg class="contact-us-pic" width="16" height="16">
+                                <use href="./pic/icon.svg#icon-mail"></use>
+                            </svg><a href="mailto:hello@createx.com" class="link contact-us-link">hello@createx.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <h3 class="newslatter-title">sign up to our newsletter</h3>
+
+                    <input class="newslatter-form" type="email"
+                        placeholder="Email address                                                  &#10140;">
+                    <p class="newslatter-text">*Subscribe to our newsletter to receive communications and early updates
+                        from
+                        Createx SEO Agency.</p>
+
+                </div>
+            </section>
+        </div>
+
+
+    </footer> -->
+
+    <!-- <section class=" copyright">
+        <div class="container copyright-container">
+            <p class="copyright-text">&copy;All rights reserved.Made with
+                <svg class="stroke" width="16" height="16">
+                    <use href="./pic/icon.svg#icon-vector-stroke"></use>
+                </svg> by Createx Studio
+            </p>
+            <a class="link anchor" href="#top">GO TO TOP</a>
+        </div>
+    </section> -->
+
+    <footer class="footer section--footer" id="footer">
+      <div class="container--footer">
+        <div class="footer__main-content">
+          <div class="footer__first-column">
+            <a class="footer__logo" href="./index.html">
+              <svg class="footer__logo-icon" width="130" height="22">
+                <use href="./images/icons.svg#icon-logo"></use>
+              </svg>
+            </a>
+            <p class="footer__text">
+              Createx Online School is a leader in online studying. We have lots of courses and
+              programs from the main market experts. We provide relevant approaches to online
+              learning, internships and employment in the largest companies in the country.
+            </p>
+            <ul class="footer__sm-list">
+              <li class="footer__sm-item">
+                <a class="footer__sm-link" href="">
+                  <svg class="footer__sm-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__sm-item">
+                <a class="footer__sm-link" href="">
+                  <svg class="footer__sm-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__sm-item">
+                <a class="footer__sm-link" href="">
+                  <svg class="footer__sm-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__sm-item">
+                <a class="footer__sm-link" href="">
+                  <svg class="footer__sm-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__sm-item">
+                <a class="footer__sm-link" href="">
+                  <svg class="footer__sm-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__sm-item">
+                <a class="footer__sm-link" href="">
+                  <svg class="footer__sm-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linked-in"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <h2 class="footer__nav-header">SITE MAP</h2>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="./about.html">About Us</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="./courses.html">Courses</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="./events-grid-view.html">Events</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="./contacts.html">Contacts</a>
+            </li>
+          </ul>
+
+          <ul class="footer__courses-list">
+            <li class="footer__courses-item">
+              <h2 class="footer__courses-header">COURSES</h2>
+            </li>
+            <li class="footer__courses-item">
+              <a class="footer__courses-link" href="">Marketing</a>
+            </li>
+            <li class="footer__courses-item">
+              <a class="footer__courses-link" href="">Management</a>
+            </li>
+            <li class="footer__courses-item">
+              <a class="footer__courses-link" href="">HR & Recruting</a>
+            </li>
+            <li class="footer__courses-item">
+              <a class="footer__courses-link" href="">Design</a>
+            </li>
+            <li class="footer__courses-item">
+              <a class="footer__courses-link" href="">Development</a>
+            </li>
+          </ul>
+
+          <address class="footer__address">
+            <h2 class="footer__address-header">CONTACT US</h2>
+            <a class="footer__address-link" href="phone:4055550128">
+              <svg class="footer__address-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              (405) 555-0128
+            </a>
+            <a class="footer__address-link" href="mailto:hello@createx.com">
+              <svg class="footer__address-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              hello@createx.com
+            </a>
+          </address>
+
+          <div class="footer__input">
+            <h2 class="footer__input-header">SIGN UP TO OUR NEWSLETTER</h2>
+            <div class="footer__input-window-container">
+              <input class="footer__input-window" type="text" placeholder="Email address" />
+              <button class="footer__input-btn" type="submit">
+                <svg class="footer__input-btn-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="footer__input-comment">
+              *Subscribe to our newsletter to receive communications and early updates from Createx
+              SEO Agency.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__bottom-text">© All rights reserved. Made with&nbsp&nbsp</p>
+          <svg class="footer__heart-icon" width="16" height="16">
+            <use href="./images/icons.svg#icon-heart"></use>
+          </svg>
+          <p class="footer__bottom-text">&nbsp&nbspby Createx Studio</p>
+          <a class="footer__bottom-link" href="#top">GO TO TOP</a>
+        </div>
+      </div>
+    </footer>
+ 
+    <div class="backdrop is-hidden" data-sign-in-modal>
+      <div class="modal modal--sign-in">
+        <button class="modal__colse-btn" type="button" data-sign-in-close>
+          <svg class="modal__colse-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <form class="modal__sign-in-form" name="sign-in-form">
+          <span class="modal__title">Sign in</span>
+          <p class="modal__text">
+            Sign in to your account using email and password provided during registration.
+          </p>
+          <label class="modal__input-label">
+            Email
+            <input
+              class="modal__input"
+              type="email"
+              name="email"
+              placeholder="Your working email"
+              autocomplete="off"
+            />
+          </label>
+          <label class="modal__input-label">
+            Password
+            <input class="modal__input" type="password" name="password" data-password />
+            <button class="modal__show-pass-btn" type="button" data-show-pass>
+              <svg class="modal__show-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-opened-eye"></use>
+              </svg>
+            </button>
+            <button class="modal__hide-pass-btn is-hidden" type="button" data-hide-pass>
+              <svg class="modal__hide-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-closed-eye"></use>
+              </svg>
+            </button>
+          </label>
+          <div class="modal__checkbox-container">
+            <input
+              class="modal__checkbox"
+              type="checkbox"
+              name="keep-signed-in"
+              id="sign-in-checkbox"
+            />
+            <label class="modal__checkbox-label" for="sign-in-checkbox">
+              <span class="modal__checkbox-icon">
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+            </label>
+            <span class="modal__checkbox-text">Keep me signed in</span>
+            <a class="modal__forgot-pass-link" href="">Forgot password?</a>
+          </div>
+          <button class="btn modal__sign-in-btn" type="submit">Sign in</button>
+          <p class="modal__sign-up-text">
+            Don't have an account?&nbsp
+            <button class="modal__sign-up-link" type="button" data-go-to-sign-up>Sign up</button>
+          </p>
+          <span class="modal__sm-list-title">Or sign in with</span>
+          <ul class="modal__sm-list">
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-google"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linked-in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-sign-up-modal>
+      <div class="modal modal--sign-up">
+        <button class="modal__colse-btn" type="button" data-sign-up-close>
+          <svg class="modal__colse-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <form class="modal__sign-up-form" name="sign-up-form">
+          <span class="modal__title">Sign up</span>
+          <p class="modal__text">
+            Registration takes less than a minute but gives you full control over your studying.
+          </p>
+          <label class="modal__input-label">
+            Full Name
+            <input
+              class="modal__input"
+              type="text"
+              name="name"
+              placeholder="Your full name"
+              autocomplete="off"
+            />
+          </label>
+          <label class="modal__input-label">
+            Email
+            <input
+              class="modal__input"
+              type="email"
+              name="email"
+              placeholder="Your working email"
+              autocomplete="off"
+            />
+          </label>
+          <label class="modal__input-label">
+            Password
+            <input class="modal__input" type="password" name="password" data-password />
+            <button class="modal__show-pass-btn" type="button" data-show-pass>
+              <svg class="modal__show-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-opened-eye"></use>
+              </svg>
+            </button>
+            <button class="modal__hide-pass-btn is-hidden" type="button" data-hide-pass>
+              <svg class="modal__hide-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-closed-eye"></use>
+              </svg>
+            </button>
+          </label>
+          <label class="modal__input-label">
+            Confirm Password
+            <input class="modal__input" type="password" name="password" data-password />
+            <button class="modal__show-pass-btn" type="button" data-show-pass>
+              <svg class="modal__show-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-opened-eye"></use>
+              </svg>
+            </button>
+            <button class="modal__hide-pass-btn is-hidden" type="button" data-hide-pass>
+              <svg class="modal__hide-pass-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-closed-eye"></use>
+              </svg>
+            </button>
+          </label>
+          <div class="modal__checkbox-container">
+            <input
+              class="modal__checkbox"
+              type="checkbox"
+              name="remember-me"
+              id="sign-up-checkbox"
+            />
+            <label class="modal__checkbox-label" for="sign-up-checkbox">
+              <span class="modal__checkbox-icon">
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+            </label>
+            <span class="modal__checkbox-text">Remember me</span>
+          </div>
+          <button class="btn modal__sign-in-btn" type="submit">Sign in</button>
+          <p class="modal__sign-up-text">
+            Already have an account?&nbsp
+            <button class="modal__sign-up-link" type="button" data-go-to-sign-in>Sign in</button>
+          </p>
+          <span class="modal__sm-list-title">Or sign in with</span>
+          <ul class="modal__sm-list">
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-google"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__sm-item">
+              <a class="modal__sm-link" href="">
+                <svg class="modal__sm-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linked-in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
+    <script src="./js/show-hide-pass.js"></script>
+</body>
+
+</html>
